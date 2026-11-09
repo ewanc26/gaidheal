@@ -11,6 +11,9 @@ pub mod interpreter;
 pub mod lexer;
 pub mod parser;
 
+#[cfg(feature = "cli")]
+pub mod repl;
+
 pub use interpreter::{InterpError, Interpreter};
 pub use parser::{parse_program, Block, Op};
 

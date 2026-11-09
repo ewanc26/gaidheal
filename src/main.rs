@@ -13,16 +13,16 @@ use gaidheal::parser::Parser;
 #[derive(ClapParser, Debug)]
 #[command(name = "gaidheal", version, about = "Gàidheal esolang interpreter")]
 struct Args {
-    /// Input file (must have .gaidheal extension)
+    /// Input file (must have .gaidheal extension); omit to start the REPL
     #[arg(value_name = "FILE")]
-    file: PathBuf,
+    file: Option<PathBuf>,
 
     /// Show the token stream
-    #[arg(long)]
+    #[arg(long, requires = "file")]
     tokens: bool,
 
     /// Show the parsed AST
-    #[arg(long)]
+    #[arg(long, requires = "file")]
     ast: bool,
 
     /// Stack depth limit
@@ -33,13 +33,22 @@ struct Args {
 fn main() {
     let args = Args::parse();
 
-    if args.file.extension().and_then(|s| s.to_str()) != Some("gaidheal") {
+    // No file: interactive REPL, sharing stdin between program input and faigh reads.
+    let Some(file) = args.file else {
+        if let Err(e) = gaidheal::repl::run_repl(io::stdin(), io::stdout(), args.stack_depth) {
+            eprintln!("runtime error: {}", e);
+            std::process::exit(1);
+        }
+        return;
+    };
+
+    if file.extension().and_then(|s| s.to_str()) != Some("gaidheal") {
         eprintln!("error: file must have .gaidheal extension");
         std::process::exit(1);
     }
 
-    let source = fs::read_to_string(&args.file).unwrap_or_else(|e| {
-        eprintln!("error reading {}: {}", args.file.display(), e);
+    let source = fs::read_to_string(&file).unwrap_or_else(|e| {
+        eprintln!("error reading {}: {}", file.display(), e);
         std::process::exit(1);
     });
 
