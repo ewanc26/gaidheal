@@ -1,0 +1,14 @@
+( Cò-aonadh as motha — CGD de dhà àireamhan )
+( Leughidh sinn dà àireamh agus cluichidh sinn an CGD aca )
+
+faigh                              ( a )
+faigh                              ( b )
+
+gcuairt
+    chuir 0 mha cuìl criòch        ( bris nuair a bhios b seachd 0 )
+    malairt                        ( [b, a] )
+    chuir 1 dhealaich               ( [b, a mod b] )
+criòch
+
+gcuir 1                            ( thoir a gu mhullach — tha b seo 0 )
+abair

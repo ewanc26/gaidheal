@@ -1,0 +1,11 @@
+( Meoirr — mac-sgrìobh an ion-chuir gu às-chur )
+( Leughidh sinn lazaran air fad gus an ruig sinn crioch an ion-chuir )
+
+gcuairt
+    fhaigh                          ( an ath character, no −1 aig crioch )
+    bhfaigh                         ( bratach: 1 ma bha crioch )
+    ma
+        cuìl                        ( bris — fàg an -1 air an stac )
+    criòch
+    n-abair                         ( sgrìobh an character )
+criòch

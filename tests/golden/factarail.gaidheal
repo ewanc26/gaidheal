@@ -1,0 +1,18 @@
+( Factarail — 5! = 120 )
+( Stac: [f, n] — an toradh fo bhonn, n air a' bhàrr )
+
+cuir 1                        ( f = 1 )
+cuir 5                        ( n = 5 )
+
+gcuairt
+    chuir 0 mha cuìl criòch      ( bris nuair a bhios n seachd 0 )
+    tog                          ( leth-bhreac de n — air a' bhàrr )
+    chuir 2                      ( leth-bhreac de f )
+    bsuim                        ( f × n )
+    mhalairt                     ( ais-thionndaidh: [f×n, n, f] )
+    leig                         ( tilg an t-seann f )
+    cuir 1 shuim                 ( n − 1 )
+criòch
+
+gcuir 1                          ( thoir f gu mhullach )
+abair

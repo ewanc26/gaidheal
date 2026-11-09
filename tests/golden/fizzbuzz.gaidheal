@@ -1,0 +1,37 @@
+( FizzBuzz bho 1 gu 15 )
+( Stac: [n] air fad an t-seallaidh )
+
+cuir 1                                    ( n = 1 )
+
+gcuairt
+    chuir 0 cuir 16 gcoimeas ma cuìl criòch     ( bris an dèidh 15 )
+
+    ( t3: a bheil n roinn le 3? )
+    chuir 0 cuir 3 dhealaich cuir 0 gcoimeas
+    ( t5: a bheil n roinn le 5? )
+    chuir 1 cuir 5 dhealaich cuir 0 gcoimeas
+
+    ma
+        ma
+            ( FizzBuzz )
+            cuir 70 n-abair cuir 105 n-abair cuir 122 n-abair cuir 122 n-abair
+            cuir 66 n-abair cuir 117 n-abair cuir 122 n-abair cuir 122 n-abair
+            cuir 10 n-abair
+        no
+            ( Buzz )
+            cuir 66 n-abair cuir 117 n-abair cuir 122 n-abair cuir 122 n-abair
+            cuir 10 n-abair
+        criòch
+    no
+        ma
+            ( Fizz )
+            cuir 70 n-abair cuir 105 n-abair cuir 122 n-abair cuir 122 n-abair
+            cuir 10 n-abair
+        no
+            ( cluich an àireamh fhèin )
+            chuir 0 abair
+        criòch
+    criòch
+
+    cuir 1 suim                       ( n + 1 )
+criòch
