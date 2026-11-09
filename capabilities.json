@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "languages": [
+    "gaidheal"
+  ],
+  "rows": [
+    {
+      "id": "stack.push",
+      "description": "Push number literals (cuir) with sign, fraction, and exponent forms, only after cuir/chuir/gcuir.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/errors/bare_number.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "stack.copy-roll",
+      "description": "Copy the Nth element to the top (chuir) and roll the Nth element to the top (gcuir), 0 = top.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/fibonacci.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "stack.top-manipulation",
+      "description": "Dup (tog), over (thog), push stack depth (dtog).",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/cunntas.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "stack.reorder",
+      "description": "Swap top two (malairt), reverse the whole stack (mhalairt), tuck top under second (bhalairt).",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/fibonacci.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "stack.discard",
+      "description": "Drop top (leig), nip second (lheig), clear the stack (nleig).",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/suim.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "arith.additive",
+      "description": "a+b (suim), a-b (shuim), a*b (bsuim) on 64-bit doubles; binary ops pop b then a.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/fibonacci.gaidheal",
+            "tests/golden/suim.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "arith.multiplicative",
+      "description": "a/b (dealaich), remainder (dhealaich), a^b (ndealaich); division by zero is a runtime error.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/errors/division_by_zero.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "control.comparisons",
+      "description": "a<b (coimeas), a>b (choimeas), a==b (gcoimeas); push 1 or 0.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/fibonacci.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "control.conditional",
+      "description": "ma runs its block when the popped value is nonzero; mha when zero; no closes the else branch sharing the block's crioch.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/errors/stray_else.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "control.loops",
+      "description": "cuairt pops its condition before each iteration; chuairt pops after the body; gcuairt runs until cùl (break); chuìl continues without skipping the loop's own condition pop.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/cunntas.gaidheal",
+            "tests/golden/errors/break_outside_loop.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "io.print",
+      "description": "Print the top as a number with newline (abair) or as a UTF-8 code point without newline (n-abair); both pop.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/failte.gaidheal",
+            "tests/golden/errors/invalid_code_point.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "io.read",
+      "description": "Read a number token (faigh), read one UTF-8 code point with -1 at EOF (fhaigh), push 1 when the last read hit EOF (bhfaigh).",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/suim.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "syntax.comments",
+      "description": "Parenthesised comments ( ... ) that may span lines and nest.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/failte.gaidheal",
+            "tests/golden/errors/unterminated_comment.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "limits.stack-depth",
+      "description": "Single operand stack of 64-bit doubles with a configurable depth limit (default 1000) enforced at runtime.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/errors/stack_overflow.gaidheal"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+( FibonaccI — a' chiad deich àireamh )
+( Stac: [a, b, c] — aisg air a' bhonn, cunntas air a' bhàrr )
+
+cuir 0        ( a = 0 )
+cuir 1        ( b = 1 )
+cuir 10       ( c = an cunntas: cia mheud àireamh )
+
+gcuairt
+    chuir 0 mha cuìl criòch      ( bris nuair a bhios an cunntas 0 )
+    chuir 2 abair                ( cluich a — leth-bhon bhonn )
+    cuir 1 shuim                 ( lùghdaich an cunntas air a' bhàrr )
+    mhalairt                     ( ais-thionndaidh: tha an cunntas fon bhonn a-nis )
+    chuir 1                      ( dèan leth-bhreac de bh )
+    suim                         ( a+b fon leth-bhreac )
+    gcuir 2                      ( thoir an cunntas air ais gu bhàrr )
+criòch
