@@ -1,0 +1,13 @@
+# Gaidheal — an esoteric stack-based programming language written in Scottish Gaelic
+# All values are 64-bit doubles on a single operand stack (default depth 1000).
+# Build: cargo build --release
+
+[package]
+name = "gaidheal"
+version = "0.1.0"
+edition = "2021"
+description = "An esoteric stack-based programming language written in Scottish Gaelic"
+license = "AGPL-3.0-or-later"
+
+[lib]
+name = "gaidheal"

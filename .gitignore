@@ -1,0 +1,11 @@
+/target
+**/*.rs.bk
+
+# OS ignore rules
+.DS_Store
+
+# Session logs
+session-*.md
+
+# Environment variables
+.env
