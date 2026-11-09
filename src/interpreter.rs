@@ -171,6 +171,39 @@ impl<R: Read, W: Write> Interpreter<R, W> {
         self.out
     }
 
+    /// The current operand stack, bottom first, top last.
+    pub fn stack(&self) -> &[f64] {
+        &self.stack
+    }
+
+    /// Write a string to the output sink.
+    pub fn write_out(&mut self, s: &str) -> Result<(), InterpError> {
+        self.out.write_all(s.as_bytes())?;
+        Ok(())
+    }
+
+    /// Flush the output sink.
+    pub fn flush_out(&mut self) -> Result<(), InterpError> {
+        self.out.flush()?;
+        Ok(())
+    }
+
+    /// Read one line of input (without the trailing newline) through the
+    /// program's input stream, so REPL program text and `faigh` reads
+    /// share a single buffer. Returns `None` only at end of input.
+    pub fn read_line(&mut self) -> Result<Option<String>, InterpError> {
+        let mut line = String::new();
+        loop {
+            match self.input.read_code_point()? {
+                None => {
+                    return Ok(if line.is_empty() { None } else { Some(line) });
+                }
+                Some('\n') => return Ok(Some(line)),
+                Some(c) => line.push(c),
+            }
+        }
+    }
+
     /// Run a parsed program to completion, flushing output at the end.
     pub fn run(&mut self, program: &Block) -> Result<(), InterpError> {
         self.exec_block(program)?;
@@ -538,5 +571,38 @@ mod tests {
     fn reads_code_points() {
         let src = "fhaigh abair fhaigh abair fhaigh abair";
         assert_eq!(run(src, "aé").unwrap(), "97\n233\n-1\n");
+    }
+
+    #[test]
+    fn read_line_shares_the_input_stream() {
+        let program = parse_program("faigh abair").unwrap();
+        let mut interp = Interpreter::new(Cursor::new(b"40 2\n91\n".to_vec()), Vec::new());
+        // faigh reads the first token; a line read returns the rest of
+        // the same line, proving they share one buffer.
+        interp.run(&program).unwrap();
+        let line = interp.read_line().unwrap().unwrap();
+        assert_eq!(line.trim(), "2");
+        let line = interp.read_line().unwrap().unwrap();
+        assert_eq!(line, "91");
+        assert!(interp.read_line().unwrap().is_none());
+    }
+
+    #[test]
+    fn read_line_handles_empty_lines() {
+        let mut interp = Interpreter::new(Cursor::new(b"\n\n".to_vec()), Vec::new());
+        assert_eq!(interp.read_line().unwrap(), Some(String::new()));
+        assert_eq!(interp.read_line().unwrap(), Some(String::new()));
+        assert_eq!(interp.read_line().unwrap(), None);
+    }
+
+    #[test]
+    fn stack_introspection_and_output_helpers() {
+        let program = parse_program("cuir 1 cuir 2").unwrap();
+        let mut interp = Interpreter::new(Cursor::new(Vec::new()), Vec::new());
+        interp.run(&program).unwrap();
+        assert_eq!(interp.stack(), &[1.0, 2.0]);
+        interp.write_out("hi").unwrap();
+        interp.flush_out().unwrap();
+        assert_eq!(interp.into_output(), b"hi".to_vec());
     }
 }
