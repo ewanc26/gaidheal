@@ -87,11 +87,15 @@ pub enum LoopKind {
     Infinite,
 }
 
-/// A parse failure, with the offending line number.
+/// A parse failure, with the offending line number. `incomplete` marks
+/// recoverable end-of-input states — an open block, a `cuir` waiting for
+/// its number, an open comment — that a REPL can extend instead of
+/// rejecting.
 #[derive(Debug, Clone, PartialEq)]
 pub struct ParseError {
     pub message: String,
     pub line: usize,
+    pub incomplete: bool,
 }
 
 impl fmt::Display for ParseError {
@@ -104,7 +108,7 @@ impl std::error::Error for ParseError {}
 
 impl From<crate::lexer::LexError> for ParseError {
     fn from(e: crate::lexer::LexError) -> Self {
-        ParseError { message: e.message, line: e.line }
+        ParseError { message: e.message, line: e.line, incomplete: e.incomplete }
     }
 }
 
@@ -138,7 +142,13 @@ impl Parser {
     }
 
     fn err<T>(&self, message: impl Into<String>, line: usize) -> Result<T, ParseError> {
-        Err(ParseError { message: message.into(), line })
+        Err(ParseError { message: message.into(), line, incomplete: false })
+    }
+
+    /// Like [`Parser::err`], but marks the error as recoverable at end of
+    /// input: the user may simply not have finished typing yet.
+    fn err_incomplete<T>(&self, message: impl Into<String>, line: usize) -> Result<T, ParseError> {
+        Err(ParseError { message: message.into(), line, incomplete: true })
     }
 
     /// Parse the whole program. The top level ends at end-of-file, so
@@ -158,7 +168,7 @@ impl Parser {
             let spanned = match self.peek() {
                 Some(s) => s,
                 None => {
-                    return self.err("unexpected end of file", self.line_of_last());
+                    return self.err_incomplete("unexpected end of file", self.line_of_last());
                 }
             };
             let line = spanned.line;
@@ -168,7 +178,10 @@ impl Parser {
                     if enders.is_empty() {
                         return Ok((ops, "eof".to_string()));
                     }
-                    return self.err(format!("missing `{}` before end of file", enders[0]), line);
+                    return self.err_incomplete(
+                        format!("missing `{}` before end of file", enders[0]),
+                        line,
+                    );
                 }
                 Token::Number(n) => {
                     return self.err(
@@ -280,9 +293,9 @@ impl Parser {
                 self.err(format!("expected a number after `{}`, found `{}`", word, w), line)
             }
             Some(Spanned { token: Token::Eof, line }) => {
-                self.err(format!("expected a number after `{}`, found end of file", word), line)
+                self.err_incomplete(format!("expected a number after `{}`, found end of file", word), line)
             }
-            None => self.err(
+            None => self.err_incomplete(
                 format!("expected a number after `{}`, found end of file", word),
                 self.line_of_last(),
             ),
@@ -305,9 +318,9 @@ impl Parser {
                 self.err(format!("expected a stack index after `{}`, found `{}`", word, w), line)
             }
             Some(Spanned { token: Token::Eof, line }) => {
-                self.err(format!("expected a stack index after `{}`, found end of file", word), line)
+                self.err_incomplete(format!("expected a stack index after `{}`, found end of file", word), line)
             }
-            None => self.err(
+            None => self.err_incomplete(
                 format!("expected a stack index after `{}`, found end of file", word),
                 self.line_of_last(),
             ),
@@ -450,5 +463,28 @@ mod tests {
     #[test]
     fn break_inside_if_inside_loop_parses() {
         assert!(parse_program("gcuairt ma cuìl criòch cuìl criòch").is_ok());
+    }
+
+    #[test]
+    fn incomplete_programs_are_marked() {
+        // Open blocks and a `cuir` waiting for its number are marked
+        // incomplete so a REPL can wait for more input.
+        for src in [
+            "ma",
+            "ma cuir 1",
+            "gcuairt cuir 1",
+            "ma cuir 1 no",
+            "cuir",
+            "chuir",
+            "( comment",
+        ] {
+            let err = parse_program(src).unwrap_err();
+            assert!(err.incomplete, "`{}` should be incomplete: {:?}", src, err);
+        }
+        // Real errors are complete.
+        for src in ["toc", "5", "cùl", "cuir 1 2", ")", "@", "cuir 1 )"] {
+            let err = parse_program(src).unwrap_err();
+            assert!(!err.incomplete, "`{}` should be complete: {:?}", src, err);
+        }
     }
 }

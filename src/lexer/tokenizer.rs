@@ -26,11 +26,14 @@ pub struct Spanned {
     pub line: usize,
 }
 
-/// A lexing failure, with the offending line number.
+/// A lexing failure, with the offending line number. `incomplete` marks
+/// recoverable end-of-input states (an open comment) that a REPL can
+/// extend instead of rejecting.
 #[derive(Debug, Clone, PartialEq)]
 pub struct LexError {
     pub message: String,
     pub line: usize,
+    pub incomplete: bool,
 }
 
 impl fmt::Display for LexError {
@@ -106,6 +109,7 @@ impl<'a> Tokenizer<'a> {
         Err(LexError {
             message: "unterminated comment: missing `)`".to_string(),
             line: start_line,
+            incomplete: true,
         })
     }
 
@@ -138,6 +142,7 @@ impl<'a> Tokenizer<'a> {
             .map_err(|e| LexError {
                 message: format!("invalid number `{}`: {}", text, e),
                 line: start_line,
+                incomplete: false,
             })
     }
 
@@ -177,6 +182,7 @@ impl<'a> Tokenizer<'a> {
                     return Err(LexError {
                         message: "unexpected `)` outside a comment".to_string(),
                         line: self.line,
+                        incomplete: false,
                     });
                 }
                 Some(_) if self.number_starts() => {
@@ -192,6 +198,7 @@ impl<'a> Tokenizer<'a> {
                     return Err(LexError {
                         message: format!("unexpected character `{}`", c),
                         line: self.line,
+                        incomplete: false,
                     });
                 }
             }
