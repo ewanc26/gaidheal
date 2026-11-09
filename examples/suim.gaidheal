@@ -1,0 +1,16 @@
+( Suim: leugh àireamhan bho ion-chur gus an crìoch an fhaidhle )
+(agus clùich an t-suim iomlan )
+
+cuir 0                        ( an t-suim on thòiseachadh )
+
+gcuairt
+    faigh                      ( leugh an ath àireamh — -1 aig crioch )
+    bhfaigh                     ( bratach: 1 ma bha crioch an ion-chuir )
+    ma
+        cuìl                   ( bris — chan eil feum againn air an -1 )
+    criòch
+    suim                       ( cuir an àireamh ris an t-suim )
+criòch
+
+gcuir 1                        ( thoir an t-suim gu mhullach — fàg an -1 )
+abair
