@@ -6,4 +6,5 @@
 //! mutation: base (destructive/primary), lenited (variant element), and
 //! eclipsed (non-destructive/structural).
 
+pub mod builtins;
 pub mod lexer;
