@@ -24,7 +24,8 @@ An esoteric stack-based programming language written in Scottish Gaelic. All val
 - `src/parser/parser.rs` — parses blocks ending with `criòch`; resolves `ma`/`mha`/`no` and loop nesting; rejects `cùl`/`chuìl` outside loops and numbers outside the `cuir` family
 - `src/interpreter.rs` — stack machine over the AST: mutation-form opcodes, arithmetic, comparisons, I/O over abstract `Read`/`Write` streams, break/continue propagation
 - `src/builtins.rs` — the canonical word table (`lookup`); the single source of truth for word spellings; do not hard-code words elsewhere
-- `src/main.rs` — CLI entry: read `.gaidheal` file, parse, interpret; `--tokens`/`--ast` inspection flags; `--stack-depth`
+- `src/repl.rs` — interactive REPL over the interpreter's streams: persistent stack, multi-line blocks until their `criòch`, error recovery
+- `src/main.rs` — CLI entry: read `.gaidheal` file, parse, interpret; no file starts the REPL; `--tokens`/`--ast` inspection flags; `--stack-depth`
 
 ## Language invariants
 

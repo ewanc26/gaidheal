@@ -59,6 +59,18 @@ Requires cargo 1.70+. The binary is `target/release/gaidheal`.
 printf '1 2 3 4 5\n' | ./target/release/gaidheal examples/suim.gaidheal
 ```
 
+Start the interactive REPL (persistent stack, multi-line blocks, `stac(n)` printed after every evaluation):
+
+```text
+$ gaidheal
+Gàidheal REPL — every block ends with `criòch`. EOF exits.
+gaidheal> cuir 5 tog bsuim
+stac(1): 25
+gaidheal>
+```
+
+Program input read by `faigh`/`fhaigh` comes from the same stdin, so typed lines can double as program input.
+
 Inspect a program without running it:
 
 ```sh

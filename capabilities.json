@@ -23,7 +23,9 @@
         "gaidheal": {
           "status": "implemented",
           "tests": [
-            "tests/golden/fibonacci.gaidheal"
+            "tests/golden/fibonacci.gaidheal",
+            "tests/golden/factarail.gaidheal",
+            "tests/golden/cgd.gaidheal"
           ]
         }
       }
@@ -72,7 +74,8 @@
           "status": "implemented",
           "tests": [
             "tests/golden/fibonacci.gaidheal",
-            "tests/golden/suim.gaidheal"
+            "tests/golden/suim.gaidheal",
+            "tests/golden/factarail.gaidheal"
           ]
         }
       }
@@ -84,7 +87,9 @@
         "gaidheal": {
           "status": "implemented",
           "tests": [
-            "tests/golden/errors/division_by_zero.gaidheal"
+            "tests/golden/errors/division_by_zero.gaidheal",
+            "tests/golden/cgd.gaidheal",
+            "tests/golden/fizzbuzz.gaidheal"
           ]
         }
       }
@@ -96,7 +101,8 @@
         "gaidheal": {
           "status": "implemented",
           "tests": [
-            "tests/golden/fibonacci.gaidheal"
+            "tests/golden/fibonacci.gaidheal",
+            "tests/golden/fizzbuzz.gaidheal"
           ]
         }
       }
@@ -121,6 +127,8 @@
           "status": "implemented",
           "tests": [
             "tests/golden/cunntas.gaidheal",
+            "tests/golden/fizzbuzz.gaidheal",
+            "tests/golden/factarail.gaidheal",
             "tests/golden/errors/break_outside_loop.gaidheal"
           ]
         }
@@ -146,7 +154,9 @@
         "gaidheal": {
           "status": "implemented",
           "tests": [
-            "tests/golden/suim.gaidheal"
+            "tests/golden/suim.gaidheal",
+            "tests/golden/cgd.gaidheal",
+            "tests/golden/meoirr.gaidheal"
           ]
         }
       }
@@ -172,6 +182,18 @@
           "status": "implemented",
           "tests": [
             "tests/golden/errors/stack_overflow.gaidheal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tooling.repl",
+      "description": "Interactive REPL with a persistent stack: multi-line blocks wait for their crioch, parse errors reset the buffer, and program input is read through the same stream as faigh/fhaigh.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/repl.rs"
           ]
         }
       }
