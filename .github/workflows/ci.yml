@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache cargo build
+        uses: actions/cache@v4
+        with:
+          path: target
+          key: cargo-${{ runner.os }}-${{ hashFiles('Cargo.toml') }}
+          restore-keys: |
+            cargo-${{ runner.os }}-
+      - name: Validate capability matrix
+        run: python3 scripts/check_capabilities.py --language gaidheal --require-complete
+      - name: Build
+        run: cargo build --verbose
+      - name: Unit tests
+        run: cargo test --verbose
+      - name: Golden end-to-end tests
+        run: ./scripts/run_golden_tests.sh target/debug/gaidheal
