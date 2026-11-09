@@ -5,3 +5,5 @@
 //! 1000). Each root word has three forms selected by initial-consonant
 //! mutation: base (destructive/primary), lenited (variant element), and
 //! eclipsed (non-destructive/structural).
+
+pub mod lexer;
