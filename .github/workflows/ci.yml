@@ -34,3 +34,5 @@ jobs:
         run: cargo test --verbose
       - name: Golden end-to-end tests
         run: ./scripts/run_golden_tests.sh target/debug/gaidheal
+      - name: Differential tests against C
+        run: python3 scripts/run_differential_tests.py --binary target/debug/gaidheal --cc clang
