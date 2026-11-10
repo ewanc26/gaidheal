@@ -59,10 +59,78 @@ static int total_triangles = 0;
 static float zbuffer[WIDTH * HEIGHT];
 static Uint32 framebuffer[WIDTH * HEIGHT];
 
+/* ------------------------------------------------------------------ */
+/* Canonical per-frame logging — byte-identical format shared by       */
+/* doughnut_logged.c and every donut_host. JSON Lines, one object per  */
+/* presented frame:                                                    */
+/*  {"frame":N,"vertices":N,"stream_checksum":"<16hex>",               */
+/*   "vertex_minmax":{"px":[min,max],"py":[..],"z":[..],"i":[..]},     */
+/*   "first_vertex":[px,py,z,i],"last_vertex":[px,py,z,i],             */
+/*   "z_writes":N,"wireframe_pixels":N,"fb_checksum":"<16hex>",         */
+/*   "wall_ms":f}                                                      */
+/* Rules: checksums are 64-bit FNV-1a (offset 14695981039346656037,    */
+/* prime 1099511628211) printed as 16 lowercase hex chars;              */
+/* stream_checksum hashes the raw text of the frame's 6000 vertex      */
+/* values in stream order, no separators (here: the token bytes        */
+/* exactly as read from stdin); fb_checksum hashes the 800x600x4      */
+/* framebuffer bytes in memory; floats use round-trip-shortest %.9g;  */
+/* wall_ms is %.3f and covers the render only (clear..raster, no      */
+/* present).                                                          */
+/* ------------------------------------------------------------------ */
+static FILE *log_file = NULL;
+static unsigned long long log_z_writes = 0;
+static unsigned long long log_wireframe_pixels = 0;
+
+static unsigned long long log_fnv_init(void) { return 14695981039346656037ULL; }
+static unsigned long long log_fnv_text(unsigned long long h, const char *s) {
+    while (*s) { h ^= (unsigned char)(*s++); h *= 1099511628211ULL; }
+    return h;
+}
+static unsigned long long log_fnv_fb(unsigned long long h) {
+    const unsigned char *b = (const unsigned char *)framebuffer;
+    size_t n = sizeof(framebuffer);
+    for (size_t i = 0; i < n; i++) { h ^= b[i]; h *= 1099511628211ULL; }
+    return h;
+}
+static double log_wall_ms(Uint64 t0, Uint64 t1) {
+    Uint64 freq = SDL_GetPerformanceFrequency();
+    return freq ? (double)(t1 - t0) * 1000.0 / (double)freq : 0.0;
+}
+/* Emit one canonical frame record (see the format comment above).    */
+static void log_frame(int frame, int nverts, const float *pxv, const float *pyv,
+                      const float *zv, const float *iv,
+                      unsigned long long stream_checksum, double wall_ms) {
+    if (!log_file || nverts <= 0) return;
+    float mn[4] = {pxv[0], pyv[0], zv[0], iv[0]};
+    float mx[4] = {pxv[0], pyv[0], zv[0], iv[0]};
+    for (int k = 1; k < nverts; k++) {
+        float v[4] = {pxv[k], pyv[k], zv[k], iv[k]};
+        for (int c = 0; c < 4; c++) {
+            if (v[c] < mn[c]) mn[c] = v[c];
+            if (v[c] > mx[c]) mx[c] = v[c];
+        }
+    }
+    int last = nverts - 1;
+    fprintf(log_file,
+        "{\"frame\":%d,\"vertices\":%d,\"stream_checksum\":\"%016llx\","
+        "\"vertex_minmax\":{\"px\":[%.9g,%.9g],\"py\":[%.9g,%.9g],"
+        "\"z\":[%.9g,%.9g],\"i\":[%.9g,%.9g]},"
+        "\"first_vertex\":[%.9g,%.9g,%.9g,%.9g],"
+        "\"last_vertex\":[%.9g,%.9g,%.9g,%.9g],"
+        "\"z_writes\":%llu,\"wireframe_pixels\":%llu,"
+        "\"fb_checksum\":\"%016llx\",\"wall_ms\":%.3f}\n",
+        frame, nverts, stream_checksum,
+        mn[0], mx[0], mn[1], mx[1], mn[2], mx[2], mn[3], mx[3],
+        pxv[0], pyv[0], zv[0], iv[0],
+        pxv[last], pyv[last], zv[last], iv[last],
+        log_z_writes, log_wireframe_pixels, log_fnv_fb(log_fnv_init()), wall_ms);
+}
+
 /* One recorded frame: the producer's per-vertex stream. */
 typedef struct {
     float px[N_VERTS], py[N_VERTS], z[N_VERTS], intensity[N_VERTS];
     int count;
+    unsigned long long stream_checksum; /* FNV-1a of the frame's raw token text */
 } VertexFrame;
 
 static VertexFrame *frames = NULL;
@@ -114,11 +182,13 @@ static void draw_triangle(Vector3 v0, Vector3 v1, Vector3 v2,
                 int idx = y * WIDTH + x;
                 if (z < zbuffer[idx]) {
                     zbuffer[idx] = z;
+                    log_z_writes++;
 
                     float intensity = (w0 * (int0 / v0.z) + w1 * (int1 / v1.z) + w2 * (int2 / v2.z)) / inv_z;
 
                     if (wireframe_on && (w0 < 0.04f || w1 < 0.04f || w2 < 0.04f)) {
                         framebuffer[idx] = 0xFF00FFFF;
+                        log_wireframe_pixels++;
                     } else {
                         Uint32 r = (Uint32)(fminf(1.0f, intensity * 0.9f) * 255);
                         Uint32 g = (Uint32)(fminf(1.0f, intensity * 0.4f) * 255);
@@ -132,6 +202,8 @@ static void draw_triangle(Vector3 v0, Vector3 v1, Vector3 v2,
 }
 
 static void render_frame(const VertexFrame *f) {
+    log_z_writes = 0;
+    log_wireframe_pixels = 0;
     for (int i = 0; i < WIDTH * HEIGHT; i++) {
         zbuffer[i] = 1e9f;
         framebuffer[i] = 0xFF101010;
@@ -173,6 +245,10 @@ int main(int argc, char **argv) {
     for (int i = 1; i < argc; i++) {
         if (!strcmp(argv[i], "--frames") && i + 1 < argc) present_limit = atoi(argv[++i]);
         else if (!strcmp(argv[i], "--size") && i + 2 < argc) { width = atoi(argv[++i]); height = atoi(argv[++i]); }
+        else if (!strcmp(argv[i], "--log") && i + 1 < argc) {
+            log_file = fopen(argv[++i], "a");
+            if (!log_file) { fprintf(stderr, "donut_host: cannot open log file\n"); return 1; }
+        }
     }
 
     generate_torus();
@@ -202,9 +278,13 @@ int main(int argc, char **argv) {
             cur.count = 0;
             npending = 0;
             in_frame = 1;
+            cur.stream_checksum = log_fnv_init();
         } else if (!strcmp(tok, "S")) {
             if (!in_frame) { bad++; continue; }
+            Uint64 wt0 = SDL_GetPerformanceCounter();
             render_frame(&cur);
+            double wms = log_wall_ms(wt0, SDL_GetPerformanceCounter());
+            log_frame(presented, cur.count, cur.px, cur.py, cur.z, cur.intensity, cur.stream_checksum, wms);
             record_frame(&cur);
             SDL_UpdateTexture(tex, NULL, framebuffer, WIDTH * sizeof(Uint32));
             SDL_RenderClear(ren);
@@ -218,6 +298,7 @@ int main(int argc, char **argv) {
             double v = strtod(tok, &end);
             if (end == tok || *end != '\0') { bad++; continue; }
             if (!in_frame || cur.count >= N_VERTS) { bad++; continue; }
+            cur.stream_checksum = log_fnv_text(cur.stream_checksum, tok);
             pending[npending++] = (float)v;
             if (npending == 4) {
                 cur.px[cur.count] = pending[0];
@@ -241,7 +322,10 @@ int main(int argc, char **argv) {
             if (ev.type == SDL_KEYDOWN && ev.key.keysym.sym == SDLK_ESCAPE) running = 0;
         }
         VertexFrame *f = &frames[presented % nframes];
+        Uint64 wt0 = SDL_GetPerformanceCounter();
         render_frame(f);
+        double wms = log_wall_ms(wt0, SDL_GetPerformanceCounter());
+        log_frame(presented, f->count, f->px, f->py, f->z, f->intensity, f->stream_checksum, wms);
         SDL_UpdateTexture(tex, NULL, framebuffer, WIDTH * sizeof(Uint32));
         SDL_RenderClear(ren);
         SDL_RenderCopy(ren, tex, NULL, NULL);
