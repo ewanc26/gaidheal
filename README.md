@@ -66,23 +66,27 @@ printf '1 2 3 4 5\n' | ./target/release/gaidheal examples/suim.gaidheal
 
 ### Donut engine
 
-`examples/donut_engine.gaidheal` is a generated finite animation (60 frames of a
-spinning shaded torus, 656 quads per frame) that streams quads to the SDL2
-token-protocol host in `host/donut_host.c` — using only `+ − × ÷`, remainder, and
-comparisons: there is no trig, no variables and no strings, so the generator
-bakes the exact cos/sin doubles of every angle the loop schedule reaches and the
-program selects them with unrolled bisect ladders over its countdown counters;
-geometry, projection and shading arithmetic all run at program time.  Printed
-values are rounded to six significant digits at program time so `abair` emits
-exactly the `%g`-style token protocol the host expects.
+`examples/donut_engine.gaidheal` is a generated finite animation (60 frames of
+a spinning, orbit-lit torus, 50x30 vertices per frame) that streams a
+per-frame vertex protocol to the SDL2 host in `host/donut_host.c` — a faithful
+port of the canonical renderer in `doughnut.c` (800x600 z-buffered Gouraud
+triangle rasterization, purple-pink palette).  The program uses only
+`+ − × ÷`, remainder, power and comparisons: there is no trig, no variables and
+no strings, so the generator bakes the exact cos/sin doubles of every angle the
+loop schedule reaches — per-frame spin and orbiting-light angles and per-step
+torus angles — and the program selects them with unrolled bisect ladders over
+its countdown counters; geometry, rotation (X then Y then Z, exactly as the
+canonical `rotate_vector`), orbiting-light shading, attenuation and perspective
+projection all run at program time (`sqrt` as power 0.5; `powf(x, 0.5)` is
+bit-equal to `sqrt` for every distance in the animation).  Printed values are
+rounded to six significant digits at program time so `abair` emits exactly the
+`%g`-style protocol the host expects.  Per frame the program emits `F`, then
+four lines `px py z intensity` for each vertex in `i*30+j` order, then `S`.
 
-The stream is byte-identical to the canonical sigi engine for overlapped frames
-—the same spin step, loop schedule, tilt, projection and shading order:
-`tests/fixtures/donut_canonical_8f.txt` vendors the canonical first 8 frames and
-`tests/donut_canonical.rs` asserts the match.  (The canonical grid tops out at
-656 quads per frame because its ring and tube loops are float-accumulation
-while-loops: the ring stride 0.392699 runs 41 iterations under `i < 16` and the
-tube stride 0.628319 runs 16 under `j < 10`.)
+The stream is byte-identical to the canonical sigi engine for overlapped
+frames — the same spin and light-angle accumulation, tilt, projection and
+shading order: `tests/fixtures/donut_canonical_v2_2f.txt` vendors the canonical
+first 2 frames and `tests/donut_canonical.rs` asserts the match.
 
 ```sh
 cc -std=c99 -O2 $(sdl2-config --cflags --libs) -o host_bin host/donut_host.c
