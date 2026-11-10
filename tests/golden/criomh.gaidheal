@@ -1,0 +1,35 @@
+( Prìomhan bho 2 gu 30 le roinneadh deuchainneil )
+( Stac: [n, bratach, d] — a' bhonn gun mullach )
+
+cuir 2                       ( n )
+cuir 1                       ( bratach )
+cuir 2                       ( d )
+
+gcuairt
+    ( bris nuair a ruigeas n 31 — n aig inneacs 2 )
+    chuir 2 cuir 31 gcoimeas ma cuìl criòch
+
+    gcuairt
+        ( bris nuair a bhios d = n )
+        chuir 0 chuir 3 gcoimeas ma cuìl criòch
+        ( r = n mod d — n air leth-bhreac an toiseach, d gu h-aithride aig inneacs 1 )
+        chuir 2 chuir 1 dhealaich
+        ( ma r = 0: bratach gu 0 agus brìs )
+        cuir 0 gcoimeas ma
+            gcuir 1 leig cuir 0 malairt cuìl
+        criòch
+        cuir 1 suim                        ( d + 1 )
+    criòch
+
+    ( ma tha a' bhratach colach: cluich n )
+    chuir 1 ma
+        chuir 2 abair
+    criòch
+
+    ( glan: thoir air falbh d agus a' bhratach )
+    leig leig
+    cuir 1 suim                            ( n + 1 )
+    cuir 1 cuir 2                          ( bratach = 1, d = 2 )
+criòch
+
+leig leig leig                             ( glan d, bratach, agus 31 )
