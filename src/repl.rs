@@ -67,7 +67,8 @@ pub fn run_repl<R: Read, W: Write>(input: R, out: W, depth: usize) -> Result<(),
 }
 
 fn report_error<R: Read, W: Write>(interp: &mut Interpreter<R, W>, e: &ParseError) -> Result<(), InterpError> {
-    interp.write_out(format!("parse error: {}\n", e).as_str())
+    let kind = if e.lexical { "lex" } else { "parse" };
+    interp.write_out(format!("{} error: {}\n", kind, e).as_str())
 }
 
 fn print_stack<R: Read, W: Write>(interp: &mut Interpreter<R, W>) -> Result<(), InterpError> {

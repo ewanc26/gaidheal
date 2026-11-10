@@ -96,6 +96,9 @@ pub struct ParseError {
     pub message: String,
     pub line: usize,
     pub incomplete: bool,
+    /// True when the failure comes from the tokenizer rather than the
+    /// grammar, so tools can print `lex error:` vs `parse error:`.
+    pub lexical: bool,
 }
 
 impl fmt::Display for ParseError {
@@ -108,7 +111,12 @@ impl std::error::Error for ParseError {}
 
 impl From<crate::lexer::LexError> for ParseError {
     fn from(e: crate::lexer::LexError) -> Self {
-        ParseError { message: e.message, line: e.line, incomplete: e.incomplete }
+        ParseError {
+            message: e.message,
+            line: e.line,
+            incomplete: e.incomplete,
+            lexical: true,
+        }
     }
 }
 
@@ -142,13 +150,13 @@ impl Parser {
     }
 
     fn err<T>(&self, message: impl Into<String>, line: usize) -> Result<T, ParseError> {
-        Err(ParseError { message: message.into(), line, incomplete: false })
+        Err(ParseError { message: message.into(), line, incomplete: false, lexical: false })
     }
 
     /// Like [`Parser::err`], but marks the error as recoverable at end of
     /// input: the user may simply not have finished typing yet.
     fn err_incomplete<T>(&self, message: impl Into<String>, line: usize) -> Result<T, ParseError> {
-        Err(ParseError { message: message.into(), line, incomplete: true })
+        Err(ParseError { message: message.into(), line, incomplete: true, lexical: false })
     }
 
     /// Parse the whole program. The top level ends at end-of-file, so

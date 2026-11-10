@@ -75,7 +75,7 @@ fn main() {
     let program = Parser::new(&source)
         .and_then(|mut p| p.parse())
         .unwrap_or_else(|e| {
-            eprintln!("parse error: {}", e);
+            eprintln!("{} error: {}", if e.lexical { "lex" } else { "parse" }, e);
             std::process::exit(1);
         });
 
