@@ -218,7 +218,7 @@ mod tests {
     /// Compile a program to C, build it with the system C compiler, run it
     /// with the given input, and return (stdout, stderr, exit code).
     /// Skips (with a note) when no C compiler is available.
-    fn compiled_output(src: &str, input: &str) -> Option<(String, String, i32)> {
+    fn compiled_output(src: &str, input: &[u8]) -> Option<(String, String, i32)> {
         let cc = std::env::var("GAIDHEAL_CC").unwrap_or_else(|_| "cc".to_string());
         let program = parse_program(src).unwrap();
         let c = emit_c(&program, "test.gaidheal", 1000, runtime_header_path());
@@ -250,7 +250,7 @@ mod tests {
             .and_then(|mut child| {
                 use std::io::Write;
                 if let Some(mut stdin) = child.stdin.take() {
-                    stdin.write_all(input.as_bytes()).ok();
+                    stdin.write_all(input).ok();
                 }
                 child.wait_with_output()
             })
@@ -265,7 +265,7 @@ mod tests {
 
     fn assert_parity(src: &str, input: &str) {
         let (i_out, _, i_rc) = interpreter_output(src, input);
-        let Some((c_out, c_err, c_rc)) = compiled_output(src, input) else {
+        let Some((c_out, c_err, c_rc)) = compiled_output(src, input.as_bytes()) else {
             return;
         };
         assert_eq!(i_out, c_out, "stdout mismatch for {:?}", src);
@@ -360,5 +360,92 @@ mod tests {
         assert_parity("fhaigh abair fhaigh abair fhaigh abair", "aé");
         assert_parity("cuir 242 n-abair", "");
         assert_parity("cuir 5 dtog abair", "");
+    }
+
+    /// Every mutation family, in all three forms, must produce identical
+    /// results interpreted and compiled.
+    #[test]
+    fn compiled_parity_every_word_form() {
+        let cases: &[(&str, &str)] = &[
+            ("cuir", "cuir 5 abair"),
+            ("chuir", "cuir 4 cuir 5 chuir 1 abair abair"),
+            ("gcuir", "cuir 4 cuir 5 gcuir 1 abair abair"),
+            ("gcuir-deep", "cuir 1 cuir 2 cuir 3 gcuir 2 abair abair abair"),
+            ("tog", "cuir 7 tog abair abair"),
+            ("thog", "cuir 7 cuir 8 thog abair abair abair"),
+            ("dtog", "cuir 1 cuir 2 dtog abair"),
+            ("malairt", "cuir 7 cuir 8 malairt abair abair"),
+            ("mhalairt", "cuir 1 cuir 2 cuir 3 mhalairt abair abair abair"),
+            ("bhalairt", "cuir 7 cuir 8 bhalairt abair abair abair"),
+            ("leig/lheig", "cuir 1 cuir 2 lheig abair"),
+            ("nleig", "cuir 1 cuir 2 cuir 3 nleig dtog abair"),
+            ("suim", "cuir 2 cuir 3 suim abair"),
+            ("shuim", "cuir 2 cuir 3 shuim abair"),
+            ("bsuim", "cuir 2 cuir 3 bsuim abair"),
+            ("dealaich", "cuir 7 cuir 2 dealaich abair"),
+            ("dhealaich", "cuir 7 cuir 2 dhealaich abair"),
+            ("dhealaich-negative", "cuir -7 cuir 2 dhealaich abair"),
+            ("ndealaich", "cuir 2 cuir 10 ndealaich abair"),
+            ("coimeas", "cuir 1 cuir 2 coimeas abair"),
+            ("choimeas", "cuir 1 cuir 2 choimeas abair"),
+            ("gcoimeas", "cuir 2 cuir 2 gcoimeas abair"),
+            ("abair/n-abair", "cuir 72 n-abair cuir 10 n-abair cuir 5 abair"),
+            ("faigh/bhfaigh", "faigh abair faigh bhfaigh abair abair", ),
+        ];
+        for &(name, src) in cases {
+            let input = match name {
+                "faigh/bhfaigh" => "9 8",
+                _ => "",
+            };
+            assert_parity(src, input);
+        }
+    }
+
+    /// Special values must format identically: large integers, negative
+    /// zero, fractions needing many digits, NaN and the infinities.
+    #[test]
+    fn compiled_parity_special_values() {
+        for src in [
+            "cuir 1e15 abair",
+            "cuir -0 abair",
+            "cuir 2.5e-7 abair",
+            "cuir 0.1 cuir 0.2 shuim abair",
+            "cuir -8 cuir 0.5 ndealaich abair",
+            "cuir 1e308 tog bsuim abair",
+            "cuir 300 cuir 7 dhealaich cuir 100 dhealaich abair",
+            "cuir 999999999999999 tog bsuim abair",
+        ] {
+            assert_parity(src, "");
+        }
+    }
+
+    /// Runtime errors must be byte-identical between the backends. Inputs
+    /// need raw bytes, so they are `&[u8]` (invalid UTF-8 cases included).
+    #[test]
+    fn compiled_parity_runtime_errors() {
+        let cases: &[(&str, &str, &[u8])] = &[
+            ("underflow", "abair", b""),
+            ("swap underflow", "cuir 1 malairt", b""),
+            ("index out of range", "chuir 5", b""),
+            ("division by zero", "cuir 1 cuir 0 dealaich", b""),
+            ("remainder by zero", "cuir 1 cuir 0 dhealaich", b""),
+            ("invalid code point", "cuir 1114112 n-abair", b""),
+            ("unreadable number", "faigh", b"abc\n"),
+            ("invalid UTF-8 lead", "fhaigh abair", b"\xff\n"),
+            ("invalid UTF-8 overlong", "fhaigh abair", b"\xc0\x80\n"),
+            ("invalid UTF-8 surrogate", "fhaigh abair", b"\xed\xa0\x80\n"),
+            ("invalid UTF-8 truncated", "fhaigh abair", b"\xc3"),
+        ];
+        for &(name, src, input) in cases {
+            let program = parse_program(src).unwrap();
+            let mut interp = Interpreter::new(Cursor::new(input.to_vec()), Vec::new());
+            let i_err = format!("runtime error: {}\n", interp.run(&program).unwrap_err());
+            // Skips (with a note) when no C compiler is available.
+            let Some((_, c_err, c_rc)) = compiled_output(src, input) else {
+                return;
+            };
+            assert_eq!(c_rc, 1, "compiled {} should exit nonzero", name);
+            assert_eq!(i_err, c_err, "error text mismatch for {}", name);
+        }
     }
 }

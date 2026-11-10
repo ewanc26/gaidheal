@@ -73,6 +73,9 @@ static void gh_push_depth(void) { gh_push((double)gh_sp); }
 
 /* malairt family */
 static void gh_swap(void) {
+    if (gh_sp < 2) {
+        gh_errorf("stack underflow: an operation popped more values than the stack had");
+    }
     double t = gh_peek(0);
     gh_stack[gh_sp - 1] = gh_stack[gh_sp - 2];
     gh_stack[gh_sp - 2] = t;
@@ -131,8 +134,11 @@ static void gh_eq(void) { double b = gh_pop(), a = gh_pop(); gh_push(a == b ? 1.
 
 /*
  * Render a double like the reference interpreter (Rust f64 Display):
- * NaN, infinities, integral values without a fraction, and otherwise the
- * shortest decimal fraction that round-trips.
+ * the SHORTEST decimal that round-trips, always in positional notation,
+ * integral values without a fraction. The search asks for p significant
+ * digits with %.*e and keeps the first precision that parses back
+ * bit-exactly, then re-renders those digits positionally. `buf` must
+ * hold at least ~470 bytes.
  */
 static void gh_fmt_double(char *buf, size_t bufsz, double v) {
     if (isnan(v)) {
@@ -143,17 +149,68 @@ static void gh_fmt_double(char *buf, size_t bufsz, double v) {
         snprintf(buf, bufsz, v < 0 ? "-inf" : "inf");
         return;
     }
-    if (v == floor(v)) {
-        snprintf(buf, bufsz, "%.0f", v);
+    if (v == 0.0) {
+        snprintf(buf, bufsz, signbit(v) ? "-0" : "0");
         return;
     }
-    for (int prec = 1; prec <= 1100; prec++) {
-        snprintf(buf, bufsz, "%.*f", prec, v);
-        if (strtod(buf, NULL) == v) {
-            return;
+
+    char sci[64];
+    int exp10 = 0;
+    for (int p = 1; p <= 17; p++) {
+        snprintf(sci, sizeof sci, "%.*e", p - 1, v);
+        if (strtod(sci, NULL) != v) {
+            continue;
         }
+        /* Parse "d.ddde±XX" into digits and an exponent. */
+        char *e = strchr(sci, 'e');
+        *e = '\0';
+        exp10 = atoi(e + 1);
+        char dig[32];
+        size_t len = 0;
+        for (const char *c = sci; *c; c++) {
+            if (*c >= '0' && *c <= '9') {
+                dig[len++] = *c;
+            }
+        }
+        dig[len] = '\0';
+
+        char *out = buf;
+        if (v < 0) {
+            *out++ = '-';
+        }
+        if (exp10 >= 0 && (size_t)exp10 >= len - 1) {
+            /* integral form: all digits, then trailing zeros */
+            for (size_t i = 0; i < len; i++) {
+                *out++ = dig[i];
+            }
+            for (size_t i = len - 1; i < (size_t)exp10; i++) {
+                *out++ = '0';
+            }
+        } else if (exp10 >= 0) {
+            /* the point falls inside the digits */
+            for (int i = 0; i <= exp10; i++) {
+                *out++ = dig[i];
+            }
+            *out++ = '.';
+            for (size_t i = (size_t)exp10 + 1; i < len; i++) {
+                *out++ = dig[i];
+            }
+        } else {
+            /* 0.000ddd */
+            *out++ = '0';
+            *out++ = '.';
+            for (int i = 0; i < -exp10 - 1; i++) {
+                *out++ = '0';
+            }
+            for (size_t i = 0; i < len; i++) {
+                *out++ = dig[i];
+            }
+        }
+        *out = '\0';
+        (void)bufsz;
+        return;
     }
-    snprintf(buf, bufsz, "%.17f", v);
+    snprintf(buf, bufsz, "%.16e", v);
 }
 
 /* abair: print the top as a number plus newline (pops) */
@@ -258,6 +315,15 @@ static void gh_read_char(void) {
             gh_errorf("input is not valid UTF-8");
         }
         cp = (cp << 6) | (uint32_t)(b & 0x3F);
+    }
+    /* Reject what String::from_utf8 rejects: overlong encodings,
+     * surrogates, and anything beyond U+10FFFF. */
+    if (cp > 0x10FFFF
+        || (len == 2 && cp < 0x80)
+        || (len == 3 && cp < 0x800)
+        || (len == 4 && cp < 0x10000)
+        || (cp >= 0xD800 && cp <= 0xDFFF)) {
+        gh_errorf("input is not valid UTF-8");
     }
     gh_push((double)cp);
 }
