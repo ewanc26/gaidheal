@@ -1,338 +1,466 @@
 ( Bòrdan trig: luachan cos agus sin air a bhàthadh a-steach )
 ( leis a' ghineadhar, cruinn dha-rìribh — co-ionnan ri sigi. )
 ( Taghadh le bàta biseach nach bi acrach air doimhne. )
-cuir 0.9987502603949663
-cuir 0.9950041652780258
+cuir 1.0
+cuir 0.999995500003375
+cuir 0.999982000054
+cuir 0.9999595002733742
+cuir 0.9999280008639958
+cuir 0.9998875021093592
+cuir 0.9998380043739528
+cuir 0.9997795081032559
+cuir 0.9997120138237345
+cuir 0.9996355221428369
+cuir 0.9995500337489875
+cuir 0.9994555494115813
+cuir 0.9993520699809768
+cuir 0.999239596388488
+cuir 0.9991181296463766
+cuir 0.9989876708478425
+cuir 0.9988482211670138
+cuir 0.9986997818589368
+cuir 0.9985423542595644
+cuir 0.9983759397857438
+cuir 0.9982005399352042
+cuir 0.9980161562865429
+cuir 0.9978227904992117
+cuir 0.9976204443135014
+cuir 0.9974091195505261
+cuir 0.9971888181122075
+cuir 0.9969595419812568
+cuir 0.9967212932211577
+cuir 0.9964740739761475
+cuir 0.9962178864711978
+cuir 0.9959527330119943
+cuir 0.9956786159849162
+cuir 0.9953955378570153
+cuir 0.9951035011759926
+cuir 0.994802508570176
+cuir 0.9944925627484974
+cuir 0.9941736665004669
+cuir 0.9938458226961485
+cuir 0.9935090342861342
+cuir 0.9931633043015177
+cuir 0.9928086358538663
+cuir 0.9924450321351935
+cuir 0.9920724964179307
+cuir 0.9916910320548965
+cuir 0.9913006424792677
+cuir 0.9909013312045479
+cuir 0.9904931018245359
+cuir 0.9900759580132933
+cuir 0.9896499035251115
+cuir 0.9892149421944781
 cuir 0.9887710779360422
+cuir 0.9883183147445792
+cuir 0.9878566566949545
+cuir 0.9873861079420876
+cuir 0.986906672720914
+cuir 0.9864183553463477
+cuir 0.9859211602132415
+cuir 0.9854150917963483
+cuir 0.9849001546502806
+cuir 0.984376353409469
+cuir 0.0
+cuir 0.002999995500002025
+cuir 0.0059999640000648
+cuir 0.008999878500492076
+cuir 0.011999712002073594
+cuir 0.01499943750632809
+cuir 0.017999028015746276
+cuir 0.020998456534033816
+cuir 0.023997696066354286
+cuir 0.026996719619572146
+cuir 0.029995500202495657
+cuir 0.032994010826119816
+cuir 0.03599222450386925
+cuir 0.038990114251841096
+cuir 0.04198765308904786
+cuir 0.04498481403766024
+cuir 0.04798157012324993
+cuir 0.05097789437503238
+cuir 0.053973759826109566
+cuir 0.05696913951371263
+cuir 0.059964006479444616
+cuir 0.06295833376952303
+cuir 0.0659520944350225
+cuir 0.06894526153211725
+cuir 0.07193780812232356
+cuir 0.07492970727274237
+cuir 0.07792093205630149
+cuir 0.08091145555199808
+cuir 0.08390125084514084
+cuir 0.08689029102759234
+cuir 0.08987854919801108
+cuir 0.09286599846209374
+cuir 0.09585261193281708
+cuir 0.09883836273068003
+cuir 0.10182322398394555
+cuir 0.10480716882888254
+cuir 0.10779017041000752
+cuir 0.11077220188032638
+cuir 0.11375323640157603
+cuir 0.1167332471444659
+cuir 0.11971220728891943
+cuir 0.1226900900243154
+cuir 0.1256668685497293
+cuir 0.12864251607417454
+cuir 0.1316170058168434
+cuir 0.13459031100734836
+cuir 0.13756240488596275
+cuir 0.14053326070386168
+cuir 0.14350285172336288
+cuir 0.14647115121816723
+cuir 0.1494381324735993
+cuir 0.1524037687868478
+cuir 0.15536803346720596
+cuir 0.15833089983631163
+cuir 0.1612923412283875
+cuir 0.16425233099048106
+cuir 0.1672108424827044
+cuir 0.17016784907847407
+cuir 0.17312332416475065
+cuir 0.17607724114227835
+cuir 0.9996875162757026
+cuir 0.9987502603949663
+cuir 0.9971888181122075
+cuir 0.9950041652780258
+cuir 0.992197667229329
+cuir 0.9887710779360422
+cuir 0.9847265389049334
 cuir 0.9800665778412416
-cuir 0.9689124217106447
+cuir 0.9747941070689433
+cuir 0.9689124217106448
+cuir 0.962425197628238
 cuir 0.955336489125606
+cuir 0.9476507264148157
 cuir 0.9393727128473789
+cuir 0.9305076219123143
 cuir 0.9210609940028851
-cuir 0.900447102352677
-cuir 0.8775825618903728
-cuir 0.8525245220595058
-cuir 0.8253356149096783
-cuir 0.7960837985490559
-cuir 0.7648421872844884
-cuir 0.7316888688738208
-cuir 0.6967067093471653
-cuir 0.6599831458849821
-cuir 0.6216099682706643
-cuir 0.5816830894638833
-cuir 0.5403023058681395
+cuir 0.9110387329540336
+cuir 0.9004471023526769
+cuir 0.8892927216231682
+cuir 0.8775825618903726
+cuir 0.8653239416229412
+cuir 0.8525245220595057
+cuir 0.839192302420654
+cuir 0.8253356149096782
+cuir 0.8109631195052178
+cuir 0.7960837985490556
+cuir 0.7807069511324467
+cuir 0.7648421872844883
+cuir 0.7484994219661649
+cuir 0.7316888688738207
+cuir 0.7144210340559312
+cuir 0.6967067093471652
+cuir 0.6785569656238396
+cuir 0.6599831458849819
+cuir 0.6409968581633247
+cuir 0.6216099682706641
+cuir 0.6018345923821121
+cuir 0.581683089463883
+cuir 0.561168053549341
+cuir 0.5403023058681393
+cuir 0.5190988868333694
 cuir 0.49757104789172674
-cuir 0.4535961214255771
-cuir 0.408487440884157
-cuir 0.36235775447667323
-cuir 0.31532236239526823
-cuir 0.26749882862458696
-cuir 0.21900668709304105
-cuir 0.16996714290024037
-cuir 0.12050276936736595
-cuir 0.07073720166770224
-cuir 0.02079482780309176
-cuir -0.02919952230128948
-cuir -0.07912088880673475
-cuir -0.12884449429552552
-cuir -0.17824605564949297
-cuir -0.22720209469308797
-cuir -0.2755902468245138
-cuir -0.3232895668635044
-cuir -0.37018083135128793
-cuir -0.4161468365471432
-cuir -0.46107269137671353
-cuir -0.5048461045998579
-cuir -0.5473576654802714
-cuir -0.5885011172553458
-cuir -0.6281736227227391
-cuir -0.6662760212798241
-cuir -0.7027130767735537
-cuir -0.7373937155412452
-cuir -0.7702312540473069
-cuir -0.8011436155469331
-cuir -0.8300535352352216
-cuir -0.8568887533689465
-cuir -0.8815821958782852
-cuir -0.9040721420170604
-cuir -0.9243023786324629
-cuir -0.9422223406686575
-cuir -0.9577872375530897
-cuir -0.97095816514959
-cuir -0.9817022029984536
-cuir -0.9899924966004451
+cuir 0.4757322432417886
+cuir 0.4535961214255773
+cuir 0.4311765167986662
+cuir 0.4084874408841574
+cuir 0.3855430736159362
+cuir 0.36235775447667384
+cuir 0.33894597353611766
+cuir 0.31532236239526906
+cuir 0.2915016850421095
+cuir 0.267498828624588
+cuir 0.2433287941466389
+cuir 0.21900668709304236
+cuir 0.19454770798898804
+cuir 0.1699671429002419
+cuir 0.14528035387985244
+cuir 0.12050276936736772
+cuir 0.09564987454656287
+cuir 0.07073720166770424
+cuir 0.024997395914712332
 cuir 0.04997916927067833
+cuir 0.07492970727274235
 cuir 0.09983341664682815
-cuir 0.14943813247359924
-cuir 0.19866933079506122
-cuir 0.24740395925452294
+cuir 0.12467473338522769
+cuir 0.14943813247359922
+cuir 0.17410813759359595
+cuir 0.1986693307950612
+cuir 0.22310636213174542
+cuir 0.2474039592545229
+cuir 0.2715469369561128
 cuir 0.29552020666133955
-cuir 0.34289780745545134
-cuir 0.38941834230865047
-cuir 0.4349655341112302
-cuir 0.47942553860420295
-cuir 0.5226872289306591
-cuir 0.5646424733950354
-cuir 0.6051864057360395
-cuir 0.6442176872376911
-cuir 0.6816387600233342
-cuir 0.7173560908995229
-cuir 0.7512804051402928
-cuir 0.7833269096274835
-cuir 0.813415504789374
-cuir 0.8414709848078966
+cuir 0.31930878585700095
+cuir 0.3428978074554514
+cuir 0.3662725290860476
+cuir 0.3894183423086506
+cuir 0.41232078174342485
+cuir 0.43496553411123035
+cuir 0.4573384471789556
+cuir 0.4794255386042031
+cuir 0.5012130046737979
+cuir 0.5226872289306593
+cuir 0.5438347906836427
+cuir 0.5646424733950355
+cuir 0.5850972729404623
+cuir 0.6051864057360398
+cuir 0.6248973167277001
+cuir 0.6442176872376912
+cuir 0.6631354426633499
+cuir 0.6816387600233345
+cuir 0.6997160753466038
+cuir 0.717356090899523
+cuir 0.7345477822465788
+cuir 0.7512804051402929
+cuir 0.7675435022360273
+cuir 0.7833269096274836
+cuir 0.7986207631988145
+cuir 0.8134155047893741
+cuir 0.827701888167258
+cuir 0.8414709848078967
+cuir 0.8547141894740936
 cuir 0.8674232255940171
-cuir 0.8912073600614355
-cuir 0.9127639402605212
-cuir 0.9320390859672265
-cuir 0.9489846193555863
-cuir 0.9635581854171931
-cuir 0.9757233578266592
-cuir 0.9854497299884603
-cuir 0.9927129910375886
-cuir 0.9974949866040544
-cuir 0.999783764189357
-cuir 0.9995736030415051
-cuir 0.9968650284539188
-cuir 0.9916648104524685
-cuir 0.9839859468739367
-cuir 0.9738476308781949
-cuir 0.9612752029752997
-cuir 0.9463000876874141
-cuir 0.9289597150038689
-cuir 0.9092974268256814
-cuir 0.8873623686333751
-cuir 0.8632093666488735
-cuir 0.8368987907984975
-cuir 0.8084964038195901
-cuir 0.7780731968879212
-cuir 0.7457052121767204
-cuir 0.7114733527908447
-cuir 0.6754631805511513
-cuir 0.6377647021345043
-cuir 0.5984721441039572
-cuir 0.5576837173914178
-cuir 0.5155013718214653
-cuir 0.4720305412898838
-cuir 0.4273798802338314
-cuir 0.38166099205233334
-cuir 0.33498815015590677
-cuir 0.28747801234254655
-cuir 0.23924932921398456
-cuir 0.19042264736102968
-cuir 0.14112000805986985
+cuir 0.8795901504337891
+cuir 0.8912073600614354
+cuir 0.9022675940990952
+cuir 0.912763940260521
+cuir 0.9226898386710329
+cuir 0.9320390859672263
+cuir 0.940805839173872
+cuir 0.9489846193555861
+cuir 0.9565703150409858
+cuir 0.9635581854171928
+cuir 0.969943863292687
+cuir 0.9757233578266589
+cuir 0.9808930570231555
+cuir 0.98544972998846
+cuir 0.9893905289502951
+cuir 0.9927129910375884
+cuir 0.9954150398196858
+cuir 0.9974949866040543
+cuir 0.017499106784510804
+cuir 0.03499285460433619
+cuir 0.0524758861359318
+cuir 0.06994284733753275
+cuir 0.0873883890887872
+cuir 0.10480716882888248
+cuir 0.12219385219266272
+cuir 0.13954311464423647
+cuir 0.1568496431075741
+cuir 0.17410813759359592
+cuir 0.19131331282325242
+cuir 0.20845989984609956
+cuir 0.22554264765387372
+cuir 0.24255632478857206
+cuir 0.25949572094454537
+cuir 0.27635564856411376
+cuir 0.29313094442621546
+cuir 0.3098164712276029
+cuir 0.3264071191561019
+cuir 0.3428978074554514
+cuir 0.35928348598124565
+cuir 0.3755591367475013
+cuir 0.3917197754633763
+cuir 0.40776045305957026
+cuir 0.4236762572039381
+cuir 0.4394623138058534
+cuir 0.45511378850886036
+cuir 0.4706258881711582
+cuir 0.48599386233346276
+cuir 0.501213004673798
+cuir 0.5162786544487701
+cuir 0.5311861979208836
+cuir 0.5459310697714628
+cuir 0.5605087544987445
+cuir 0.5749147878007154
+cuir 0.5891447579422698
+cuir 0.6031943071062685
+cuir 0.6170591327280869
+cuir 0.6307349888132412
+cuir 0.6442176872376912
+cuir 0.6575030990304213
+cuir 0.6705871556379038
+cuir 0.683465850170064
+cuir 0.6961352386273568
+cuir 0.708591441108587
+cuir 0.7208306429990985
+cuir 0.7328490961389698
+cuir 0.7446431199708592
+cuir 0.7562091026671465
+cuir 0.7675435022360269
+cuir 0.7786428476062183
+cuir 0.7895037396899501
+cuir 0.8001228524239069
+cuir 0.8104969337878093
+cuir 0.8206228068003203
+cuir 0.83049737049197
+cuir 0.8401176008548046
+cuir 0.8494805517684639
+cuir 0.8585833559024083
+cuir 0.8674232255940164
 cuir 1.0
-cuir 0.9238795637760319
-cuir 0.7071068967259818
-cuir 0.38268365880441535
-cuir 3.2679489653813835e-07
-cuir -0.38268305496616245
-cuir -0.7071064345681314
-cuir -0.9238793136578983
-cuir -0.9999999999997864
-cuir -0.9238798138937707
-cuir -0.7071073588835305
-cuir -0.3826842626425056
-cuir -9.803846900583647e-07
-cuir 0.38268245112774607
-cuir 0.7071059724099793
-cuir 0.9238790635393707
-cuir 0.9999999999991457
-cuir 0.9238800640111141
-cuir 0.7071078210407751
-cuir 0.3826848664804291
-cuir 1.6339744804695477e-06
-cuir -0.3826818472891678
-cuir -0.707105510251526
-cuir -0.9238788134204486
-cuir -0.9999999999980776
-cuir -0.9238803141280628
-cuir -0.707108283197718
-cuir -0.38268547031818995
-cuir -2.2875642717682115e-06
-cuir 0.382681243450427
-cuir 0.7071050480927714
-cuir 0.9238785633011323
-cuir 0.9999999999965825
-cuir 0.9238805642446165
-cuir 0.7071087453543582
-cuir 0.38268607415578654
-cuir 2.9411540621777193e-06
-cuir -0.3826806396115226
-cuir -0.7071045859337148
-cuir -0.9238783131814213
-cuir -0.9999999999946603
+cuir 0.9921147013144267
+cuir 0.968583161128428
+cuir 0.9297764858878005
+cuir 0.8763066800430769
+cuir 0.8090169943737475
+cuir 0.7289686274197347
+cuir 0.6374239897464877
+cuir 0.535826794976239
+cuir 0.425779291561748
+cuir 0.30901699437106456
+cuir 0.1873813145813132
+cuir 0.062790519524424
+cuir -0.06279051953461023
+cuir -0.18738131459133903
+cuir -0.3090169943807716
+cuir -0.42577929157098315
+cuir -0.5358267949848566
+cuir -0.6374239897543521
+cuir -0.7289686274267216
+cuir -0.809016994379747
+cuir -0.876306680047994
+cuir -0.9297764858915579
+cuir -0.9685831611309664
+cuir -0.9921147013157059
+cuir -1.0
+cuir -0.9921147013131475
+cuir -0.9685831611258898
+cuir -0.9297764858840433
+cuir -0.8763066800381598
+cuir -0.8090169943677483
+cuir -0.7289686274127478
+cuir -0.6374239897386234
+cuir -0.5358267949676216
+cuir -0.42577929155251276
+cuir -0.30901699436135793
+cuir -0.1873813145712874
+cuir -0.06279051951423775
+cuir 0.06279051954479692
+cuir 0.18738131460136462
+cuir 0.30901699439047886
+cuir 0.42577929158021816
+cuir 0.5358267949934746
+cuir 0.6374239897622163
+cuir 0.7289686274337086
+cuir 0.809016994385746
+cuir 0.8763066800529111
+cuir 0.9297764858953151
+cuir 0.9685831611335045
+cuir 0.9921147013169851
 cuir 0.0
-cuir 0.3826833568853094
-cuir 0.7071066656470943
-cuir 0.9238794387170145
-cuir 0.9999999999999466
-cuir 0.9238796888349505
-cuir 0.7071071278047938
-cuir 0.38268396072348093
-cuir 6.535897935203311e-07
-cuir -0.38268275304697424
-cuir -0.7071062034890926
-cuir -0.9238791885986835
-cuir -0.9999999999995194
-cuir -0.923879938952492
-cuir -0.7071075899621907
-cuir -0.3826845645614878
-cuir -1.307179585264026e-06
-cuir 0.38268214920847776
-cuir 0.7071057413307907
-cuir 0.9238789384799592
-cuir 0.9999999999986651
-cuir 0.923880189069638
-cuir 0.7071080521192846
-cuir 0.38268516839933037
-cuir 1.9607693765630734e-06
-cuir -0.3826815453698178
-cuir -0.7071052791721866
-cuir -0.9238786883608398
-cuir -0.9999999999973835
-cuir -0.9238804391863891
-cuir -0.7071085142760758
-cuir -0.38268577223700867
-cuir -2.6143591669731047e-06
-cuir 0.3826809415309952
-cuir 0.7071048170132809
-cuir 0.9238784382413261
-cuir 0.9999999999956748
-cuir 0.9238806893027454
-cuir 0.707108976432565
-cuir 0.3826863760745235
-cuir 3.2679489573820196e-06
-cuir 0.9238795637760319
-cuir 0.7071068967259818
-cuir 0.38268365880441535
-cuir 3.2679489653813835e-07
-cuir -0.38268305496616245
-cuir -0.7071064345681314
-cuir -0.9238793136578983
-cuir -0.9999999999997864
-cuir -0.9238798138937707
-cuir -0.7071073588835305
-cuir -0.3826842626425056
-cuir -9.803846900583647e-07
-cuir 0.38268245112774607
-cuir 0.7071059724099793
-cuir 0.9238790635393707
-cuir 0.9999999999991457
-cuir 0.9238800640111141
-cuir 0.7071078210407751
-cuir 0.3826848664804291
-cuir 1.6339744804695477e-06
-cuir -0.3826818472891678
-cuir -0.707105510251526
-cuir -0.9238788134204486
-cuir -0.9999999999980776
-cuir -0.9238803141280628
-cuir -0.707108283197718
-cuir -0.38268547031818995
-cuir -2.2875642717682115e-06
-cuir 0.382681243450427
-cuir 0.7071050480927714
-cuir 0.9238785633011323
-cuir 0.9999999999965825
-cuir 0.9238805642446165
-cuir 0.7071087453543582
-cuir 0.38268607415578654
-cuir 2.9411540621777193e-06
-cuir -0.3826806396115226
-cuir -0.7071045859337148
-cuir -0.9238783131814213
-cuir -0.9999999999946603
-cuir -0.9238808143607763
-cuir 0.3826833568853094
-cuir 0.7071066656470943
-cuir 0.9238794387170145
-cuir 0.9999999999999466
-cuir 0.9238796888349505
-cuir 0.7071071278047938
-cuir 0.38268396072348093
-cuir 6.535897935203311e-07
-cuir -0.38268275304697424
-cuir -0.7071062034890926
-cuir -0.9238791885986835
-cuir -0.9999999999995194
-cuir -0.923879938952492
-cuir -0.7071075899621907
-cuir -0.3826845645614878
-cuir -1.307179585264026e-06
-cuir 0.38268214920847776
-cuir 0.7071057413307907
-cuir 0.9238789384799592
-cuir 0.9999999999986651
-cuir 0.923880189069638
-cuir 0.7071080521192846
-cuir 0.38268516839933037
-cuir 1.9607693765630734e-06
-cuir -0.3826815453698178
-cuir -0.7071052791721866
-cuir -0.9238786883608398
-cuir -0.9999999999973835
-cuir -0.9238804391863891
-cuir -0.7071085142760758
-cuir -0.38268577223700867
-cuir -2.6143591669731047e-06
-cuir 0.3826809415309952
-cuir 0.7071048170132809
-cuir 0.9238784382413261
-cuir 0.9999999999956748
-cuir 0.9238806893027454
-cuir 0.707108976432565
-cuir 0.3826863760745235
-cuir 3.2679489573820196e-06
-cuir -0.3826803376920075
+cuir 0.1253332335647093
+cuir 0.24868988716564566
+cuir 0.36812455268581673
+cuir 0.48175367410314635
+cuir 0.5877852522941246
+cuir 0.6845471059304743
+cuir 0.7705132427776109
+cuir 0.8443279255037651
+cuir 0.904827052467584
+cuir 0.9510565162964152
+cuir 0.9822872507295302
+cuir 0.9980267284285792
+cuir 0.9980267284279383
+cuir 0.9822872507276177
+cuir 0.9510565162932612
+cuir 0.9048270524632382
+cuir 0.8443279254982962
+cuir 0.7705132427711049
+cuir 0.684547105923034
+cuir 0.5877852522858672
+cuir 0.4817536740942021
+cuir 0.36812455267632677
+cuir 0.24868988715575957
+cuir 0.12533323355458342
+cuir -1.0206379845304075e-11
+cuir -0.12533323357483522
+cuir -0.24868988717553145
+cuir -0.3681245526953065
+cuir -0.48175367411209036
+cuir -0.5877852523023819
+cuir -0.6845471059379146
+cuir -0.7705132427841168
+cuir -0.8443279255092339
+cuir -0.9048270524719297
+cuir -0.9510565162995691
+cuir -0.9822872507314427
+cuir -0.99802672842922
+cuir -0.9980267284272974
+cuir -0.9822872507257052
+cuir -0.9510565162901071
+cuir -0.9048270524588926
+cuir -0.8443279254928271
+cuir -0.7705132427645991
+cuir -0.6845471059155935
+cuir -0.58778525227761
+cuir -0.4817536740852578
+cuir -0.3681245526668371
+cuir -0.24868988714587426
+cuir -0.12533323354445708
 cuir 1.0
-cuir 0.8090167185377953
-cuir 0.3090161017473246
-cuir -0.3090183333158714
-cuir -0.8090180977217742
-cuir -0.9999999999972472
-cuir -0.8090153393493622
-cuir -0.3090138701770768
-cuir 0.3090205648827167
-cuir 0.8090194769012993
-cuir 0.9999999999889887
-cuir 0.8090139601564743
-cuir 0.30901163860512587
-cuir -0.3090227964478623
-cuir -0.8090208560763704
-cuir -0.9999999999752246
+cuir 0.9781476007338721
+cuir 0.9135454576428609
+cuir 0.8090169943755109
+cuir 0.669130606359808
+cuir 0.5000000000013837
+cuir 0.30901699437677077
+cuir 0.10452846326987808
+cuir -0.10452846326511116
+cuir -0.3090169943722124
+cuir -0.49999999999723266
+cuir -0.6691306063562461
+cuir -0.8090169943726936
+cuir -0.9135454576409114
+cuir -0.9781476007328755
+cuir -1.0
+cuir -0.9781476007348686
+cuir -0.9135454576448103
+cuir -0.8090169943783281
+cuir -0.6691306063633702
+cuir -0.5000000000055347
+cuir -0.30901699438132935
+cuir -0.10452846327464478
+cuir 0.10452846326034446
+cuir 0.309016994367654
+cuir 0.49999999999308203
+cuir 0.6691306063526845
+cuir 0.8090169943698761
+cuir 0.9135454576389617
+cuir 0.9781476007318789
 cuir 0.0
-cuir 0.587785631949555
-cuir 0.9510568063269865
-cuir 0.9510560812458333
-cuir 0.5877837336628513
-cuir -2.346410206452714e-06
-cuir -0.5877875302330224
-cuir -0.9510575314029035
-cuir -0.9510553561594439
-cuir -0.5877818353729112
-cuir 4.692820413780688e-06
-cuir 0.5877894285132548
-cuir 0.9510582564735849
-cuir 0.9510546310678178
-cuir 0.5877799370797345
-cuir -7.0392306201946465e-06
-cuir 0.8090167185377953
-cuir 0.3090161017473246
-cuir -0.3090183333158714
-cuir -0.8090180977217742
-cuir -0.9999999999972472
-cuir -0.8090153393493622
-cuir -0.3090138701770768
-cuir 0.3090205648827167
-cuir 0.8090194769012993
-cuir 0.9999999999889887
-cuir 0.8090139601564743
-cuir 0.30901163860512587
-cuir -0.3090227964478623
-cuir -0.8090208560763704
-cuir -0.9999999999752246
-cuir -0.8090125809591334
+cuir 0.2079116908174468
+cuir 0.4067366430752164
+cuir 0.5877852522916976
+cuir 0.7431448254765389
+cuir 0.8660254037836398
+cuir 0.9510565162945611
+cuir 0.9945218953680395
+cuir 0.9945218953685405
+cuir 0.9510565162960423
+cuir 0.8660254037860364
+cuir 0.7431448254797461
+cuir 0.5877852522955752
+cuir 0.4067366430795949
+cuir 0.2079116908221353
+cuir 4.793177306591641e-12
+cuir -0.20791169081275843
+cuir -0.40673664307083773
+cuir -0.58778525228782
+cuir -0.7431448254733316
+cuir -0.8660254037812432
+cuir -0.95105651629308
+cuir -0.9945218953675385
+cuir -0.9945218953690416
+cuir -0.9510565162975233
+cuir -0.8660254037884327
+cuir -0.7431448254829531
+cuir -0.5877852522994533
+cuir -0.4067366430839741
+cuir -0.20791169082682373
 ( Seadaichean-obrach: trig a chaidh a thaghadh, agus cunntadairean. )
 cuir 0.0
 cuir 0.0
@@ -344,9 +472,9 @@ cuir 0.0
 cuir 0.0
 cuir 0.0
 cuir 60.0
-cuir 41.0
-cuir 16.0
-( An t-einnsean donut: sruth ceala-deug co-ionnan ri sigi. )
+cuir 50.0
+cuir 30.0
+( An t-einnsean donut: sruth buicean co-ionnan ri sigi (doughnut.c). )
 ( Cunnt cunntadan sìos le cuairt; tagh trig à bhòrdan. )
 ( Air a ghineadh le scripts/gen_donut_engine.py — FRAMES 60. )
 ( Frèam. )
@@ -380,10 +508,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 343
+chuir 471
 no
 leig
-chuir 342
+chuir 470
 criòch
 no
 cuir 57.5
@@ -391,10 +519,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 341
+chuir 469
 no
 leig
-chuir 340
+chuir 468
 criòch
 criòch
 no
@@ -407,10 +535,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 339
+chuir 467
 no
 leig
-chuir 338
+chuir 466
 criòch
 no
 cuir 53.5
@@ -418,10 +546,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 337
+chuir 465
 no
 leig
-chuir 336
+chuir 464
 criòch
 criòch
 criòch
@@ -439,10 +567,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 335
+chuir 463
 no
 leig
-chuir 334
+chuir 462
 criòch
 no
 cuir 49.5
@@ -450,10 +578,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 333
+chuir 461
 no
 leig
-chuir 332
+chuir 460
 criòch
 criòch
 no
@@ -466,14 +594,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 331
+chuir 459
 no
 leig
-chuir 330
+chuir 458
 criòch
 no
 leig
-chuir 329
+chuir 457
 criòch
 criòch
 criòch
@@ -495,10 +623,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 328
+chuir 456
 no
 leig
-chuir 327
+chuir 455
 criòch
 no
 cuir 42.5
@@ -506,10 +634,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 326
+chuir 454
 no
 leig
-chuir 325
+chuir 453
 criòch
 criòch
 no
@@ -522,10 +650,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 324
+chuir 452
 no
 leig
-chuir 323
+chuir 451
 criòch
 no
 cuir 38.5
@@ -533,10 +661,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 322
+chuir 450
 no
 leig
-chuir 321
+chuir 449
 criòch
 criòch
 criòch
@@ -554,10 +682,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 320
+chuir 448
 no
 leig
-chuir 319
+chuir 447
 criòch
 no
 cuir 34.5
@@ -565,10 +693,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 318
+chuir 446
 no
 leig
-chuir 317
+chuir 445
 criòch
 criòch
 no
@@ -581,14 +709,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 316
+chuir 444
 no
 leig
-chuir 315
+chuir 443
 criòch
 no
 leig
-chuir 314
+chuir 442
 criòch
 criòch
 criòch
@@ -615,10 +743,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 313
+chuir 441
 no
 leig
-chuir 312
+chuir 440
 criòch
 no
 cuir 27.5
@@ -626,10 +754,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 311
+chuir 439
 no
 leig
-chuir 310
+chuir 438
 criòch
 criòch
 no
@@ -642,10 +770,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 309
+chuir 437
 no
 leig
-chuir 308
+chuir 436
 criòch
 no
 cuir 23.5
@@ -653,10 +781,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 307
+chuir 435
 no
 leig
-chuir 306
+chuir 434
 criòch
 criòch
 criòch
@@ -674,10 +802,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 305
+chuir 433
 no
 leig
-chuir 304
+chuir 432
 criòch
 no
 cuir 19.5
@@ -685,10 +813,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 303
+chuir 431
 no
 leig
-chuir 302
+chuir 430
 criòch
 criòch
 no
@@ -701,14 +829,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 301
+chuir 429
 no
 leig
-chuir 300
+chuir 428
 criòch
 no
 leig
-chuir 299
+chuir 427
 criòch
 criòch
 criòch
@@ -730,10 +858,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 298
+chuir 426
 no
 leig
-chuir 297
+chuir 425
 criòch
 no
 cuir 12.5
@@ -741,10 +869,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 296
+chuir 424
 no
 leig
-chuir 295
+chuir 423
 criòch
 criòch
 no
@@ -757,10 +885,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 294
+chuir 422
 no
 leig
-chuir 293
+chuir 421
 criòch
 no
 cuir 8.5
@@ -768,10 +896,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 292
+chuir 420
 no
 leig
-chuir 291
+chuir 419
 criòch
 criòch
 criòch
@@ -789,10 +917,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 290
+chuir 418
 no
 leig
-chuir 289
+chuir 417
 criòch
 no
 cuir 4.5
@@ -800,10 +928,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 288
+chuir 416
 no
 leig
-chuir 287
+chuir 415
 criòch
 criòch
 no
@@ -816,14 +944,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 286
+chuir 414
 no
 leig
-chuir 285
+chuir 413
 criòch
 no
 leig
-chuir 284
+chuir 412
 criòch
 criòch
 criòch
@@ -868,10 +996,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 283
+chuir 411
 no
 leig
-chuir 282
+chuir 410
 criòch
 no
 cuir 57.5
@@ -879,10 +1007,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 281
+chuir 409
 no
 leig
-chuir 280
+chuir 408
 criòch
 criòch
 no
@@ -895,10 +1023,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 279
+chuir 407
 no
 leig
-chuir 278
+chuir 406
 criòch
 no
 cuir 53.5
@@ -906,10 +1034,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 277
+chuir 405
 no
 leig
-chuir 276
+chuir 404
 criòch
 criòch
 criòch
@@ -927,10 +1055,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 275
+chuir 403
 no
 leig
-chuir 274
+chuir 402
 criòch
 no
 cuir 49.5
@@ -938,10 +1066,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 273
+chuir 401
 no
 leig
-chuir 272
+chuir 400
 criòch
 criòch
 no
@@ -954,14 +1082,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 271
+chuir 399
 no
 leig
-chuir 270
+chuir 398
 criòch
 no
 leig
-chuir 269
+chuir 397
 criòch
 criòch
 criòch
@@ -983,10 +1111,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 268
+chuir 396
 no
 leig
-chuir 267
+chuir 395
 criòch
 no
 cuir 42.5
@@ -994,10 +1122,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 266
+chuir 394
 no
 leig
-chuir 265
+chuir 393
 criòch
 criòch
 no
@@ -1010,10 +1138,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 264
+chuir 392
 no
 leig
-chuir 263
+chuir 391
 criòch
 no
 cuir 38.5
@@ -1021,10 +1149,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 262
+chuir 390
 no
 leig
-chuir 261
+chuir 389
 criòch
 criòch
 criòch
@@ -1042,10 +1170,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 260
+chuir 388
 no
 leig
-chuir 259
+chuir 387
 criòch
 no
 cuir 34.5
@@ -1053,10 +1181,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 258
+chuir 386
 no
 leig
-chuir 257
+chuir 385
 criòch
 criòch
 no
@@ -1069,14 +1197,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 256
+chuir 384
 no
 leig
-chuir 255
+chuir 383
 criòch
 no
 leig
-chuir 254
+chuir 382
 criòch
 criòch
 criòch
@@ -1103,10 +1231,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 253
+chuir 381
 no
 leig
-chuir 252
+chuir 380
 criòch
 no
 cuir 27.5
@@ -1114,10 +1242,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 251
+chuir 379
 no
 leig
-chuir 250
+chuir 378
 criòch
 criòch
 no
@@ -1130,10 +1258,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 249
+chuir 377
 no
 leig
-chuir 248
+chuir 376
 criòch
 no
 cuir 23.5
@@ -1141,10 +1269,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 247
+chuir 375
 no
 leig
-chuir 246
+chuir 374
 criòch
 criòch
 criòch
@@ -1162,10 +1290,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 245
+chuir 373
 no
 leig
-chuir 244
+chuir 372
 criòch
 no
 cuir 19.5
@@ -1173,10 +1301,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 243
+chuir 371
 no
 leig
-chuir 242
+chuir 370
 criòch
 criòch
 no
@@ -1189,14 +1317,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 241
+chuir 369
 no
 leig
-chuir 240
+chuir 368
 criòch
 no
 leig
-chuir 239
+chuir 367
 criòch
 criòch
 criòch
@@ -1218,10 +1346,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 238
+chuir 366
 no
 leig
-chuir 237
+chuir 365
 criòch
 no
 cuir 12.5
@@ -1229,10 +1357,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 236
+chuir 364
 no
 leig
-chuir 235
+chuir 363
 criòch
 criòch
 no
@@ -1245,10 +1373,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 234
+chuir 362
 no
 leig
-chuir 233
+chuir 361
 criòch
 no
 cuir 8.5
@@ -1256,10 +1384,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 232
+chuir 360
 no
 leig
-chuir 231
+chuir 359
 criòch
 criòch
 criòch
@@ -1277,10 +1405,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 230
+chuir 358
 no
 leig
-chuir 229
+chuir 357
 criòch
 no
 cuir 4.5
@@ -1288,10 +1416,10 @@ chuir 4
 coimeas
 ma
 leig
-chuir 228
+chuir 356
 no
 leig
-chuir 227
+chuir 355
 criòch
 criòch
 no
@@ -1304,14 +1432,14 @@ chuir 4
 coimeas
 ma
 leig
-chuir 226
+chuir 354
 no
 leig
-chuir 225
+chuir 353
 criòch
 no
 leig
-chuir 224
+chuir 352
 criòch
 criòch
 criòch
@@ -1329,342 +1457,483 @@ gcuir 10
 gcuir 10
 gcuir 10
 gcuir 10
-cuir 70
-n-abair
-cuir 10
-n-abair
-( Cealla a' chrò — RIT tiotail. )
-cuir 41.0
-gcuir 2
-leig
-gcuir 1
-chuir 1
 cuir 0.0
-choimeas
-cuairt
-cuir 0.0
-cuir 20.5
-chuir 3
-coimeas
-ma
 cuir 30.5
-chuir 3
+chuir 4
 coimeas
 ma
-cuir 35.5
-chuir 3
+cuir 45.5
+chuir 4
 coimeas
 ma
-cuir 38.5
-chuir 3
+cuir 52.5
+chuir 4
 coimeas
 ma
+cuir 56.5
+chuir 4
+coimeas
+ma
+cuir 58.5
+chuir 4
+coimeas
+ma
+cuir 59.5
+chuir 4
+coimeas
+ma
+leig
+chuir 351
+no
+leig
+chuir 350
+criòch
+no
+cuir 57.5
+chuir 4
+coimeas
+ma
+leig
+chuir 349
+no
+leig
+chuir 348
+criòch
+criòch
+no
+cuir 54.5
+chuir 4
+coimeas
+ma
+cuir 55.5
+chuir 4
+coimeas
+ma
+leig
+chuir 347
+no
+leig
+chuir 346
+criòch
+no
+cuir 53.5
+chuir 4
+coimeas
+ma
+leig
+chuir 345
+no
+leig
+chuir 344
+criòch
+criòch
+criòch
+no
+cuir 48.5
+chuir 4
+coimeas
+ma
+cuir 50.5
+chuir 4
+coimeas
+ma
+cuir 51.5
+chuir 4
+coimeas
+ma
+leig
+chuir 343
+no
+leig
+chuir 342
+criòch
+no
+cuir 49.5
+chuir 4
+coimeas
+ma
+leig
+chuir 341
+no
+leig
+chuir 340
+criòch
+criòch
+no
+cuir 46.5
+chuir 4
+coimeas
+ma
+cuir 47.5
+chuir 4
+coimeas
+ma
+leig
+chuir 339
+no
+leig
+chuir 338
+criòch
+no
+leig
+chuir 337
+criòch
+criòch
+criòch
+no
+cuir 37.5
+chuir 4
+coimeas
+ma
+cuir 41.5
+chuir 4
+coimeas
+ma
+cuir 43.5
+chuir 4
+coimeas
+ma
+cuir 44.5
+chuir 4
+coimeas
+ma
+leig
+chuir 336
+no
+leig
+chuir 335
+criòch
+no
+cuir 42.5
+chuir 4
+coimeas
+ma
+leig
+chuir 334
+no
+leig
+chuir 333
+criòch
+criòch
+no
 cuir 39.5
-chuir 3
+chuir 4
 coimeas
 ma
 cuir 40.5
-chuir 3
+chuir 4
 coimeas
 ma
 leig
-chuir 223
+chuir 332
 no
 leig
-chuir 222
+chuir 331
 criòch
 no
-leig
-chuir 221
-criòch
-no
-cuir 36.5
-chuir 3
-coimeas
-ma
-cuir 37.5
-chuir 3
+cuir 38.5
+chuir 4
 coimeas
 ma
 leig
-chuir 220
+chuir 330
 no
 leig
-chuir 219
+chuir 329
 criòch
-no
-leig
-chuir 218
 criòch
 criòch
 no
-cuir 32.5
-chuir 3
-coimeas
-ma
 cuir 33.5
-chuir 3
+chuir 4
 coimeas
 ma
-cuir 34.5
-chuir 3
+cuir 35.5
+chuir 4
+coimeas
+ma
+cuir 36.5
+chuir 4
 coimeas
 ma
 leig
-chuir 217
+chuir 328
 no
 leig
-chuir 216
+chuir 327
 criòch
 no
+cuir 34.5
+chuir 4
+coimeas
+ma
 leig
-chuir 215
+chuir 326
+no
+leig
+chuir 325
+criòch
 criòch
 no
 cuir 31.5
-chuir 3
+chuir 4
+coimeas
+ma
+cuir 32.5
+chuir 4
 coimeas
 ma
 leig
-chuir 214
+chuir 324
 no
 leig
-chuir 213
+chuir 323
+criòch
+no
+leig
+chuir 322
+criòch
 criòch
 criòch
 criòch
 no
-cuir 25.5
-chuir 3
+cuir 15.5
+chuir 4
 coimeas
 ma
-cuir 27.5
-chuir 3
+cuir 22.5
+chuir 4
+coimeas
+ma
+cuir 26.5
+chuir 4
 coimeas
 ma
 cuir 28.5
-chuir 3
+chuir 4
 coimeas
 ma
 cuir 29.5
-chuir 3
+chuir 4
 coimeas
 ma
 leig
-chuir 212
+chuir 321
 no
 leig
-chuir 211
+chuir 320
 criòch
 no
-leig
-chuir 210
-criòch
-no
-cuir 26.5
-chuir 3
+cuir 27.5
+chuir 4
 coimeas
 ma
 leig
-chuir 209
+chuir 319
 no
 leig
-chuir 208
+chuir 318
 criòch
 criòch
 no
-cuir 22.5
-chuir 3
-coimeas
-ma
-cuir 23.5
-chuir 3
-coimeas
-ma
 cuir 24.5
-chuir 3
+chuir 4
+coimeas
+ma
+cuir 25.5
+chuir 4
 coimeas
 ma
 leig
-chuir 207
+chuir 317
 no
 leig
-chuir 206
+chuir 316
 criòch
 no
-leig
-chuir 205
-criòch
-no
-cuir 21.5
-chuir 3
+cuir 23.5
+chuir 4
 coimeas
 ma
 leig
-chuir 204
+chuir 315
 no
 leig
-chuir 203
-criòch
+chuir 314
 criòch
 criòch
 criòch
 no
-cuir 10.5
-chuir 3
-coimeas
-ma
-cuir 15.5
-chuir 3
-coimeas
-ma
-cuir 17.5
-chuir 3
-coimeas
-ma
 cuir 18.5
-chuir 3
+chuir 4
 coimeas
 ma
-cuir 19.5
-chuir 3
+cuir 20.5
+chuir 4
+coimeas
+ma
+cuir 21.5
+chuir 4
 coimeas
 ma
 leig
-chuir 202
+chuir 313
 no
 leig
-chuir 201
+chuir 312
 criòch
 no
+cuir 19.5
+chuir 4
+coimeas
+ma
 leig
-chuir 200
+chuir 311
+no
+leig
+chuir 310
+criòch
 criòch
 no
 cuir 16.5
-chuir 3
+chuir 4
+coimeas
+ma
+cuir 17.5
+chuir 4
 coimeas
 ma
 leig
-chuir 199
+chuir 309
 no
 leig
-chuir 198
+chuir 308
+criòch
+no
+leig
+chuir 307
+criòch
 criòch
 criòch
 no
-cuir 12.5
-chuir 3
+cuir 7.5
+chuir 4
+coimeas
+ma
+cuir 11.5
+chuir 4
 coimeas
 ma
 cuir 13.5
-chuir 3
+chuir 4
 coimeas
 ma
 cuir 14.5
-chuir 3
+chuir 4
 coimeas
 ma
 leig
-chuir 197
+chuir 306
 no
 leig
-chuir 196
+chuir 305
 criòch
 no
-leig
-chuir 195
-criòch
-no
-cuir 11.5
-chuir 3
+cuir 12.5
+chuir 4
 coimeas
 ma
 leig
-chuir 194
+chuir 304
 no
 leig
-chuir 193
-criòch
+chuir 303
 criòch
 criòch
 no
-cuir 5.5
-chuir 3
-coimeas
-ma
-cuir 7.5
-chuir 3
-coimeas
-ma
-cuir 8.5
-chuir 3
-coimeas
-ma
 cuir 9.5
-chuir 3
+chuir 4
+coimeas
+ma
+cuir 10.5
+chuir 4
 coimeas
 ma
 leig
-chuir 192
+chuir 302
 no
 leig
-chuir 191
+chuir 301
 criòch
 no
-leig
-chuir 190
-criòch
-no
-cuir 6.5
-chuir 3
+cuir 8.5
+chuir 4
 coimeas
 ma
 leig
-chuir 189
+chuir 300
 no
 leig
-chuir 188
+chuir 299
+criòch
 criòch
 criòch
 no
-cuir 2.5
-chuir 3
-coimeas
-ma
 cuir 3.5
-chuir 3
+chuir 4
 coimeas
 ma
-cuir 4.5
-chuir 3
+cuir 5.5
+chuir 4
+coimeas
+ma
+cuir 6.5
+chuir 4
 coimeas
 ma
 leig
-chuir 187
+chuir 298
 no
 leig
-chuir 186
+chuir 297
 criòch
 no
+cuir 4.5
+chuir 4
+coimeas
+ma
 leig
-chuir 185
+chuir 296
+no
+leig
+chuir 295
+criòch
 criòch
 no
 cuir 1.5
-chuir 3
+chuir 4
+coimeas
+ma
+cuir 2.5
+chuir 4
 coimeas
 ma
 leig
-chuir 184
+chuir 294
 no
 leig
-chuir 183
+chuir 293
+criòch
+no
+leig
+chuir 292
 criòch
 criòch
 criòch
 criòch
 criòch
+cuir 4.5
+bsuim
 gcuir 10
 leig
 gcuir 9
@@ -1677,28 +1946,892 @@ gcuir 9
 gcuir 9
 gcuir 9
 cuir 0.0
-cuir 20.5
-chuir 3
-coimeas
-ma
 cuir 30.5
-chuir 3
+chuir 4
 coimeas
 ma
-cuir 35.5
-chuir 3
+cuir 45.5
+chuir 4
 coimeas
 ma
-cuir 38.5
-chuir 3
+cuir 52.5
+chuir 4
 coimeas
 ma
+cuir 56.5
+chuir 4
+coimeas
+ma
+cuir 58.5
+chuir 4
+coimeas
+ma
+cuir 59.5
+chuir 4
+coimeas
+ma
+leig
+chuir 291
+no
+leig
+chuir 290
+criòch
+no
+cuir 57.5
+chuir 4
+coimeas
+ma
+leig
+chuir 289
+no
+leig
+chuir 288
+criòch
+criòch
+no
+cuir 54.5
+chuir 4
+coimeas
+ma
+cuir 55.5
+chuir 4
+coimeas
+ma
+leig
+chuir 287
+no
+leig
+chuir 286
+criòch
+no
+cuir 53.5
+chuir 4
+coimeas
+ma
+leig
+chuir 285
+no
+leig
+chuir 284
+criòch
+criòch
+criòch
+no
+cuir 48.5
+chuir 4
+coimeas
+ma
+cuir 50.5
+chuir 4
+coimeas
+ma
+cuir 51.5
+chuir 4
+coimeas
+ma
+leig
+chuir 283
+no
+leig
+chuir 282
+criòch
+no
+cuir 49.5
+chuir 4
+coimeas
+ma
+leig
+chuir 281
+no
+leig
+chuir 280
+criòch
+criòch
+no
+cuir 46.5
+chuir 4
+coimeas
+ma
+cuir 47.5
+chuir 4
+coimeas
+ma
+leig
+chuir 279
+no
+leig
+chuir 278
+criòch
+no
+leig
+chuir 277
+criòch
+criòch
+criòch
+no
+cuir 37.5
+chuir 4
+coimeas
+ma
+cuir 41.5
+chuir 4
+coimeas
+ma
+cuir 43.5
+chuir 4
+coimeas
+ma
+cuir 44.5
+chuir 4
+coimeas
+ma
+leig
+chuir 276
+no
+leig
+chuir 275
+criòch
+no
+cuir 42.5
+chuir 4
+coimeas
+ma
+leig
+chuir 274
+no
+leig
+chuir 273
+criòch
+criòch
+no
 cuir 39.5
-chuir 3
+chuir 4
 coimeas
 ma
 cuir 40.5
-chuir 3
+chuir 4
+coimeas
+ma
+leig
+chuir 272
+no
+leig
+chuir 271
+criòch
+no
+cuir 38.5
+chuir 4
+coimeas
+ma
+leig
+chuir 270
+no
+leig
+chuir 269
+criòch
+criòch
+criòch
+no
+cuir 33.5
+chuir 4
+coimeas
+ma
+cuir 35.5
+chuir 4
+coimeas
+ma
+cuir 36.5
+chuir 4
+coimeas
+ma
+leig
+chuir 268
+no
+leig
+chuir 267
+criòch
+no
+cuir 34.5
+chuir 4
+coimeas
+ma
+leig
+chuir 266
+no
+leig
+chuir 265
+criòch
+criòch
+no
+cuir 31.5
+chuir 4
+coimeas
+ma
+cuir 32.5
+chuir 4
+coimeas
+ma
+leig
+chuir 264
+no
+leig
+chuir 263
+criòch
+no
+leig
+chuir 262
+criòch
+criòch
+criòch
+criòch
+no
+cuir 15.5
+chuir 4
+coimeas
+ma
+cuir 22.5
+chuir 4
+coimeas
+ma
+cuir 26.5
+chuir 4
+coimeas
+ma
+cuir 28.5
+chuir 4
+coimeas
+ma
+cuir 29.5
+chuir 4
+coimeas
+ma
+leig
+chuir 261
+no
+leig
+chuir 260
+criòch
+no
+cuir 27.5
+chuir 4
+coimeas
+ma
+leig
+chuir 259
+no
+leig
+chuir 258
+criòch
+criòch
+no
+cuir 24.5
+chuir 4
+coimeas
+ma
+cuir 25.5
+chuir 4
+coimeas
+ma
+leig
+chuir 257
+no
+leig
+chuir 256
+criòch
+no
+cuir 23.5
+chuir 4
+coimeas
+ma
+leig
+chuir 255
+no
+leig
+chuir 254
+criòch
+criòch
+criòch
+no
+cuir 18.5
+chuir 4
+coimeas
+ma
+cuir 20.5
+chuir 4
+coimeas
+ma
+cuir 21.5
+chuir 4
+coimeas
+ma
+leig
+chuir 253
+no
+leig
+chuir 252
+criòch
+no
+cuir 19.5
+chuir 4
+coimeas
+ma
+leig
+chuir 251
+no
+leig
+chuir 250
+criòch
+criòch
+no
+cuir 16.5
+chuir 4
+coimeas
+ma
+cuir 17.5
+chuir 4
+coimeas
+ma
+leig
+chuir 249
+no
+leig
+chuir 248
+criòch
+no
+leig
+chuir 247
+criòch
+criòch
+criòch
+no
+cuir 7.5
+chuir 4
+coimeas
+ma
+cuir 11.5
+chuir 4
+coimeas
+ma
+cuir 13.5
+chuir 4
+coimeas
+ma
+cuir 14.5
+chuir 4
+coimeas
+ma
+leig
+chuir 246
+no
+leig
+chuir 245
+criòch
+no
+cuir 12.5
+chuir 4
+coimeas
+ma
+leig
+chuir 244
+no
+leig
+chuir 243
+criòch
+criòch
+no
+cuir 9.5
+chuir 4
+coimeas
+ma
+cuir 10.5
+chuir 4
+coimeas
+ma
+leig
+chuir 242
+no
+leig
+chuir 241
+criòch
+no
+cuir 8.5
+chuir 4
+coimeas
+ma
+leig
+chuir 240
+no
+leig
+chuir 239
+criòch
+criòch
+criòch
+no
+cuir 3.5
+chuir 4
+coimeas
+ma
+cuir 5.5
+chuir 4
+coimeas
+ma
+cuir 6.5
+chuir 4
+coimeas
+ma
+leig
+chuir 238
+no
+leig
+chuir 237
+criòch
+no
+cuir 4.5
+chuir 4
+coimeas
+ma
+leig
+chuir 236
+no
+leig
+chuir 235
+criòch
+criòch
+no
+cuir 1.5
+chuir 4
+coimeas
+ma
+cuir 2.5
+chuir 4
+coimeas
+ma
+leig
+chuir 234
+no
+leig
+chuir 233
+criòch
+no
+leig
+chuir 232
+criòch
+criòch
+criòch
+criòch
+criòch
+cuir 4.5
+bsuim
+gcuir 9
+leig
+gcuir 8
+gcuir 8
+gcuir 8
+gcuir 8
+gcuir 8
+gcuir 8
+gcuir 8
+gcuir 8
+cuir 0.0
+cuir 30.5
+chuir 4
+coimeas
+ma
+cuir 45.5
+chuir 4
+coimeas
+ma
+cuir 52.5
+chuir 4
+coimeas
+ma
+cuir 56.5
+chuir 4
+coimeas
+ma
+cuir 58.5
+chuir 4
+coimeas
+ma
+cuir 59.5
+chuir 4
+coimeas
+ma
+leig
+chuir 231
+no
+leig
+chuir 230
+criòch
+no
+cuir 57.5
+chuir 4
+coimeas
+ma
+leig
+chuir 229
+no
+leig
+chuir 228
+criòch
+criòch
+no
+cuir 54.5
+chuir 4
+coimeas
+ma
+cuir 55.5
+chuir 4
+coimeas
+ma
+leig
+chuir 227
+no
+leig
+chuir 226
+criòch
+no
+cuir 53.5
+chuir 4
+coimeas
+ma
+leig
+chuir 225
+no
+leig
+chuir 224
+criòch
+criòch
+criòch
+no
+cuir 48.5
+chuir 4
+coimeas
+ma
+cuir 50.5
+chuir 4
+coimeas
+ma
+cuir 51.5
+chuir 4
+coimeas
+ma
+leig
+chuir 223
+no
+leig
+chuir 222
+criòch
+no
+cuir 49.5
+chuir 4
+coimeas
+ma
+leig
+chuir 221
+no
+leig
+chuir 220
+criòch
+criòch
+no
+cuir 46.5
+chuir 4
+coimeas
+ma
+cuir 47.5
+chuir 4
+coimeas
+ma
+leig
+chuir 219
+no
+leig
+chuir 218
+criòch
+no
+leig
+chuir 217
+criòch
+criòch
+criòch
+no
+cuir 37.5
+chuir 4
+coimeas
+ma
+cuir 41.5
+chuir 4
+coimeas
+ma
+cuir 43.5
+chuir 4
+coimeas
+ma
+cuir 44.5
+chuir 4
+coimeas
+ma
+leig
+chuir 216
+no
+leig
+chuir 215
+criòch
+no
+cuir 42.5
+chuir 4
+coimeas
+ma
+leig
+chuir 214
+no
+leig
+chuir 213
+criòch
+criòch
+no
+cuir 39.5
+chuir 4
+coimeas
+ma
+cuir 40.5
+chuir 4
+coimeas
+ma
+leig
+chuir 212
+no
+leig
+chuir 211
+criòch
+no
+cuir 38.5
+chuir 4
+coimeas
+ma
+leig
+chuir 210
+no
+leig
+chuir 209
+criòch
+criòch
+criòch
+no
+cuir 33.5
+chuir 4
+coimeas
+ma
+cuir 35.5
+chuir 4
+coimeas
+ma
+cuir 36.5
+chuir 4
+coimeas
+ma
+leig
+chuir 208
+no
+leig
+chuir 207
+criòch
+no
+cuir 34.5
+chuir 4
+coimeas
+ma
+leig
+chuir 206
+no
+leig
+chuir 205
+criòch
+criòch
+no
+cuir 31.5
+chuir 4
+coimeas
+ma
+cuir 32.5
+chuir 4
+coimeas
+ma
+leig
+chuir 204
+no
+leig
+chuir 203
+criòch
+no
+leig
+chuir 202
+criòch
+criòch
+criòch
+criòch
+no
+cuir 15.5
+chuir 4
+coimeas
+ma
+cuir 22.5
+chuir 4
+coimeas
+ma
+cuir 26.5
+chuir 4
+coimeas
+ma
+cuir 28.5
+chuir 4
+coimeas
+ma
+cuir 29.5
+chuir 4
+coimeas
+ma
+leig
+chuir 201
+no
+leig
+chuir 200
+criòch
+no
+cuir 27.5
+chuir 4
+coimeas
+ma
+leig
+chuir 199
+no
+leig
+chuir 198
+criòch
+criòch
+no
+cuir 24.5
+chuir 4
+coimeas
+ma
+cuir 25.5
+chuir 4
+coimeas
+ma
+leig
+chuir 197
+no
+leig
+chuir 196
+criòch
+no
+cuir 23.5
+chuir 4
+coimeas
+ma
+leig
+chuir 195
+no
+leig
+chuir 194
+criòch
+criòch
+criòch
+no
+cuir 18.5
+chuir 4
+coimeas
+ma
+cuir 20.5
+chuir 4
+coimeas
+ma
+cuir 21.5
+chuir 4
+coimeas
+ma
+leig
+chuir 193
+no
+leig
+chuir 192
+criòch
+no
+cuir 19.5
+chuir 4
+coimeas
+ma
+leig
+chuir 191
+no
+leig
+chuir 190
+criòch
+criòch
+no
+cuir 16.5
+chuir 4
+coimeas
+ma
+cuir 17.5
+chuir 4
+coimeas
+ma
+leig
+chuir 189
+no
+leig
+chuir 188
+criòch
+no
+leig
+chuir 187
+criòch
+criòch
+criòch
+no
+cuir 7.5
+chuir 4
+coimeas
+ma
+cuir 11.5
+chuir 4
+coimeas
+ma
+cuir 13.5
+chuir 4
+coimeas
+ma
+cuir 14.5
+chuir 4
+coimeas
+ma
+leig
+chuir 186
+no
+leig
+chuir 185
+criòch
+no
+cuir 12.5
+chuir 4
+coimeas
+ma
+leig
+chuir 184
+no
+leig
+chuir 183
+criòch
+criòch
+no
+cuir 9.5
+chuir 4
+coimeas
+ma
+cuir 10.5
+chuir 4
 coimeas
 ma
 leig
@@ -1708,40 +2841,40 @@ leig
 chuir 181
 criòch
 no
+cuir 8.5
+chuir 4
+coimeas
+ma
 leig
 chuir 180
-criòch
 no
-cuir 36.5
-chuir 3
-coimeas
-ma
-cuir 37.5
-chuir 3
-coimeas
-ma
 leig
 chuir 179
+criòch
+criòch
+criòch
 no
+cuir 3.5
+chuir 4
+coimeas
+ma
+cuir 5.5
+chuir 4
+coimeas
+ma
+cuir 6.5
+chuir 4
+coimeas
+ma
 leig
 chuir 178
-criòch
 no
 leig
 chuir 177
 criòch
-criòch
 no
-cuir 32.5
-chuir 3
-coimeas
-ma
-cuir 33.5
-chuir 3
-coimeas
-ma
-cuir 34.5
-chuir 3
+cuir 4.5
+chuir 4
 coimeas
 ma
 leig
@@ -1750,37 +2883,76 @@ no
 leig
 chuir 175
 criòch
-no
-leig
-chuir 174
 criòch
 no
-cuir 31.5
-chuir 3
+cuir 1.5
+chuir 4
+coimeas
+ma
+cuir 2.5
+chuir 4
 coimeas
 ma
 leig
+chuir 174
+no
+leig
 chuir 173
+criòch
 no
 leig
 chuir 172
 criòch
 criòch
 criòch
-no
+criòch
+criòch
+cuir 2.5
+bsuim
+gcuir 8
+leig
+gcuir 7
+gcuir 7
+gcuir 7
+gcuir 7
+gcuir 7
+gcuir 7
+gcuir 7
+cuir 70
+n-abair
+cuir 10
+n-abair
+( Lùb U — U_STEPS ceuma. )
+cuir 50.0
+gcuir 2
+leig
+gcuir 1
+chuir 1
+cuir 0.0
+choimeas
+cuairt
+cuir 0.0
 cuir 25.5
 chuir 3
 coimeas
 ma
-cuir 27.5
+cuir 37.5
 chuir 3
 coimeas
 ma
-cuir 28.5
+cuir 43.5
 chuir 3
 coimeas
 ma
-cuir 29.5
+cuir 46.5
+chuir 3
+coimeas
+ma
+cuir 48.5
+chuir 3
+coimeas
+ma
+cuir 49.5
 chuir 3
 coimeas
 ma
@@ -1791,76 +2963,66 @@ leig
 chuir 170
 criòch
 no
+cuir 47.5
+chuir 3
+coimeas
+ma
 leig
 chuir 169
-criòch
 no
-cuir 26.5
-chuir 3
-coimeas
-ma
 leig
 chuir 168
+criòch
+criòch
 no
+cuir 44.5
+chuir 3
+coimeas
+ma
+cuir 45.5
+chuir 3
+coimeas
+ma
 leig
 chuir 167
-criòch
-criòch
 no
-cuir 22.5
-chuir 3
-coimeas
-ma
-cuir 23.5
-chuir 3
-coimeas
-ma
-cuir 24.5
-chuir 3
-coimeas
-ma
 leig
 chuir 166
+criòch
 no
 leig
 chuir 165
 criòch
-no
-leig
-chuir 164
 criòch
 no
-cuir 21.5
+cuir 40.5
+chuir 3
+coimeas
+ma
+cuir 41.5
+chuir 3
+coimeas
+ma
+cuir 42.5
 chuir 3
 coimeas
 ma
 leig
+chuir 164
+no
+leig
 chuir 163
+criòch
 no
 leig
 chuir 162
 criòch
-criòch
-criòch
-criòch
 no
-cuir 10.5
+cuir 38.5
 chuir 3
 coimeas
 ma
-cuir 15.5
-chuir 3
-coimeas
-ma
-cuir 17.5
-chuir 3
-coimeas
-ma
-cuir 18.5
-chuir 3
-coimeas
-ma
-cuir 19.5
+cuir 39.5
 chuir 3
 coimeas
 ma
@@ -1874,8 +3036,22 @@ no
 leig
 chuir 159
 criòch
+criòch
+criòch
 no
-cuir 16.5
+cuir 31.5
+chuir 3
+coimeas
+ma
+cuir 34.5
+chuir 3
+coimeas
+ma
+cuir 35.5
+chuir 3
+coimeas
+ma
+cuir 36.5
 chuir 3
 coimeas
 ma
@@ -1885,184 +3061,9 @@ no
 leig
 chuir 157
 criòch
-criòch
 no
-cuir 12.5
-chuir 3
-coimeas
-ma
-cuir 13.5
-chuir 3
-coimeas
-ma
-cuir 14.5
-chuir 3
-coimeas
-ma
 leig
 chuir 156
-no
-leig
-chuir 155
-criòch
-no
-leig
-chuir 154
-criòch
-no
-cuir 11.5
-chuir 3
-coimeas
-ma
-leig
-chuir 153
-no
-leig
-chuir 152
-criòch
-criòch
-criòch
-no
-cuir 5.5
-chuir 3
-coimeas
-ma
-cuir 7.5
-chuir 3
-coimeas
-ma
-cuir 8.5
-chuir 3
-coimeas
-ma
-cuir 9.5
-chuir 3
-coimeas
-ma
-leig
-chuir 151
-no
-leig
-chuir 150
-criòch
-no
-leig
-chuir 149
-criòch
-no
-cuir 6.5
-chuir 3
-coimeas
-ma
-leig
-chuir 148
-no
-leig
-chuir 147
-criòch
-criòch
-no
-cuir 2.5
-chuir 3
-coimeas
-ma
-cuir 3.5
-chuir 3
-coimeas
-ma
-cuir 4.5
-chuir 3
-coimeas
-ma
-leig
-chuir 146
-no
-leig
-chuir 145
-criòch
-no
-leig
-chuir 144
-criòch
-no
-cuir 1.5
-chuir 3
-coimeas
-ma
-leig
-chuir 143
-no
-leig
-chuir 142
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 9
-leig
-gcuir 8
-gcuir 8
-gcuir 8
-gcuir 8
-gcuir 8
-gcuir 8
-gcuir 8
-gcuir 8
-cuir 0.0
-cuir 20.5
-chuir 3
-coimeas
-ma
-cuir 30.5
-chuir 3
-coimeas
-ma
-cuir 35.5
-chuir 3
-coimeas
-ma
-cuir 38.5
-chuir 3
-coimeas
-ma
-cuir 39.5
-chuir 3
-coimeas
-ma
-cuir 40.5
-chuir 3
-coimeas
-ma
-leig
-chuir 141
-no
-leig
-chuir 140
-criòch
-no
-leig
-chuir 139
-criòch
-no
-cuir 36.5
-chuir 3
-coimeas
-ma
-cuir 37.5
-chuir 3
-coimeas
-ma
-leig
-chuir 138
-no
-leig
-chuir 137
-criòch
-no
-leig
-chuir 136
-criòch
 criòch
 no
 cuir 32.5
@@ -2073,35 +3074,42 @@ cuir 33.5
 chuir 3
 coimeas
 ma
-cuir 34.5
+leig
+chuir 155
+no
+leig
+chuir 154
+criòch
+no
+leig
+chuir 153
+criòch
+criòch
+no
+cuir 28.5
+chuir 3
+coimeas
+ma
+cuir 29.5
+chuir 3
+coimeas
+ma
+cuir 30.5
 chuir 3
 coimeas
 ma
 leig
-chuir 135
+chuir 152
 no
 leig
-chuir 134
+chuir 151
 criòch
 no
 leig
-chuir 133
+chuir 150
 criòch
 no
-cuir 31.5
-chuir 3
-coimeas
-ma
-leig
-chuir 132
-no
-leig
-chuir 131
-criòch
-criòch
-criòch
-no
-cuir 25.5
+cuir 26.5
 chuir 3
 coimeas
 ma
@@ -2109,11 +3117,155 @@ cuir 27.5
 chuir 3
 coimeas
 ma
-cuir 28.5
+leig
+chuir 149
+no
+leig
+chuir 148
+criòch
+no
+leig
+chuir 147
+criòch
+criòch
+criòch
+criòch
+no
+cuir 12.5
 chuir 3
 coimeas
 ma
-cuir 29.5
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 21.5
+chuir 3
+coimeas
+ma
+cuir 23.5
+chuir 3
+coimeas
+ma
+cuir 24.5
+chuir 3
+coimeas
+ma
+leig
+chuir 146
+no
+leig
+chuir 145
+criòch
+no
+cuir 22.5
+chuir 3
+coimeas
+ma
+leig
+chuir 144
+no
+leig
+chuir 143
+criòch
+criòch
+no
+cuir 19.5
+chuir 3
+coimeas
+ma
+cuir 20.5
+chuir 3
+coimeas
+ma
+leig
+chuir 142
+no
+leig
+chuir 141
+criòch
+no
+leig
+chuir 140
+criòch
+criòch
+no
+cuir 15.5
+chuir 3
+coimeas
+ma
+cuir 16.5
+chuir 3
+coimeas
+ma
+cuir 17.5
+chuir 3
+coimeas
+ma
+leig
+chuir 139
+no
+leig
+chuir 138
+criòch
+no
+leig
+chuir 137
+criòch
+no
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
+chuir 3
+coimeas
+ma
+leig
+chuir 136
+no
+leig
+chuir 135
+criòch
+no
+leig
+chuir 134
+criòch
+criòch
+criòch
+no
+cuir 6.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 11.5
+chuir 3
+coimeas
+ma
+leig
+chuir 133
+no
+leig
+chuir 132
+criòch
+no
+leig
+chuir 131
+criòch
+no
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
 chuir 3
 coimeas
 ma
@@ -2127,8 +3279,17 @@ no
 leig
 chuir 128
 criòch
+criòch
 no
-cuir 26.5
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+cuir 5.5
 chuir 3
 coimeas
 ma
@@ -2138,77 +3299,90 @@ no
 leig
 chuir 126
 criòch
-criòch
 no
-cuir 22.5
-chuir 3
-coimeas
-ma
-cuir 23.5
-chuir 3
-coimeas
-ma
-cuir 24.5
-chuir 3
-coimeas
-ma
 leig
 chuir 125
+criòch
 no
+cuir 1.5
+chuir 3
+coimeas
+ma
+cuir 2.5
+chuir 3
+coimeas
+ma
 leig
 chuir 124
-criòch
 no
 leig
 chuir 123
 criòch
 no
-cuir 21.5
-chuir 3
-coimeas
-ma
 leig
 chuir 122
-no
+criòch
+criòch
+criòch
+criòch
+criòch
+gcuir 7
+leig
+gcuir 6
+gcuir 6
+gcuir 6
+gcuir 6
+gcuir 6
+gcuir 6
+cuir 0.0
+cuir 25.5
+chuir 3
+coimeas
+ma
+cuir 37.5
+chuir 3
+coimeas
+ma
+cuir 43.5
+chuir 3
+coimeas
+ma
+cuir 46.5
+chuir 3
+coimeas
+ma
+cuir 48.5
+chuir 3
+coimeas
+ma
+cuir 49.5
+chuir 3
+coimeas
+ma
 leig
 chuir 121
-criòch
-criòch
-criòch
-criòch
 no
-cuir 10.5
-chuir 3
-coimeas
-ma
-cuir 15.5
-chuir 3
-coimeas
-ma
-cuir 17.5
-chuir 3
-coimeas
-ma
-cuir 18.5
-chuir 3
-coimeas
-ma
-cuir 19.5
-chuir 3
-coimeas
-ma
 leig
 chuir 120
+criòch
 no
+cuir 47.5
+chuir 3
+coimeas
+ma
 leig
 chuir 119
-criòch
 no
 leig
 chuir 118
 criòch
+criòch
 no
-cuir 16.5
+cuir 44.5
+chuir 3
+coimeas
+ma
+cuir 45.5
 chuir 3
 coimeas
 ma
@@ -2218,92 +3392,88 @@ no
 leig
 chuir 116
 criòch
-criòch
 no
-cuir 12.5
-chuir 3
-coimeas
-ma
-cuir 13.5
-chuir 3
-coimeas
-ma
-cuir 14.5
-chuir 3
-coimeas
-ma
 leig
 chuir 115
+criòch
+criòch
 no
+cuir 40.5
+chuir 3
+coimeas
+ma
+cuir 41.5
+chuir 3
+coimeas
+ma
+cuir 42.5
+chuir 3
+coimeas
+ma
 leig
 chuir 114
-criòch
 no
 leig
 chuir 113
 criòch
 no
-cuir 11.5
-chuir 3
-coimeas
-ma
 leig
 chuir 112
+criòch
 no
+cuir 38.5
+chuir 3
+coimeas
+ma
+cuir 39.5
+chuir 3
+coimeas
+ma
 leig
 chuir 111
-criòch
-criòch
-criòch
 no
-cuir 5.5
-chuir 3
-coimeas
-ma
-cuir 7.5
-chuir 3
-coimeas
-ma
-cuir 8.5
-chuir 3
-coimeas
-ma
-cuir 9.5
-chuir 3
-coimeas
-ma
 leig
 chuir 110
+criòch
 no
 leig
 chuir 109
 criòch
-no
-leig
-chuir 108
+criòch
 criòch
 no
-cuir 6.5
+cuir 31.5
+chuir 3
+coimeas
+ma
+cuir 34.5
+chuir 3
+coimeas
+ma
+cuir 35.5
+chuir 3
+coimeas
+ma
+cuir 36.5
 chuir 3
 coimeas
 ma
 leig
+chuir 108
+no
+leig
 chuir 107
+criòch
 no
 leig
 chuir 106
 criòch
-criòch
 no
-cuir 2.5
+cuir 32.5
 chuir 3
 coimeas
 ma
-cuir 3.5
-chuir 3
-coimeas
-ma
-cuir 4.5
+cuir 33.5
 chuir 3
 coimeas
 ma
@@ -2317,8 +3487,17 @@ no
 leig
 chuir 103
 criòch
+criòch
 no
-cuir 1.5
+cuir 28.5
+chuir 3
+coimeas
+ma
+cuir 29.5
+chuir 3
+coimeas
+ma
+cuir 30.5
 chuir 3
 coimeas
 ma
@@ -2328,84 +3507,61 @@ no
 leig
 chuir 101
 criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 8
-leig
-gcuir 7
-gcuir 7
-gcuir 7
-gcuir 7
-gcuir 7
-gcuir 7
-gcuir 7
-cuir 0.0
-cuir 20.5
-chuir 3
-coimeas
-ma
-cuir 30.5
-chuir 3
-coimeas
-ma
-cuir 35.5
-chuir 3
-coimeas
-ma
-cuir 38.5
-chuir 3
-coimeas
-ma
-cuir 39.5
-chuir 3
-coimeas
-ma
-cuir 40.5
-chuir 3
-coimeas
-ma
-leig
-chuir 100
 no
 leig
-chuir 99
+chuir 100
 criòch
+no
+cuir 26.5
+chuir 3
+coimeas
+ma
+cuir 27.5
+chuir 3
+coimeas
+ma
+leig
+chuir 99
 no
 leig
 chuir 98
 criòch
 no
-cuir 36.5
-chuir 3
-coimeas
-ma
-cuir 37.5
-chuir 3
-coimeas
-ma
 leig
 chuir 97
+criòch
+criòch
+criòch
+criòch
 no
+cuir 12.5
+chuir 3
+coimeas
+ma
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 21.5
+chuir 3
+coimeas
+ma
+cuir 23.5
+chuir 3
+coimeas
+ma
+cuir 24.5
+chuir 3
+coimeas
+ma
 leig
 chuir 96
-criòch
 no
 leig
 chuir 95
 criòch
-criòch
 no
-cuir 32.5
-chuir 3
-coimeas
-ma
-cuir 33.5
-chuir 3
-coimeas
-ma
-cuir 34.5
+cuir 22.5
 chuir 3
 coimeas
 ma
@@ -2415,37 +3571,37 @@ no
 leig
 chuir 93
 criòch
-no
-leig
-chuir 92
 criòch
 no
-cuir 31.5
+cuir 19.5
+chuir 3
+coimeas
+ma
+cuir 20.5
 chuir 3
 coimeas
 ma
 leig
+chuir 92
+no
+leig
 chuir 91
+criòch
 no
 leig
 chuir 90
 criòch
 criòch
-criòch
 no
-cuir 25.5
+cuir 15.5
 chuir 3
 coimeas
 ma
-cuir 27.5
+cuir 16.5
 chuir 3
 coimeas
 ma
-cuir 28.5
-chuir 3
-coimeas
-ma
-cuir 29.5
+cuir 17.5
 chuir 3
 coimeas
 ma
@@ -2460,7 +3616,11 @@ leig
 chuir 87
 criòch
 no
-cuir 26.5
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
 chuir 3
 coimeas
 ma
@@ -2470,97 +3630,88 @@ no
 leig
 chuir 85
 criòch
-criòch
 no
-cuir 22.5
-chuir 3
-coimeas
-ma
-cuir 23.5
-chuir 3
-coimeas
-ma
-cuir 24.5
-chuir 3
-coimeas
-ma
 leig
 chuir 84
+criòch
+criòch
+criòch
 no
+cuir 6.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 11.5
+chuir 3
+coimeas
+ma
 leig
 chuir 83
-criòch
 no
 leig
 chuir 82
 criòch
 no
-cuir 21.5
-chuir 3
-coimeas
-ma
 leig
 chuir 81
+criòch
 no
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
+chuir 3
+coimeas
+ma
 leig
 chuir 80
-criòch
-criòch
-criòch
-criòch
 no
-cuir 10.5
-chuir 3
-coimeas
-ma
-cuir 15.5
-chuir 3
-coimeas
-ma
-cuir 17.5
-chuir 3
-coimeas
-ma
-cuir 18.5
-chuir 3
-coimeas
-ma
-cuir 19.5
-chuir 3
-coimeas
-ma
 leig
 chuir 79
+criòch
 no
 leig
 chuir 78
 criòch
-no
-leig
-chuir 77
 criòch
 no
-cuir 16.5
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+cuir 5.5
 chuir 3
 coimeas
 ma
 leig
+chuir 77
+no
+leig
 chuir 76
+criòch
 no
 leig
 chuir 75
 criòch
-criòch
 no
-cuir 12.5
+cuir 1.5
 chuir 3
 coimeas
 ma
-cuir 13.5
-chuir 3
-coimeas
-ma
-cuir 14.5
+cuir 2.5
 chuir 3
 coimeas
 ma
@@ -2574,9 +3725,44 @@ no
 leig
 chuir 72
 criòch
-no
-cuir 11.5
-chuir 3
+criòch
+criòch
+criòch
+criòch
+gcuir 6
+leig
+gcuir 5
+gcuir 5
+gcuir 5
+gcuir 5
+gcuir 5
+( Lùb V — V_STEPS ceuma gach buice. )
+cuir 30.0
+gcuir 1
+leig
+chuir 0
+cuir 0.0
+choimeas
+cuairt
+cuir 0.0
+cuir 15.5
+chuir 2
+coimeas
+ma
+cuir 22.5
+chuir 2
+coimeas
+ma
+cuir 26.5
+chuir 2
+coimeas
+ma
+cuir 28.5
+chuir 2
+coimeas
+ma
+cuir 29.5
+chuir 2
 coimeas
 ma
 leig
@@ -2585,23 +3771,9 @@ no
 leig
 chuir 70
 criòch
-criòch
-criòch
 no
-cuir 5.5
-chuir 3
-coimeas
-ma
-cuir 7.5
-chuir 3
-coimeas
-ma
-cuir 8.5
-chuir 3
-coimeas
-ma
-cuir 9.5
-chuir 3
+cuir 27.5
+chuir 2
 coimeas
 ma
 leig
@@ -2610,48 +3782,57 @@ no
 leig
 chuir 68
 criòch
+criòch
 no
+cuir 24.5
+chuir 2
+coimeas
+ma
+cuir 25.5
+chuir 2
+coimeas
+ma
 leig
 chuir 67
-criòch
 no
-cuir 6.5
-chuir 3
-coimeas
-ma
 leig
 chuir 66
+criòch
 no
+cuir 23.5
+chuir 2
+coimeas
+ma
 leig
 chuir 65
-criòch
-criòch
 no
-cuir 2.5
-chuir 3
-coimeas
-ma
-cuir 3.5
-chuir 3
-coimeas
-ma
-cuir 4.5
-chuir 3
-coimeas
-ma
 leig
 chuir 64
+criòch
+criòch
+criòch
 no
+cuir 18.5
+chuir 2
+coimeas
+ma
+cuir 20.5
+chuir 2
+coimeas
+ma
+cuir 21.5
+chuir 2
+coimeas
+ma
 leig
 chuir 63
-criòch
 no
 leig
 chuir 62
 criòch
 no
-cuir 1.5
-chuir 3
+cuir 19.5
+chuir 2
 coimeas
 ma
 leig
@@ -2661,39 +3842,12 @@ leig
 chuir 60
 criòch
 criòch
-criòch
-criòch
-criòch
-gcuir 7
-leig
-gcuir 6
-gcuir 6
-gcuir 6
-gcuir 6
-gcuir 6
-gcuir 6
-( Ceallaich a' phiob — TIT tiotal. )
-cuir 16.0
-gcuir 1
-leig
-chuir 0
-cuir 0.0
-choimeas
-cuairt
-cuir 0.0
-cuir 8.5
+no
+cuir 16.5
 chuir 2
 coimeas
 ma
-cuir 12.5
-chuir 2
-coimeas
-ma
-cuir 14.5
-chuir 2
-coimeas
-ma
-cuir 15.5
+cuir 17.5
 chuir 2
 coimeas
 ma
@@ -2704,19 +3858,13 @@ leig
 chuir 58
 criòch
 no
-cuir 13.5
-chuir 2
-coimeas
-ma
 leig
 chuir 57
-no
-leig
-chuir 56
+criòch
 criòch
 criòch
 no
-cuir 10.5
+cuir 7.5
 chuir 2
 coimeas
 ma
@@ -2724,98 +3872,7 @@ cuir 11.5
 chuir 2
 coimeas
 ma
-leig
-chuir 55
-no
-leig
-chuir 54
-criòch
-no
-cuir 9.5
-chuir 2
-coimeas
-ma
-leig
-chuir 53
-no
-leig
-chuir 52
-criòch
-criòch
-criòch
-no
-cuir 4.5
-chuir 2
-coimeas
-ma
-cuir 6.5
-chuir 2
-coimeas
-ma
-cuir 7.5
-chuir 2
-coimeas
-ma
-leig
-chuir 51
-no
-leig
-chuir 50
-criòch
-no
-cuir 5.5
-chuir 2
-coimeas
-ma
-leig
-chuir 49
-no
-leig
-chuir 48
-criòch
-criòch
-no
-cuir 2.5
-chuir 2
-coimeas
-ma
-cuir 3.5
-chuir 2
-coimeas
-ma
-leig
-chuir 47
-no
-leig
-chuir 46
-criòch
-no
-cuir 1.5
-chuir 2
-coimeas
-ma
-leig
-chuir 45
-no
-leig
-chuir 44
-criòch
-criòch
-criòch
-criòch
-gcuir 6
-leig
-gcuir 5
-gcuir 5
-gcuir 5
-gcuir 5
-gcuir 5
-cuir 0.0
-cuir 8.5
-chuir 2
-coimeas
-ma
-cuir 12.5
+cuir 13.5
 chuir 2
 coimeas
 ma
@@ -2823,18 +3880,129 @@ cuir 14.5
 chuir 2
 coimeas
 ma
-cuir 15.5
+leig
+chuir 56
+no
+leig
+chuir 55
+criòch
+no
+cuir 12.5
 chuir 2
 coimeas
 ma
 leig
+chuir 54
+no
+leig
+chuir 53
+criòch
+criòch
+no
+cuir 9.5
+chuir 2
+coimeas
+ma
+cuir 10.5
+chuir 2
+coimeas
+ma
+leig
+chuir 52
+no
+leig
+chuir 51
+criòch
+no
+cuir 8.5
+chuir 2
+coimeas
+ma
+leig
+chuir 50
+no
+leig
+chuir 49
+criòch
+criòch
+criòch
+no
+cuir 3.5
+chuir 2
+coimeas
+ma
+cuir 5.5
+chuir 2
+coimeas
+ma
+cuir 6.5
+chuir 2
+coimeas
+ma
+leig
+chuir 48
+no
+leig
+chuir 47
+criòch
+no
+cuir 4.5
+chuir 2
+coimeas
+ma
+leig
+chuir 46
+no
+leig
+chuir 45
+criòch
+criòch
+no
+cuir 1.5
+chuir 2
+coimeas
+ma
+cuir 2.5
+chuir 2
+coimeas
+ma
+leig
+chuir 44
+no
+leig
 chuir 43
+criòch
 no
 leig
 chuir 42
 criòch
-no
-cuir 13.5
+criòch
+criòch
+criòch
+gcuir 5
+leig
+gcuir 4
+gcuir 4
+gcuir 4
+gcuir 4
+cuir 0.0
+cuir 15.5
+chuir 2
+coimeas
+ma
+cuir 22.5
+chuir 2
+coimeas
+ma
+cuir 26.5
+chuir 2
+coimeas
+ma
+cuir 28.5
+chuir 2
+coimeas
+ma
+cuir 29.5
 chuir 2
 coimeas
 ma
@@ -2844,13 +4012,8 @@ no
 leig
 chuir 40
 criòch
-criòch
 no
-cuir 10.5
-chuir 2
-coimeas
-ma
-cuir 11.5
+cuir 27.5
 chuir 2
 coimeas
 ma
@@ -2860,8 +4023,13 @@ no
 leig
 chuir 38
 criòch
+criòch
 no
-cuir 9.5
+cuir 24.5
+chuir 2
+coimeas
+ma
+cuir 25.5
 chuir 2
 coimeas
 ma
@@ -2871,18 +4039,8 @@ no
 leig
 chuir 36
 criòch
-criòch
-criòch
 no
-cuir 4.5
-chuir 2
-coimeas
-ma
-cuir 6.5
-chuir 2
-coimeas
-ma
-cuir 7.5
+cuir 23.5
 chuir 2
 coimeas
 ma
@@ -2892,8 +4050,18 @@ no
 leig
 chuir 34
 criòch
+criòch
+criòch
 no
-cuir 5.5
+cuir 18.5
+chuir 2
+coimeas
+ma
+cuir 20.5
+chuir 2
+coimeas
+ma
+cuir 21.5
 chuir 2
 coimeas
 ma
@@ -2903,13 +4071,8 @@ no
 leig
 chuir 32
 criòch
-criòch
 no
-cuir 2.5
-chuir 2
-coimeas
-ma
-cuir 3.5
+cuir 19.5
 chuir 2
 coimeas
 ma
@@ -2919,8 +4082,13 @@ no
 leig
 chuir 30
 criòch
+criòch
 no
-cuir 1.5
+cuir 16.5
+chuir 2
+coimeas
+ma
+cuir 17.5
 chuir 2
 coimeas
 ma
@@ -2930,52 +4098,14 @@ no
 leig
 chuir 28
 criòch
-criòch
-criòch
-criòch
-gcuir 5
-leig
-gcuir 4
-gcuir 4
-gcuir 4
-gcuir 4
-cuir 0.0
-cuir 8.5
-chuir 2
-coimeas
-ma
-cuir 12.5
-chuir 2
-coimeas
-ma
-cuir 14.5
-chuir 2
-coimeas
-ma
-cuir 15.5
-chuir 2
-coimeas
-ma
+no
 leig
 chuir 27
-no
-leig
-chuir 26
 criòch
-no
-cuir 13.5
-chuir 2
-coimeas
-ma
-leig
-chuir 25
-no
-leig
-chuir 24
 criòch
 criòch
 no
-cuir 10.5
+cuir 7.5
 chuir 2
 coimeas
 ma
@@ -2983,27 +4113,66 @@ cuir 11.5
 chuir 2
 coimeas
 ma
+cuir 13.5
+chuir 2
+coimeas
+ma
+cuir 14.5
+chuir 2
+coimeas
+ma
 leig
-chuir 23
+chuir 26
 no
 leig
-chuir 22
+chuir 25
+criòch
+no
+cuir 12.5
+chuir 2
+coimeas
+ma
+leig
+chuir 24
+no
+leig
+chuir 23
+criòch
 criòch
 no
 cuir 9.5
 chuir 2
 coimeas
 ma
+cuir 10.5
+chuir 2
+coimeas
+ma
+leig
+chuir 22
+no
 leig
 chuir 21
+criòch
 no
+cuir 8.5
+chuir 2
+coimeas
+ma
 leig
 chuir 20
+no
+leig
+chuir 19
 criòch
 criòch
 criòch
 no
-cuir 4.5
+cuir 3.5
+chuir 2
+coimeas
+ma
+cuir 5.5
 chuir 2
 coimeas
 ma
@@ -3011,50 +4180,39 @@ cuir 6.5
 chuir 2
 coimeas
 ma
-cuir 7.5
-chuir 2
-coimeas
-ma
-leig
-chuir 19
-no
 leig
 chuir 18
-criòch
 no
-cuir 5.5
-chuir 2
-coimeas
-ma
 leig
 chuir 17
+criòch
 no
+cuir 4.5
+chuir 2
+coimeas
+ma
 leig
 chuir 16
-criòch
-criòch
 no
-cuir 2.5
-chuir 2
-coimeas
-ma
-cuir 3.5
-chuir 2
-coimeas
-ma
 leig
 chuir 15
-no
-leig
-chuir 14
+criòch
 criòch
 no
 cuir 1.5
 chuir 2
 coimeas
 ma
+cuir 2.5
+chuir 2
+coimeas
+ma
+leig
+chuir 14
+no
 leig
 chuir 13
+criòch
 no
 leig
 chuir 12
@@ -3067,1020 +4225,177 @@ leig
 gcuir 3
 gcuir 3
 gcuir 3
-( Ceithir-cheàrnach le sgàilean. )
 chuir 4
-chuir 12
+cuir 0.8
 bsuim
-chuir 6
-chuir 10
+cuir 2.0
+suim
+chuir 0
+chuir 8
 bsuim
-chuir 12
+chuir 1
+chuir 8
 bsuim
-shuim
-chuir 5
-chuir 12
-bsuim
+cuir 0.8
 chuir 7
+bsuim
+chuir 8
 chuir 11
 bsuim
-chuir 14
-bsuim
-suim
-chuir 7
-chuir 12
-bsuim
-cuir 0.751806
-bsuim
-chuir 1
-cuir 0.659385
-bsuim
-suim
-chuir 0
-cuir 0.32
+chuir 9
+chuir 11
 bsuim
 chuir 3
-cuir 0.58
+cuir 0.87758256189
 bsuim
-suim
-chuir 2
-cuir 0.75
-bsuim
-suim
-cuir 1.0
-suim
-cuir 0.5
-bsuim
-chuir 0
-cuir 150.0
-bsuim
-cuir 80.0
-suim
-chuir 1
-cuir 90.0
-bsuim
-cuir 50.0
-suim
-chuir 2
-cuir 60.0
-bsuim
-cuir 30.0
-suim
-gcuir 3
-leig
-gcuir 3
-leig
-gcuir 3
-leig
-gcuir 3
-leig
-cuir 80
-n-abair
-cuir 10
-n-abair
-chuir 8
-cuir 1.25
-bsuim
-cuir 3.0
-suim
-tog
-chuir 14
-bsuim
-chuir 9
-cuir 1.25
-bsuim
-chuir 2
-chuir 15
-bsuim
-chuir 1
-chuir 19
-bsuim
-chuir 1
-chuir 19
+chuir 3
+cuir 0.479425538604
 bsuim
 shuim
-chuir 2
-chuir 19
-bsuim
-chuir 2
-chuir 21
-bsuim
-suim
 chuir 4
-cuir 0.751806
+cuir 0.479425538604
 bsuim
-chuir 1
-cuir 0.659385
+chuir 4
+cuir 0.87758256189
 bsuim
 suim
-cuir 28.0
-bsuim
-cuir 120.0
-suim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-cuir 120.0
-chuir 2
-cuir 28.0
-bsuim
-shuim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-leig
-leig
-leig
-leig
-leig
-leig
 chuir 6
-cuir 1.25
+cuir 0.87758256189
 bsuim
-cuir 3.0
+chuir 1
+cuir 0.479425538604
+bsuim
 suim
-tog
-chuir 14
-bsuim
-chuir 9
-cuir 1.25
-bsuim
-chuir 2
-chuir 15
-bsuim
 chuir 1
-chuir 19
+cuir 0.87758256189
 bsuim
-chuir 1
-chuir 19
+chuir 8
+cuir 0.479425538604
 bsuim
 shuim
-chuir 2
-chuir 19
+chuir 1
+chuir 22
 bsuim
-chuir 2
-chuir 21
-bsuim
-suim
 chuir 4
-cuir 0.751806
+chuir 22
 bsuim
-chuir 1
-cuir 0.659385
-bsuim
-suim
-cuir 28.0
-bsuim
-cuir 120.0
-suim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
 shuim
 chuir 2
-chuir 1
+chuir 22
 bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
 chuir 5
-dealaich
-chuir 0
-chuir 8
+chuir 24
 bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-cuir 120.0
-chuir 2
-cuir 28.0
-bsuim
-shuim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
 suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-leig
-leig
-leig
-leig
-leig
-leig
 chuir 6
-cuir 1.25
+cuir 0.87758256189
 bsuim
-cuir 3.0
+chuir 16
+cuir 0.479425538604
+bsuim
+shuim
+chuir 7
+cuir 0.479425538604
+bsuim
+chuir 17
+cuir 0.87758256189
+bsuim
 suim
-tog
-chuir 12
-bsuim
 chuir 9
-cuir 1.25
-bsuim
-chuir 2
-chuir 13
+cuir 0.87758256189
 bsuim
 chuir 1
-chuir 19
-bsuim
-chuir 1
-chuir 19
-bsuim
-shuim
-chuir 2
-chuir 19
-bsuim
-chuir 2
-chuir 21
+cuir 0.479425538604
 bsuim
 suim
+chuir 1
+cuir 0.87758256189
+bsuim
+chuir 11
+cuir 0.479425538604
+bsuim
+shuim
+chuir 1
+chuir 28
+bsuim
 chuir 4
-cuir 0.751806
+chuir 28
 bsuim
-chuir 1
-cuir 0.659385
-bsuim
-suim
-cuir 28.0
-bsuim
-cuir 120.0
-suim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
 shuim
 chuir 2
-chuir 1
+chuir 28
 bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
 chuir 5
-dealaich
-chuir 0
+chuir 30
+bsuim
+suim
+chuir 27
 chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-cuir 120.0
-chuir 2
-cuir 28.0
-bsuim
 shuim
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
+chuir 27
+chuir 8
+shuim
+chuir 27
+chuir 11
 shuim
 chuir 2
-chuir 1
+chuir 3
 bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
+chuir 2
+chuir 3
 bsuim
-chuir 0
-cuir 1.0
-dhealaich
+suim
 chuir 1
-chuir 1
-shuim
+chuir 2
+bsuim
+suim
 cuir 0.5
-chuir 2
-coimeas
+ndealaich
+chuir 3
 chuir 1
-suim
-chuir 0
-chuir 5
 dealaich
+chuir 3
+chuir 2
+dealaich
+chuir 3
+chuir 3
+dealaich
+chuir 8
+chuir 3
+bsuim
+chuir 8
+chuir 3
+bsuim
+suim
+chuir 10
+chuir 2
+bsuim
+suim
 chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
+cuir 0.08
+coimeas
+ma
 leig
-leig
-leig
-leig
-leig
-leig
-chuir 8
-cuir 1.25
-bsuim
-cuir 3.0
-suim
-tog
-chuir 12
-bsuim
-chuir 9
-cuir 1.25
-bsuim
-chuir 2
-chuir 13
-bsuim
-chuir 1
-chuir 19
-bsuim
-chuir 1
-chuir 19
-bsuim
-shuim
-chuir 2
-chuir 19
-bsuim
-chuir 2
-chuir 21
-bsuim
-suim
+cuir 0.08
+no
+criòch
 chuir 4
-cuir 0.751806
+cuir 0.04
 bsuim
-chuir 1
-cuir 0.659385
-bsuim
+cuir 1.0
 suim
-cuir 28.0
+chuir 1
+chuir 1
+dealaich
+chuir 18
+cuir 5.0
+suim
+chuir 18
+chuir 1
+dealaich
+cuir 500.0
 bsuim
-cuir 120.0
+cuir 400.0
 suim
 tog
 cuir 0.0
@@ -4208,11 +4523,267 @@ lheig
 lheig
 lheig
 abair
-cuir 120.0
-chuir 2
-cuir 28.0
+chuir 17
+chuir 1
+dealaich
+cuir 500.0
 bsuim
+cuir 300.0
+suim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
 shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+chuir 0
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+chuir 1
 tog
 cuir 0.0
 coimeas
@@ -4345,386 +4916,27 @@ leig
 leig
 leig
 leig
-chuir 2
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
 leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
 leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
 leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
 leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
 leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
 leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
 leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
 leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
 leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
 leig
-cuir 1000000000.0
-no
 leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-chuir 1
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
 leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
 leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
 leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
 leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
 leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
 leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
 leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
 leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
 leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
 leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
-tog
-cuir 0.0
-coimeas
-chuir 0
-cuir 2.0
-bsuim
-cuir 1.0
-malairt
-shuim
-chuir 2
-chuir 1
-bsuim
-chuir 0
-chuir 0
-cuir 100000.0
-choimeas
-ma
-leig
-cuir 1.0
-no
-chuir 0
-cuir 10000.0
-choimeas
-ma
-leig
-cuir 10.0
-no
-chuir 0
-cuir 1000.0
-choimeas
-ma
-leig
-cuir 100.0
-no
-chuir 0
-cuir 100.0
-choimeas
-ma
-leig
-cuir 1000.0
-no
-chuir 0
-cuir 10.0
-choimeas
-ma
-leig
-cuir 10000.0
-no
-chuir 0
-cuir 1.0
-choimeas
-ma
-leig
-cuir 100000.0
-no
-chuir 0
-cuir 0.1
-choimeas
-ma
-leig
-cuir 1000000.0
-no
-chuir 0
-cuir 0.01
-choimeas
-ma
-leig
-cuir 10000000.0
-no
-chuir 0
-cuir 0.001
-choimeas
-ma
-leig
-cuir 100000000.0
-no
-chuir 0
-cuir 0.0001
-choimeas
-ma
-leig
-cuir 1000000000.0
-no
-leig
-cuir 1000000000.0
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-chuir 1
-chuir 1
-bsuim
-chuir 0
-cuir 1.0
-dhealaich
-chuir 1
-chuir 1
-shuim
-cuir 0.5
-chuir 2
-coimeas
-chuir 1
-suim
-chuir 0
-chuir 5
-dealaich
-chuir 0
-chuir 8
-bsuim
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-lheig
-abair
 leig
 leig
 chuir 0
@@ -4746,7 +4958,7 @@ chuir 1
 cuir 0.0
 choimeas
 criòch
-( Fhuaras am frèam air a chrathadh — sgaoil S. )
+( Sgaoil — deireadh an fhrèim. )
 cuir 83
 n-abair
 cuir 10
