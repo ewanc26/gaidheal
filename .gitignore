@@ -9,3 +9,6 @@ session-*.md
 
 # Environment variables
 .env
+
+# Donut host build artifact
+host_bin

@@ -64,6 +64,25 @@ Requires cargo 1.70+. The binary is `target/release/gaidheal`.
 printf '1 2 3 4 5\n' | ./target/release/gaidheal examples/suim.gaidheal
 ```
 
+### Donut engine
+
+`examples/donut_engine.gaidheal` is a generated finite animation (60 frames of a
+spinning shaded torus, 160 quads per frame) that streams quads to the SDL2
+token-protocol host in `host/donut_host.c` — using only `+ − × ÷`, remainder, and
+comparisons: sin/cos come from a 32-sample lookup table with runtime linear
+interpolation, angles are reduced with remainder, and there are no variables or
+strings (state lives in stack slots).
+
+```sh
+cc -std=c99 -O2 $(sdl2-config --cflags --libs) -o host_bin host/donut_host.c
+python3 scripts/gen_donut_engine.py   # regenerate the example
+./target/release/gaidheal examples/donut_engine.gaidheal | ./host_bin
+# headless smoke test:
+./target/release/gaidheal examples/donut_engine.gaidheal \
+  | SDL_VIDEODRIVER=dummy ./host_bin --frames 3
+```
+
+
 Start the interactive REPL (persistent stack, multi-line blocks, `stac(n)` printed after every evaluation):
 
 ```text
