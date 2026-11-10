@@ -64,6 +64,13 @@ enum Flow {
     Continue,
 }
 
+/// The whitespace class `faigh` skips between tokens and that ends them.
+/// Deliberately ASCII-only — space, tab, newline, vertical tab, form
+/// feed, carriage return — so the C backend's `isspace` matches exactly.
+fn is_token_whitespace(c: char) -> bool {
+    matches!(c, ' ' | '\t' | '\n' | '\u{0b}' | '\u{0c}' | '\r')
+}
+
 /// Byte-level reader that can hand out whole UTF-8 code points and
 /// whitespace-delimited number tokens from the same stream.
 struct InputReader<R: Read> {
@@ -103,13 +110,14 @@ impl<R: Read> InputReader<R> {
     }
 
     /// Read the next whitespace-delimited token. Returns `None` when only
-    /// whitespace remains before EOF.
+    /// whitespace remains before EOF. Whitespace is the ASCII class, so
+    /// compiled programs use the identical definition via `isspace`.
     fn read_token(&mut self) -> Result<Option<String>, InterpError> {
         // Skip leading whitespace.
         loop {
             match self.read_code_point()? {
                 None => return Ok(None),
-                Some(c) if c.is_whitespace() => continue,
+                Some(c) if is_token_whitespace(c) => continue,
                 Some(c) => {
                     let mut token = String::new();
                     token.push(c);
@@ -117,7 +125,7 @@ impl<R: Read> InputReader<R> {
                     loop {
                         match self.read_code_point()? {
                             None => return Ok(Some(token)),
-                            Some(c) if c.is_whitespace() => return Ok(Some(token)),
+                            Some(c) if is_token_whitespace(c) => return Ok(Some(token)),
                             Some(c) => token.push(c),
                         }
                     }

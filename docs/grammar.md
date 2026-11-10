@@ -52,6 +52,10 @@ Notes on the table:
   accepts `chùl`. Both must appear inside a loop body.
 - Indices for `chuir`/`gcuir` must be whole and non-negative, and are
   checked against the current stack depth at runtime.
+- `faigh` treats **ASCII whitespace** (space, tab, newline, vertical tab,
+  form feed, carriage return) as the token delimiter — the same class the
+  compiled runtime's `isspace` uses — so interpreted and compiled
+  programs read identical tokens.
 
 ## Control flow
 

@@ -199,6 +199,24 @@
       }
     },
     {
+      "id": "runtime.diagnostics",
+      "description": "Runtime errors carry the same wording in both backends and exit 1: stack underflow (including malformed swap/tuck), stack overflow past the depth limit, out-of-range stack indices, division and remainder by zero, unreadable numbers from input, invalid UTF-8 input (including overlong encodings, surrogates, and truncated sequences), and invalid Unicode code points.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "tests/golden/errors/stack_underflow.gaidheal",
+            "tests/golden/errors/swap_underflow.gaidheal",
+            "tests/golden/errors/invalid_index.gaidheal",
+            "tests/golden/errors/division_by_zero.gaidheal",
+            "tests/golden/errors/number_read.gaidheal",
+            "tests/golden/errors/invalid_utf8.gaidheal",
+            "tests/golden/errors/invalid_code_point.gaidheal"
+          ]
+        }
+      }
+    },
+    {
       "id": "compiler.c-backend",
       "description": "Every program lowers to readable portable C99 against runtime/gaidheal_runtime.h; -o builds a native binary through the system C compiler and --run executes it immediately. Interpreted and compiled programs produce identical stdout, stderr, and exit codes, including runtime error messages.",
       "cells": {

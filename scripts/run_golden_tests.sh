@@ -39,9 +39,15 @@ for src in "$DIR"/tests/golden/errors/*.gaidheal; do
     name="$(basename "$src" .gaidheal)"
     expected="$DIR/tests/golden/errors/$name.expected"
     [ -f "$expected" ] || { echo "SKIP $name (no .expected file)"; continue; }
-
-    if "$BIN" "$src" > "$TMP/$name.actual" 2>&1; then
-        echo "FAIL $name: expected a runtime or parse error but the program succeeded"
+    input="$DIR/tests/golden/errors/$name.input"
+    status=0
+    if [ -f "$input" ]; then
+        "$BIN" "$src" < "$input" > "$TMP/$name.actual" 2>&1 || status=$?
+    else
+        "$BIN" "$src" > "$TMP/$name.actual" 2>&1 || status=$?
+    fi
+    if [ "$status" -eq 0 ]; then
+        echo "FAIL $name: expected a lex, parse, or runtime error but the program succeeded"
         fail=1
         continue
     fi
