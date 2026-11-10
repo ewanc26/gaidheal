@@ -67,11 +67,22 @@ printf '1 2 3 4 5\n' | ./target/release/gaidheal examples/suim.gaidheal
 ### Donut engine
 
 `examples/donut_engine.gaidheal` is a generated finite animation (60 frames of a
-spinning shaded torus, 160 quads per frame) that streams quads to the SDL2
+spinning shaded torus, 656 quads per frame) that streams quads to the SDL2
 token-protocol host in `host/donut_host.c` — using only `+ − × ÷`, remainder, and
-comparisons: sin/cos come from a 32-sample lookup table with runtime linear
-interpolation, angles are reduced with remainder, and there are no variables or
-strings (state lives in stack slots).
+comparisons: there is no trig, no variables and no strings, so the generator
+bakes the exact cos/sin doubles of every angle the loop schedule reaches and the
+program selects them with unrolled bisect ladders over its countdown counters;
+geometry, projection and shading arithmetic all run at program time.  Printed
+values are rounded to six significant digits at program time so `abair` emits
+exactly the `%g`-style token protocol the host expects.
+
+The stream is byte-identical to the canonical sigi engine for overlapped frames
+—the same spin step, loop schedule, tilt, projection and shading order:
+`tests/fixtures/donut_canonical_8f.txt` vendors the canonical first 8 frames and
+`tests/donut_canonical.rs` asserts the match.  (The canonical grid tops out at
+656 quads per frame because its ring and tube loops are float-accumulation
+while-loops: the ring stride 0.392699 runs 41 iterations under `i < 16` and the
+tube stride 0.628319 runs 16 under `j < 10`.)
 
 ```sh
 cc -std=c99 -O2 $(sdl2-config --cflags --libs) -o host_bin host/donut_host.c

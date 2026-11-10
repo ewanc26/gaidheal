@@ -1,37 +1,339 @@
-( Bòrd co-shìnte: 16 sampall de cos eadar 0 agus 2π. )
+( Bòrdan trig: luachan cos agus sin air a bhàthadh a-steach )
+( leis a' ghineadhar, cruinn dha-rìribh — co-ionnan ri sigi. )
+( Taghadh le bàta biseach nach bi acrach air doimhne. )
+cuir 0.9987502603949663
+cuir 0.9950041652780258
+cuir 0.9887710779360422
+cuir 0.9800665778412416
+cuir 0.9689124217106447
+cuir 0.955336489125606
+cuir 0.9393727128473789
+cuir 0.9210609940028851
+cuir 0.900447102352677
+cuir 0.8775825618903728
+cuir 0.8525245220595058
+cuir 0.8253356149096783
+cuir 0.7960837985490559
+cuir 0.7648421872844884
+cuir 0.7316888688738208
+cuir 0.6967067093471653
+cuir 0.6599831458849821
+cuir 0.6216099682706643
+cuir 0.5816830894638833
+cuir 0.5403023058681395
+cuir 0.49757104789172674
+cuir 0.4535961214255771
+cuir 0.408487440884157
+cuir 0.36235775447667323
+cuir 0.31532236239526823
+cuir 0.26749882862458696
+cuir 0.21900668709304105
+cuir 0.16996714290024037
+cuir 0.12050276936736595
+cuir 0.07073720166770224
+cuir 0.02079482780309176
+cuir -0.02919952230128948
+cuir -0.07912088880673475
+cuir -0.12884449429552552
+cuir -0.17824605564949297
+cuir -0.22720209469308797
+cuir -0.2755902468245138
+cuir -0.3232895668635044
+cuir -0.37018083135128793
+cuir -0.4161468365471432
+cuir -0.46107269137671353
+cuir -0.5048461045998579
+cuir -0.5473576654802714
+cuir -0.5885011172553458
+cuir -0.6281736227227391
+cuir -0.6662760212798241
+cuir -0.7027130767735537
+cuir -0.7373937155412452
+cuir -0.7702312540473069
+cuir -0.8011436155469331
+cuir -0.8300535352352216
+cuir -0.8568887533689465
+cuir -0.8815821958782852
+cuir -0.9040721420170604
+cuir -0.9243023786324629
+cuir -0.9422223406686575
+cuir -0.9577872375530897
+cuir -0.97095816514959
+cuir -0.9817022029984536
+cuir -0.9899924966004451
+cuir 0.04997916927067833
+cuir 0.09983341664682815
+cuir 0.14943813247359924
+cuir 0.19866933079506122
+cuir 0.24740395925452294
+cuir 0.29552020666133955
+cuir 0.34289780745545134
+cuir 0.38941834230865047
+cuir 0.4349655341112302
+cuir 0.47942553860420295
+cuir 0.5226872289306591
+cuir 0.5646424733950354
+cuir 0.6051864057360395
+cuir 0.6442176872376911
+cuir 0.6816387600233342
+cuir 0.7173560908995229
+cuir 0.7512804051402928
+cuir 0.7833269096274835
+cuir 0.813415504789374
+cuir 0.8414709848078966
+cuir 0.8674232255940171
+cuir 0.8912073600614355
+cuir 0.9127639402605212
+cuir 0.9320390859672265
+cuir 0.9489846193555863
+cuir 0.9635581854171931
+cuir 0.9757233578266592
+cuir 0.9854497299884603
+cuir 0.9927129910375886
+cuir 0.9974949866040544
+cuir 0.999783764189357
+cuir 0.9995736030415051
+cuir 0.9968650284539188
+cuir 0.9916648104524685
+cuir 0.9839859468739367
+cuir 0.9738476308781949
+cuir 0.9612752029752997
+cuir 0.9463000876874141
+cuir 0.9289597150038689
+cuir 0.9092974268256814
+cuir 0.8873623686333751
+cuir 0.8632093666488735
+cuir 0.8368987907984975
+cuir 0.8084964038195901
+cuir 0.7780731968879212
+cuir 0.7457052121767204
+cuir 0.7114733527908447
+cuir 0.6754631805511513
+cuir 0.6377647021345043
+cuir 0.5984721441039572
+cuir 0.5576837173914178
+cuir 0.5155013718214653
+cuir 0.4720305412898838
+cuir 0.4273798802338314
+cuir 0.38166099205233334
+cuir 0.33498815015590677
+cuir 0.28747801234254655
+cuir 0.23924932921398456
+cuir 0.19042264736102968
+cuir 0.14112000805986985
 cuir 1.0
-cuir 0.980785280403
-cuir 0.923879532511
-cuir 0.831469612303
-cuir 0.707106781187
-cuir 0.55557023302
-cuir 0.382683432365
-cuir 0.195090322016
+cuir 0.9238795637760319
+cuir 0.7071068967259818
+cuir 0.38268365880441535
+cuir 3.2679489653813835e-07
+cuir -0.38268305496616245
+cuir -0.7071064345681314
+cuir -0.9238793136578983
+cuir -0.9999999999997864
+cuir -0.9238798138937707
+cuir -0.7071073588835305
+cuir -0.3826842626425056
+cuir -9.803846900583647e-07
+cuir 0.38268245112774607
+cuir 0.7071059724099793
+cuir 0.9238790635393707
+cuir 0.9999999999991457
+cuir 0.9238800640111141
+cuir 0.7071078210407751
+cuir 0.3826848664804291
+cuir 1.6339744804695477e-06
+cuir -0.3826818472891678
+cuir -0.707105510251526
+cuir -0.9238788134204486
+cuir -0.9999999999980776
+cuir -0.9238803141280628
+cuir -0.707108283197718
+cuir -0.38268547031818995
+cuir -2.2875642717682115e-06
+cuir 0.382681243450427
+cuir 0.7071050480927714
+cuir 0.9238785633011323
+cuir 0.9999999999965825
+cuir 0.9238805642446165
+cuir 0.7071087453543582
+cuir 0.38268607415578654
+cuir 2.9411540621777193e-06
+cuir -0.3826806396115226
+cuir -0.7071045859337148
+cuir -0.9238783131814213
+cuir -0.9999999999946603
 cuir 0.0
-cuir -0.195090322016
-cuir -0.382683432365
-cuir -0.55557023302
-cuir -0.707106781187
-cuir -0.831469612303
-cuir -0.923879532511
-cuir -0.980785280403
-cuir -1.0
-cuir -0.980785280403
-cuir -0.923879532511
-cuir -0.831469612303
-cuir -0.707106781187
-cuir -0.55557023302
-cuir -0.382683432365
-cuir -0.195090322016
-cuir -0.0
-cuir 0.195090322016
-cuir 0.382683432365
-cuir 0.55557023302
-cuir 0.707106781187
-cuir 0.831469612303
-cuir 0.923879532511
-cuir 0.980785280403
-( Seadaichean-obrach: trighirimhean, ceumannan, agus cunntadairean. )
+cuir 0.3826833568853094
+cuir 0.7071066656470943
+cuir 0.9238794387170145
+cuir 0.9999999999999466
+cuir 0.9238796888349505
+cuir 0.7071071278047938
+cuir 0.38268396072348093
+cuir 6.535897935203311e-07
+cuir -0.38268275304697424
+cuir -0.7071062034890926
+cuir -0.9238791885986835
+cuir -0.9999999999995194
+cuir -0.923879938952492
+cuir -0.7071075899621907
+cuir -0.3826845645614878
+cuir -1.307179585264026e-06
+cuir 0.38268214920847776
+cuir 0.7071057413307907
+cuir 0.9238789384799592
+cuir 0.9999999999986651
+cuir 0.923880189069638
+cuir 0.7071080521192846
+cuir 0.38268516839933037
+cuir 1.9607693765630734e-06
+cuir -0.3826815453698178
+cuir -0.7071052791721866
+cuir -0.9238786883608398
+cuir -0.9999999999973835
+cuir -0.9238804391863891
+cuir -0.7071085142760758
+cuir -0.38268577223700867
+cuir -2.6143591669731047e-06
+cuir 0.3826809415309952
+cuir 0.7071048170132809
+cuir 0.9238784382413261
+cuir 0.9999999999956748
+cuir 0.9238806893027454
+cuir 0.707108976432565
+cuir 0.3826863760745235
+cuir 3.2679489573820196e-06
+cuir 0.9238795637760319
+cuir 0.7071068967259818
+cuir 0.38268365880441535
+cuir 3.2679489653813835e-07
+cuir -0.38268305496616245
+cuir -0.7071064345681314
+cuir -0.9238793136578983
+cuir -0.9999999999997864
+cuir -0.9238798138937707
+cuir -0.7071073588835305
+cuir -0.3826842626425056
+cuir -9.803846900583647e-07
+cuir 0.38268245112774607
+cuir 0.7071059724099793
+cuir 0.9238790635393707
+cuir 0.9999999999991457
+cuir 0.9238800640111141
+cuir 0.7071078210407751
+cuir 0.3826848664804291
+cuir 1.6339744804695477e-06
+cuir -0.3826818472891678
+cuir -0.707105510251526
+cuir -0.9238788134204486
+cuir -0.9999999999980776
+cuir -0.9238803141280628
+cuir -0.707108283197718
+cuir -0.38268547031818995
+cuir -2.2875642717682115e-06
+cuir 0.382681243450427
+cuir 0.7071050480927714
+cuir 0.9238785633011323
+cuir 0.9999999999965825
+cuir 0.9238805642446165
+cuir 0.7071087453543582
+cuir 0.38268607415578654
+cuir 2.9411540621777193e-06
+cuir -0.3826806396115226
+cuir -0.7071045859337148
+cuir -0.9238783131814213
+cuir -0.9999999999946603
+cuir -0.9238808143607763
+cuir 0.3826833568853094
+cuir 0.7071066656470943
+cuir 0.9238794387170145
+cuir 0.9999999999999466
+cuir 0.9238796888349505
+cuir 0.7071071278047938
+cuir 0.38268396072348093
+cuir 6.535897935203311e-07
+cuir -0.38268275304697424
+cuir -0.7071062034890926
+cuir -0.9238791885986835
+cuir -0.9999999999995194
+cuir -0.923879938952492
+cuir -0.7071075899621907
+cuir -0.3826845645614878
+cuir -1.307179585264026e-06
+cuir 0.38268214920847776
+cuir 0.7071057413307907
+cuir 0.9238789384799592
+cuir 0.9999999999986651
+cuir 0.923880189069638
+cuir 0.7071080521192846
+cuir 0.38268516839933037
+cuir 1.9607693765630734e-06
+cuir -0.3826815453698178
+cuir -0.7071052791721866
+cuir -0.9238786883608398
+cuir -0.9999999999973835
+cuir -0.9238804391863891
+cuir -0.7071085142760758
+cuir -0.38268577223700867
+cuir -2.6143591669731047e-06
+cuir 0.3826809415309952
+cuir 0.7071048170132809
+cuir 0.9238784382413261
+cuir 0.9999999999956748
+cuir 0.9238806893027454
+cuir 0.707108976432565
+cuir 0.3826863760745235
+cuir 3.2679489573820196e-06
+cuir -0.3826803376920075
+cuir 1.0
+cuir 0.8090167185377953
+cuir 0.3090161017473246
+cuir -0.3090183333158714
+cuir -0.8090180977217742
+cuir -0.9999999999972472
+cuir -0.8090153393493622
+cuir -0.3090138701770768
+cuir 0.3090205648827167
+cuir 0.8090194769012993
+cuir 0.9999999999889887
+cuir 0.8090139601564743
+cuir 0.30901163860512587
+cuir -0.3090227964478623
+cuir -0.8090208560763704
+cuir -0.9999999999752246
+cuir 0.0
+cuir 0.587785631949555
+cuir 0.9510568063269865
+cuir 0.9510560812458333
+cuir 0.5877837336628513
+cuir -2.346410206452714e-06
+cuir -0.5877875302330224
+cuir -0.9510575314029035
+cuir -0.9510553561594439
+cuir -0.5877818353729112
+cuir 4.692820413780688e-06
+cuir 0.5877894285132548
+cuir 0.9510582564735849
+cuir 0.9510546310678178
+cuir 0.5877799370797345
+cuir -7.0392306201946465e-06
+cuir 0.8090167185377953
+cuir 0.3090161017473246
+cuir -0.3090183333158714
+cuir -0.8090180977217742
+cuir -0.9999999999972472
+cuir -0.8090153393493622
+cuir -0.3090138701770768
+cuir 0.3090205648827167
+cuir 0.8090194769012993
+cuir 0.9999999999889887
+cuir 0.8090139601564743
+cuir 0.30901163860512587
+cuir -0.3090227964478623
+cuir -0.8090208560763704
+cuir -0.9999999999752246
+cuir -0.8090125809591334
+( Seadaichean-obrach: trig a chaidh a thaghadh, agus cunntadairean. )
 cuir 0.0
 cuir 0.0
 cuir 0.0
@@ -41,4454 +343,1323 @@ cuir 0.0
 cuir 0.0
 cuir 0.0
 cuir 0.0
-cuir 0.0
-cuir 0.0
-cuir 0.0
-cuir 16.0
-cuir 10.0
 cuir 60.0
-cuir 0.0
-( An t-einnsean donut: toirgeoill bheò do dhonut_host SDL2 )
-( le cos/sin à bòrd co-shìnte — gun trig, le + − × ÷ a-mhàin. )
-( Air a ghintinn le scripts/gen_donut_engine.py — FRAMES 60. )
-chuir 1
-cuir 0.0
-choimeas
-cuairt
-( Fhràmadh: A += SPIN_STEP; ca/sa à A; sgaoil F. )
-chuir 0
-cuir 0.05
-suim
-gcuir 1
-leig
-chuir 0
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 16
-leig
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-gcuir 15
-chuir 0
-cuir 4.712388980385
-suim
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 15
-leig
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-gcuir 14
-cuir 70
-n-abair
-cuir 10
-n-abair
-( Ath-shuidhic ni airson gach fràma. )
+cuir 41.0
 cuir 16.0
-gcuir 4
-leig
-gcuir 3
-gcuir 3
-gcuir 3
-( Ceallaichean a' chrò: )
-( teta = TH_STEP air i; tha ni ag dol sios. )
-chuir 3
-cuir 0.0
-choimeas
-cuairt
-cuir 16
-chuir 4
-shuim
-cuir 0.392699081699
-bsuim
-gcuir 6
-leig
-gcuir 5
-gcuir 5
-gcuir 5
-gcuir 5
-gcuir 5
-chuir 5
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 14
-leig
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-gcuir 13
-chuir 5
-cuir 4.712388980385
-suim
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 13
-leig
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-gcuir 12
-chuir 5
-cuir 0.392699081699
-suim
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 12
-leig
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-gcuir 11
-chuir 5
-cuir 0.392699081699
-suim
-cuir 4.712388980385
-suim
-cuir 6.28318530718
-dhealaich
-tog
-cuir 0.0
-coimeas
-ma
-cuir 6.28318530718
-suim
-criòch
-tog
-cuir 0.196349540849
-coimeas
-ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
-coimeas
-ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
-coimeas
-ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
-coimeas
-ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
-coimeas
-ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
-coimeas
-ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
-coimeas
-ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
-coimeas
-ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
-coimeas
-ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
-coimeas
-ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
-coimeas
-ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
-coimeas
-ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
-coimeas
-ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
-coimeas
-ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
-coimeas
-ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-gcuir 11
-leig
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-gcuir 10
-( Ath-shuidhic nj airson gach cealla den chrò. )
-cuir 10.0
-gcuir 3
-leig
-gcuir 2
-gcuir 2
-( Ceallaichean a' phiob: )
-( fi = PH_STEP air j; tha nj ag dol sios. )
+( An t-einnsean donut: sruth ceala-deug co-ionnan ri sigi. )
+( Cunnt cunntadan sìos le cuairt; tagh trig à bhòrdan. )
+( Air a ghineadh le scripts/gen_donut_engine.py — FRAMES 60. )
+( Frèam. )
 chuir 2
 cuir 0.0
 choimeas
 cuairt
-cuir 10
-chuir 3
-shuim
-cuir 0.628318530718
-bsuim
-gcuir 5
-leig
-gcuir 4
-gcuir 4
-gcuir 4
-gcuir 4
+cuir 0.0
+cuir 30.5
 chuir 4
-cuir 6.28318530718
-dhealaich
-tog
+coimeas
+ma
+cuir 45.5
+chuir 4
+coimeas
+ma
+cuir 52.5
+chuir 4
+coimeas
+ma
+cuir 56.5
+chuir 4
+coimeas
+ma
+cuir 58.5
+chuir 4
+coimeas
+ma
+cuir 59.5
+chuir 4
+coimeas
+ma
+leig
+chuir 343
+no
+leig
+chuir 342
+criòch
+no
+cuir 57.5
+chuir 4
+coimeas
+ma
+leig
+chuir 341
+no
+leig
+chuir 340
+criòch
+criòch
+no
+cuir 54.5
+chuir 4
+coimeas
+ma
+cuir 55.5
+chuir 4
+coimeas
+ma
+leig
+chuir 339
+no
+leig
+chuir 338
+criòch
+no
+cuir 53.5
+chuir 4
+coimeas
+ma
+leig
+chuir 337
+no
+leig
+chuir 336
+criòch
+criòch
+criòch
+no
+cuir 48.5
+chuir 4
+coimeas
+ma
+cuir 50.5
+chuir 4
+coimeas
+ma
+cuir 51.5
+chuir 4
+coimeas
+ma
+leig
+chuir 335
+no
+leig
+chuir 334
+criòch
+no
+cuir 49.5
+chuir 4
+coimeas
+ma
+leig
+chuir 333
+no
+leig
+chuir 332
+criòch
+criòch
+no
+cuir 46.5
+chuir 4
+coimeas
+ma
+cuir 47.5
+chuir 4
+coimeas
+ma
+leig
+chuir 331
+no
+leig
+chuir 330
+criòch
+no
+leig
+chuir 329
+criòch
+criòch
+criòch
+no
+cuir 37.5
+chuir 4
+coimeas
+ma
+cuir 41.5
+chuir 4
+coimeas
+ma
+cuir 43.5
+chuir 4
+coimeas
+ma
+cuir 44.5
+chuir 4
+coimeas
+ma
+leig
+chuir 328
+no
+leig
+chuir 327
+criòch
+no
+cuir 42.5
+chuir 4
+coimeas
+ma
+leig
+chuir 326
+no
+leig
+chuir 325
+criòch
+criòch
+no
+cuir 39.5
+chuir 4
+coimeas
+ma
+cuir 40.5
+chuir 4
+coimeas
+ma
+leig
+chuir 324
+no
+leig
+chuir 323
+criòch
+no
+cuir 38.5
+chuir 4
+coimeas
+ma
+leig
+chuir 322
+no
+leig
+chuir 321
+criòch
+criòch
+criòch
+no
+cuir 33.5
+chuir 4
+coimeas
+ma
+cuir 35.5
+chuir 4
+coimeas
+ma
+cuir 36.5
+chuir 4
+coimeas
+ma
+leig
+chuir 320
+no
+leig
+chuir 319
+criòch
+no
+cuir 34.5
+chuir 4
+coimeas
+ma
+leig
+chuir 318
+no
+leig
+chuir 317
+criòch
+criòch
+no
+cuir 31.5
+chuir 4
+coimeas
+ma
+cuir 32.5
+chuir 4
+coimeas
+ma
+leig
+chuir 316
+no
+leig
+chuir 315
+criòch
+no
+leig
+chuir 314
+criòch
+criòch
+criòch
+criòch
+no
+cuir 15.5
+chuir 4
+coimeas
+ma
+cuir 22.5
+chuir 4
+coimeas
+ma
+cuir 26.5
+chuir 4
+coimeas
+ma
+cuir 28.5
+chuir 4
+coimeas
+ma
+cuir 29.5
+chuir 4
+coimeas
+ma
+leig
+chuir 313
+no
+leig
+chuir 312
+criòch
+no
+cuir 27.5
+chuir 4
+coimeas
+ma
+leig
+chuir 311
+no
+leig
+chuir 310
+criòch
+criòch
+no
+cuir 24.5
+chuir 4
+coimeas
+ma
+cuir 25.5
+chuir 4
+coimeas
+ma
+leig
+chuir 309
+no
+leig
+chuir 308
+criòch
+no
+cuir 23.5
+chuir 4
+coimeas
+ma
+leig
+chuir 307
+no
+leig
+chuir 306
+criòch
+criòch
+criòch
+no
+cuir 18.5
+chuir 4
+coimeas
+ma
+cuir 20.5
+chuir 4
+coimeas
+ma
+cuir 21.5
+chuir 4
+coimeas
+ma
+leig
+chuir 305
+no
+leig
+chuir 304
+criòch
+no
+cuir 19.5
+chuir 4
+coimeas
+ma
+leig
+chuir 303
+no
+leig
+chuir 302
+criòch
+criòch
+no
+cuir 16.5
+chuir 4
+coimeas
+ma
+cuir 17.5
+chuir 4
+coimeas
+ma
+leig
+chuir 301
+no
+leig
+chuir 300
+criòch
+no
+leig
+chuir 299
+criòch
+criòch
+criòch
+no
+cuir 7.5
+chuir 4
+coimeas
+ma
+cuir 11.5
+chuir 4
+coimeas
+ma
+cuir 13.5
+chuir 4
+coimeas
+ma
+cuir 14.5
+chuir 4
+coimeas
+ma
+leig
+chuir 298
+no
+leig
+chuir 297
+criòch
+no
+cuir 12.5
+chuir 4
+coimeas
+ma
+leig
+chuir 296
+no
+leig
+chuir 295
+criòch
+criòch
+no
+cuir 9.5
+chuir 4
+coimeas
+ma
+cuir 10.5
+chuir 4
+coimeas
+ma
+leig
+chuir 294
+no
+leig
+chuir 293
+criòch
+no
+cuir 8.5
+chuir 4
+coimeas
+ma
+leig
+chuir 292
+no
+leig
+chuir 291
+criòch
+criòch
+criòch
+no
+cuir 3.5
+chuir 4
+coimeas
+ma
+cuir 5.5
+chuir 4
+coimeas
+ma
+cuir 6.5
+chuir 4
+coimeas
+ma
+leig
+chuir 290
+no
+leig
+chuir 289
+criòch
+no
+cuir 4.5
+chuir 4
+coimeas
+ma
+leig
+chuir 288
+no
+leig
+chuir 287
+criòch
+criòch
+no
+cuir 1.5
+chuir 4
+coimeas
+ma
+cuir 2.5
+chuir 4
+coimeas
+ma
+leig
+chuir 286
+no
+leig
+chuir 285
+criòch
+no
+leig
+chuir 284
+criòch
+criòch
+criòch
+criòch
+criòch
+gcuir 12
+leig
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
+gcuir 11
 cuir 0.0
+cuir 30.5
+chuir 4
 coimeas
 ma
-cuir 6.28318530718
-suim
+cuir 45.5
+chuir 4
+coimeas
+ma
+cuir 52.5
+chuir 4
+coimeas
+ma
+cuir 56.5
+chuir 4
+coimeas
+ma
+cuir 58.5
+chuir 4
+coimeas
+ma
+cuir 59.5
+chuir 4
+coimeas
+ma
+leig
+chuir 283
+no
+leig
+chuir 282
 criòch
-tog
-cuir 0.196349540849
+no
+cuir 57.5
+chuir 4
 coimeas
 ma
-tog
+leig
+chuir 281
+no
+leig
+chuir 280
+criòch
+criòch
+no
+cuir 54.5
+chuir 4
+coimeas
+ma
+cuir 55.5
+chuir 4
+coimeas
+ma
+leig
+chuir 279
+no
+leig
+chuir 278
+criòch
+no
+cuir 53.5
+chuir 4
+coimeas
+ma
+leig
+chuir 277
+no
+leig
+chuir 276
+criòch
+criòch
+criòch
+no
+cuir 48.5
+chuir 4
+coimeas
+ma
+cuir 50.5
+chuir 4
+coimeas
+ma
+cuir 51.5
+chuir 4
+coimeas
+ma
+leig
+chuir 275
+no
+leig
+chuir 274
+criòch
+no
+cuir 49.5
+chuir 4
+coimeas
+ma
+leig
+chuir 273
+no
+leig
+chuir 272
+criòch
+criòch
+no
+cuir 46.5
+chuir 4
+coimeas
+ma
+cuir 47.5
+chuir 4
+coimeas
+ma
+leig
+chuir 271
+no
+leig
+chuir 270
+criòch
+no
+leig
+chuir 269
+criòch
+criòch
+criòch
+no
+cuir 37.5
+chuir 4
+coimeas
+ma
+cuir 41.5
+chuir 4
+coimeas
+ma
+cuir 43.5
+chuir 4
+coimeas
+ma
+cuir 44.5
+chuir 4
+coimeas
+ma
+leig
+chuir 268
+no
+leig
+chuir 267
+criòch
+no
+cuir 42.5
+chuir 4
+coimeas
+ma
+leig
+chuir 266
+no
+leig
+chuir 265
+criòch
+criòch
+no
+cuir 39.5
+chuir 4
+coimeas
+ma
+cuir 40.5
+chuir 4
+coimeas
+ma
+leig
+chuir 264
+no
+leig
+chuir 263
+criòch
+no
+cuir 38.5
+chuir 4
+coimeas
+ma
+leig
+chuir 262
+no
+leig
+chuir 261
+criòch
+criòch
+criòch
+no
+cuir 33.5
+chuir 4
+coimeas
+ma
+cuir 35.5
+chuir 4
+coimeas
+ma
+cuir 36.5
+chuir 4
+coimeas
+ma
+leig
+chuir 260
+no
+leig
+chuir 259
+criòch
+no
+cuir 34.5
+chuir 4
+coimeas
+ma
+leig
+chuir 258
+no
+leig
+chuir 257
+criòch
+criòch
+no
+cuir 31.5
+chuir 4
+coimeas
+ma
+cuir 32.5
+chuir 4
+coimeas
+ma
+leig
+chuir 256
+no
+leig
+chuir 255
+criòch
+no
+leig
+chuir 254
+criòch
+criòch
+criòch
+criòch
+no
+cuir 15.5
+chuir 4
+coimeas
+ma
+cuir 22.5
+chuir 4
+coimeas
+ma
+cuir 26.5
+chuir 4
+coimeas
+ma
+cuir 28.5
+chuir 4
+coimeas
+ma
+cuir 29.5
+chuir 4
+coimeas
+ma
+leig
+chuir 253
+no
+leig
+chuir 252
+criòch
+no
+cuir 27.5
+chuir 4
+coimeas
+ma
+leig
+chuir 251
+no
+leig
+chuir 250
+criòch
+criòch
+no
+cuir 24.5
+chuir 4
+coimeas
+ma
+cuir 25.5
+chuir 4
+coimeas
+ma
+leig
+chuir 249
+no
+leig
+chuir 248
+criòch
+no
+cuir 23.5
+chuir 4
+coimeas
+ma
+leig
+chuir 247
+no
+leig
+chuir 246
+criòch
+criòch
+criòch
+no
+cuir 18.5
+chuir 4
+coimeas
+ma
+cuir 20.5
+chuir 4
+coimeas
+ma
+cuir 21.5
+chuir 4
+coimeas
+ma
+leig
+chuir 245
+no
+leig
+chuir 244
+criòch
+no
+cuir 19.5
+chuir 4
+coimeas
+ma
+leig
+chuir 243
+no
+leig
+chuir 242
+criòch
+criòch
+no
+cuir 16.5
+chuir 4
+coimeas
+ma
+cuir 17.5
+chuir 4
+coimeas
+ma
+leig
+chuir 241
+no
+leig
+chuir 240
+criòch
+no
+leig
+chuir 239
+criòch
+criòch
+criòch
+no
+cuir 7.5
+chuir 4
+coimeas
+ma
+cuir 11.5
+chuir 4
+coimeas
+ma
+cuir 13.5
+chuir 4
+coimeas
+ma
+cuir 14.5
+chuir 4
+coimeas
+ma
+leig
+chuir 238
+no
+leig
+chuir 237
+criòch
+no
+cuir 12.5
+chuir 4
+coimeas
+ma
+leig
+chuir 236
+no
+leig
+chuir 235
+criòch
+criòch
+no
+cuir 9.5
+chuir 4
+coimeas
+ma
+cuir 10.5
+chuir 4
+coimeas
+ma
+leig
+chuir 234
+no
+leig
+chuir 233
+criòch
+no
+cuir 8.5
+chuir 4
+coimeas
+ma
+leig
+chuir 232
+no
+leig
+chuir 231
+criòch
+criòch
+criòch
+no
+cuir 3.5
+chuir 4
+coimeas
+ma
+cuir 5.5
+chuir 4
+coimeas
+ma
+cuir 6.5
+chuir 4
+coimeas
+ma
+leig
+chuir 230
+no
+leig
+chuir 229
+criòch
+no
+cuir 4.5
+chuir 4
+coimeas
+ma
+leig
+chuir 228
+no
+leig
+chuir 227
+criòch
+criòch
+no
+cuir 1.5
+chuir 4
+coimeas
+ma
+cuir 2.5
+chuir 4
+coimeas
+ma
+leig
+chuir 226
+no
+leig
+chuir 225
+criòch
+no
+leig
+chuir 224
+criòch
+criòch
+criòch
+criòch
+criòch
+gcuir 11
+leig
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+gcuir 10
+cuir 70
+n-abair
+cuir 10
+n-abair
+( Cealla a' chrò — RIT tiotail. )
+cuir 41.0
+gcuir 2
+leig
+gcuir 1
+chuir 1
 cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
+choimeas
+cuairt
+cuir 0.0
+cuir 20.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
-no
-tog
-cuir 0.589048622548
+cuir 30.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
+cuir 35.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
+cuir 38.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
-no
-tog
-cuir 1.178097245096
+cuir 39.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
-no
-tog
-cuir 1.374446785946
+cuir 40.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
+leig
+chuir 223
 no
-tog
-cuir 1.570796326795
+leig
+chuir 222
+criòch
+no
+leig
+chuir 221
+criòch
+no
+cuir 36.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
+cuir 37.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
+leig
+chuir 220
 no
-tog
-cuir 1.963495408494
+leig
+chuir 219
+criòch
+no
+leig
+chuir 218
+criòch
+criòch
+no
+cuir 32.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
-no
-tog
-cuir 2.159844949343
+cuir 33.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
-no
-tog
-cuir 2.356194490192
+cuir 34.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
+leig
+chuir 217
 no
-tog
-cuir 2.552544031042
+leig
+chuir 216
+criòch
+no
+leig
+chuir 215
+criòch
+no
+cuir 31.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
+leig
+chuir 214
 no
-tog
-cuir 2.748893571891
+leig
+chuir 213
+criòch
+criòch
+criòch
+no
+cuir 25.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
-no
-tog
-cuir 2.94524311274
+cuir 27.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
-no
-tog
-cuir 3.14159265359
+cuir 28.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
+cuir 29.5
+chuir 3
 coimeas
 ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
+leig
+chuir 212
 no
-tog
-cuir 3.534291735289
+leig
+chuir 211
+criòch
+no
+leig
+chuir 210
+criòch
+no
+cuir 26.5
+chuir 3
 coimeas
 ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
+leig
+chuir 209
 no
-tog
-cuir 3.730641276138
+leig
+chuir 208
+criòch
+criòch
+no
+cuir 22.5
+chuir 3
 coimeas
 ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
+cuir 23.5
+chuir 3
 coimeas
 ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
+cuir 24.5
+chuir 3
 coimeas
 ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
+leig
+chuir 207
 no
-tog
-cuir 4.319689898686
+leig
+chuir 206
+criòch
+no
+leig
+chuir 205
+criòch
+no
+cuir 21.5
+chuir 3
 coimeas
 ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
+leig
+chuir 204
 no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
+leig
+chuir 203
 criòch
 criòch
 criòch
 criòch
+no
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 15.5
+chuir 3
+coimeas
+ma
+cuir 17.5
+chuir 3
+coimeas
+ma
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 19.5
+chuir 3
+coimeas
+ma
+leig
+chuir 202
+no
+leig
+chuir 201
+criòch
+no
+leig
+chuir 200
+criòch
+no
+cuir 16.5
+chuir 3
+coimeas
+ma
+leig
+chuir 199
+no
+leig
+chuir 198
+criòch
+criòch
+no
+cuir 12.5
+chuir 3
+coimeas
+ma
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
+chuir 3
+coimeas
+ma
+leig
+chuir 197
+no
+leig
+chuir 196
+criòch
+no
+leig
+chuir 195
+criòch
+no
+cuir 11.5
+chuir 3
+coimeas
+ma
+leig
+chuir 194
+no
+leig
+chuir 193
 criòch
 criòch
 criòch
+no
+cuir 5.5
+chuir 3
+coimeas
+ma
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+leig
+chuir 192
+no
+leig
+chuir 191
+criòch
+no
+leig
+chuir 190
+criòch
+no
+cuir 6.5
+chuir 3
+coimeas
+ma
+leig
+chuir 189
+no
+leig
+chuir 188
 criòch
 criòch
+no
+cuir 2.5
+chuir 3
+coimeas
+ma
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+leig
+chuir 187
+no
+leig
+chuir 186
 criòch
+no
+leig
+chuir 185
 criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
+no
+cuir 1.5
+chuir 3
+coimeas
+ma
+leig
+chuir 184
+no
+leig
+chuir 183
 criòch
 criòch
 criòch
@@ -4505,615 +1676,324 @@ gcuir 9
 gcuir 9
 gcuir 9
 gcuir 9
-chuir 4
-cuir 4.712388980385
-suim
-cuir 6.28318530718
-dhealaich
-tog
 cuir 0.0
+cuir 20.5
+chuir 3
 coimeas
 ma
-cuir 6.28318530718
-suim
+cuir 30.5
+chuir 3
+coimeas
+ma
+cuir 35.5
+chuir 3
+coimeas
+ma
+cuir 38.5
+chuir 3
+coimeas
+ma
+cuir 39.5
+chuir 3
+coimeas
+ma
+cuir 40.5
+chuir 3
+coimeas
+ma
+leig
+chuir 182
+no
+leig
+chuir 181
 criòch
-tog
-cuir 0.196349540849
+no
+leig
+chuir 180
+criòch
+no
+cuir 36.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
+cuir 37.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
+leig
+chuir 179
 no
-tog
-cuir 0.589048622548
+leig
+chuir 178
+criòch
+no
+leig
+chuir 177
+criòch
+criòch
+no
+cuir 32.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
+cuir 33.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
+cuir 34.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
+leig
+chuir 176
 no
-tog
-cuir 1.178097245096
+leig
+chuir 175
+criòch
+no
+leig
+chuir 174
+criòch
+no
+cuir 31.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
+leig
+chuir 173
 no
-tog
-cuir 1.374446785946
+leig
+chuir 172
+criòch
+criòch
+criòch
+no
+cuir 25.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
+cuir 27.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
+cuir 28.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
+cuir 29.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
+leig
+chuir 171
 no
-tog
-cuir 2.159844949343
+leig
+chuir 170
+criòch
+no
+leig
+chuir 169
+criòch
+no
+cuir 26.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
+leig
+chuir 168
 no
-tog
-cuir 2.356194490192
+leig
+chuir 167
+criòch
+criòch
+no
+cuir 22.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
+cuir 23.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
+cuir 24.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
+leig
+chuir 166
 no
-tog
-cuir 2.94524311274
+leig
+chuir 165
+criòch
+no
+leig
+chuir 164
+criòch
+no
+cuir 21.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
+leig
+chuir 163
 no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
+leig
+chuir 162
 criòch
 criòch
 criòch
 criòch
+no
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 15.5
+chuir 3
+coimeas
+ma
+cuir 17.5
+chuir 3
+coimeas
+ma
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 19.5
+chuir 3
+coimeas
+ma
+leig
+chuir 161
+no
+leig
+chuir 160
+criòch
+no
+leig
+chuir 159
+criòch
+no
+cuir 16.5
+chuir 3
+coimeas
+ma
+leig
+chuir 158
+no
+leig
+chuir 157
+criòch
+criòch
+no
+cuir 12.5
+chuir 3
+coimeas
+ma
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
+chuir 3
+coimeas
+ma
+leig
+chuir 156
+no
+leig
+chuir 155
+criòch
+no
+leig
+chuir 154
+criòch
+no
+cuir 11.5
+chuir 3
+coimeas
+ma
+leig
+chuir 153
+no
+leig
+chuir 152
 criòch
 criòch
 criòch
+no
+cuir 5.5
+chuir 3
+coimeas
+ma
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+leig
+chuir 151
+no
+leig
+chuir 150
+criòch
+no
+leig
+chuir 149
+criòch
+no
+cuir 6.5
+chuir 3
+coimeas
+ma
+leig
+chuir 148
+no
+leig
+chuir 147
 criòch
 criòch
+no
+cuir 2.5
+chuir 3
+coimeas
+ma
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+leig
+chuir 146
+no
+leig
+chuir 145
 criòch
+no
+leig
+chuir 144
 criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
+no
+cuir 1.5
+chuir 3
+coimeas
+ma
+leig
+chuir 143
+no
+leig
+chuir 142
 criòch
 criòch
 criòch
@@ -5129,615 +2009,324 @@ gcuir 8
 gcuir 8
 gcuir 8
 gcuir 8
-chuir 4
-cuir 0.628318530718
-suim
-cuir 6.28318530718
-dhealaich
-tog
 cuir 0.0
+cuir 20.5
+chuir 3
 coimeas
 ma
-cuir 6.28318530718
-suim
+cuir 30.5
+chuir 3
+coimeas
+ma
+cuir 35.5
+chuir 3
+coimeas
+ma
+cuir 38.5
+chuir 3
+coimeas
+ma
+cuir 39.5
+chuir 3
+coimeas
+ma
+cuir 40.5
+chuir 3
+coimeas
+ma
+leig
+chuir 141
+no
+leig
+chuir 140
 criòch
-tog
-cuir 0.196349540849
+no
+leig
+chuir 139
+criòch
+no
+cuir 36.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
+cuir 37.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
+leig
+chuir 138
 no
-tog
-cuir 0.589048622548
+leig
+chuir 137
+criòch
+no
+leig
+chuir 136
+criòch
+criòch
+no
+cuir 32.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
+cuir 33.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
+cuir 34.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
+leig
+chuir 135
 no
-tog
-cuir 1.178097245096
+leig
+chuir 134
+criòch
+no
+leig
+chuir 133
+criòch
+no
+cuir 31.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
+leig
+chuir 132
 no
-tog
-cuir 1.374446785946
+leig
+chuir 131
+criòch
+criòch
+criòch
+no
+cuir 25.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
+cuir 27.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
+cuir 28.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
+cuir 29.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
+leig
+chuir 130
 no
-tog
-cuir 2.159844949343
+leig
+chuir 129
+criòch
+no
+leig
+chuir 128
+criòch
+no
+cuir 26.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
+leig
+chuir 127
 no
-tog
-cuir 2.356194490192
+leig
+chuir 126
+criòch
+criòch
+no
+cuir 22.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
+cuir 23.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
+cuir 24.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
+leig
+chuir 125
 no
-tog
-cuir 2.94524311274
+leig
+chuir 124
+criòch
+no
+leig
+chuir 123
+criòch
+no
+cuir 21.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
+leig
+chuir 122
 no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
+leig
+chuir 121
 criòch
 criòch
 criòch
 criòch
+no
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 15.5
+chuir 3
+coimeas
+ma
+cuir 17.5
+chuir 3
+coimeas
+ma
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 19.5
+chuir 3
+coimeas
+ma
+leig
+chuir 120
+no
+leig
+chuir 119
+criòch
+no
+leig
+chuir 118
+criòch
+no
+cuir 16.5
+chuir 3
+coimeas
+ma
+leig
+chuir 117
+no
+leig
+chuir 116
+criòch
+criòch
+no
+cuir 12.5
+chuir 3
+coimeas
+ma
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
+chuir 3
+coimeas
+ma
+leig
+chuir 115
+no
+leig
+chuir 114
+criòch
+no
+leig
+chuir 113
+criòch
+no
+cuir 11.5
+chuir 3
+coimeas
+ma
+leig
+chuir 112
+no
+leig
+chuir 111
 criòch
 criòch
 criòch
+no
+cuir 5.5
+chuir 3
+coimeas
+ma
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+leig
+chuir 110
+no
+leig
+chuir 109
+criòch
+no
+leig
+chuir 108
+criòch
+no
+cuir 6.5
+chuir 3
+coimeas
+ma
+leig
+chuir 107
+no
+leig
+chuir 106
 criòch
 criòch
+no
+cuir 2.5
+chuir 3
+coimeas
+ma
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+leig
+chuir 105
+no
+leig
+chuir 104
 criòch
+no
+leig
+chuir 103
 criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
+no
+cuir 1.5
+chuir 3
+coimeas
+ma
+leig
+chuir 102
+no
+leig
+chuir 101
 criòch
 criòch
 criòch
@@ -5752,617 +2341,324 @@ gcuir 7
 gcuir 7
 gcuir 7
 gcuir 7
-chuir 4
-cuir 0.628318530718
-suim
-cuir 4.712388980385
-suim
-cuir 6.28318530718
-dhealaich
-tog
 cuir 0.0
+cuir 20.5
+chuir 3
 coimeas
 ma
-cuir 6.28318530718
-suim
+cuir 30.5
+chuir 3
+coimeas
+ma
+cuir 35.5
+chuir 3
+coimeas
+ma
+cuir 38.5
+chuir 3
+coimeas
+ma
+cuir 39.5
+chuir 3
+coimeas
+ma
+cuir 40.5
+chuir 3
+coimeas
+ma
+leig
+chuir 100
+no
+leig
+chuir 99
 criòch
-tog
-cuir 0.196349540849
+no
+leig
+chuir 98
+criòch
+no
+cuir 36.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.0
-shuim
-cuir 0.196349540849
-dealaich
-chuir 48
-chuir 50
-shuim
-malairt
-bsuim
-chuir 49
-suim
-lheig
-no
-tog
-cuir 0.392699081699
+cuir 37.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.196349540849
-shuim
-cuir 0.196349540849
-dealaich
-chuir 47
-chuir 49
-shuim
-malairt
-bsuim
-chuir 48
-suim
-lheig
+leig
+chuir 97
 no
-tog
-cuir 0.589048622548
+leig
+chuir 96
+criòch
+no
+leig
+chuir 95
+criòch
+criòch
+no
+cuir 32.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.392699081699
-shuim
-cuir 0.196349540849
-dealaich
-chuir 46
-chuir 48
-shuim
-malairt
-bsuim
-chuir 47
-suim
-lheig
-no
-tog
-cuir 0.785398163397
+cuir 33.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.589048622548
-shuim
-cuir 0.196349540849
-dealaich
-chuir 45
-chuir 47
-shuim
-malairt
-bsuim
-chuir 46
-suim
-lheig
-no
-tog
-cuir 0.981747704247
+cuir 34.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.785398163397
-shuim
-cuir 0.196349540849
-dealaich
-chuir 44
-chuir 46
-shuim
-malairt
-bsuim
-chuir 45
-suim
-lheig
+leig
+chuir 94
 no
-tog
-cuir 1.178097245096
+leig
+chuir 93
+criòch
+no
+leig
+chuir 92
+criòch
+no
+cuir 31.5
+chuir 3
 coimeas
 ma
-tog
-cuir 0.981747704247
-shuim
-cuir 0.196349540849
-dealaich
-chuir 43
-chuir 45
-shuim
-malairt
-bsuim
-chuir 44
-suim
-lheig
+leig
+chuir 91
 no
-tog
-cuir 1.374446785946
+leig
+chuir 90
+criòch
+criòch
+criòch
+no
+cuir 25.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.178097245096
-shuim
-cuir 0.196349540849
-dealaich
-chuir 42
-chuir 44
-shuim
-malairt
-bsuim
-chuir 43
-suim
-lheig
-no
-tog
-cuir 1.570796326795
+cuir 27.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.374446785946
-shuim
-cuir 0.196349540849
-dealaich
-chuir 41
-chuir 43
-shuim
-malairt
-bsuim
-chuir 42
-suim
-lheig
-no
-tog
-cuir 1.767145867644
+cuir 28.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.570796326795
-shuim
-cuir 0.196349540849
-dealaich
-chuir 40
-chuir 42
-shuim
-malairt
-bsuim
-chuir 41
-suim
-lheig
-no
-tog
-cuir 1.963495408494
+cuir 29.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.767145867644
-shuim
-cuir 0.196349540849
-dealaich
-chuir 39
-chuir 41
-shuim
-malairt
-bsuim
-chuir 40
-suim
-lheig
+leig
+chuir 89
 no
-tog
-cuir 2.159844949343
+leig
+chuir 88
+criòch
+no
+leig
+chuir 87
+criòch
+no
+cuir 26.5
+chuir 3
 coimeas
 ma
-tog
-cuir 1.963495408494
-shuim
-cuir 0.196349540849
-dealaich
-chuir 38
-chuir 40
-shuim
-malairt
-bsuim
-chuir 39
-suim
-lheig
+leig
+chuir 86
 no
-tog
-cuir 2.356194490192
+leig
+chuir 85
+criòch
+criòch
+no
+cuir 22.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.159844949343
-shuim
-cuir 0.196349540849
-dealaich
-chuir 37
-chuir 39
-shuim
-malairt
-bsuim
-chuir 38
-suim
-lheig
-no
-tog
-cuir 2.552544031042
+cuir 23.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.356194490192
-shuim
-cuir 0.196349540849
-dealaich
-chuir 36
-chuir 38
-shuim
-malairt
-bsuim
-chuir 37
-suim
-lheig
-no
-tog
-cuir 2.748893571891
+cuir 24.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.552544031042
-shuim
-cuir 0.196349540849
-dealaich
-chuir 35
-chuir 37
-shuim
-malairt
-bsuim
-chuir 36
-suim
-lheig
+leig
+chuir 84
 no
-tog
-cuir 2.94524311274
+leig
+chuir 83
+criòch
+no
+leig
+chuir 82
+criòch
+no
+cuir 21.5
+chuir 3
 coimeas
 ma
-tog
-cuir 2.748893571891
-shuim
-cuir 0.196349540849
-dealaich
-chuir 34
-chuir 36
-shuim
-malairt
-bsuim
-chuir 35
-suim
-lheig
+leig
+chuir 81
 no
-tog
-cuir 3.14159265359
-coimeas
-ma
-tog
-cuir 2.94524311274
-shuim
-cuir 0.196349540849
-dealaich
-chuir 33
-chuir 35
-shuim
-malairt
-bsuim
-chuir 34
-suim
-lheig
-no
-tog
-cuir 3.337942194439
-coimeas
-ma
-tog
-cuir 3.14159265359
-shuim
-cuir 0.196349540849
-dealaich
-chuir 32
-chuir 34
-shuim
-malairt
-bsuim
-chuir 33
-suim
-lheig
-no
-tog
-cuir 3.534291735289
-coimeas
-ma
-tog
-cuir 3.337942194439
-shuim
-cuir 0.196349540849
-dealaich
-chuir 31
-chuir 33
-shuim
-malairt
-bsuim
-chuir 32
-suim
-lheig
-no
-tog
-cuir 3.730641276138
-coimeas
-ma
-tog
-cuir 3.534291735289
-shuim
-cuir 0.196349540849
-dealaich
-chuir 30
-chuir 32
-shuim
-malairt
-bsuim
-chuir 31
-suim
-lheig
-no
-tog
-cuir 3.926990816987
-coimeas
-ma
-tog
-cuir 3.730641276138
-shuim
-cuir 0.196349540849
-dealaich
-chuir 29
-chuir 31
-shuim
-malairt
-bsuim
-chuir 30
-suim
-lheig
-no
-tog
-cuir 4.123340357837
-coimeas
-ma
-tog
-cuir 3.926990816987
-shuim
-cuir 0.196349540849
-dealaich
-chuir 28
-chuir 30
-shuim
-malairt
-bsuim
-chuir 29
-suim
-lheig
-no
-tog
-cuir 4.319689898686
-coimeas
-ma
-tog
-cuir 4.123340357837
-shuim
-cuir 0.196349540849
-dealaich
-chuir 27
-chuir 29
-shuim
-malairt
-bsuim
-chuir 28
-suim
-lheig
-no
-tog
-cuir 4.516039439535
-coimeas
-ma
-tog
-cuir 4.319689898686
-shuim
-cuir 0.196349540849
-dealaich
-chuir 26
-chuir 28
-shuim
-malairt
-bsuim
-chuir 27
-suim
-lheig
-no
-tog
-cuir 4.712388980385
-coimeas
-ma
-tog
-cuir 4.516039439535
-shuim
-cuir 0.196349540849
-dealaich
-chuir 25
-chuir 27
-shuim
-malairt
-bsuim
-chuir 26
-suim
-lheig
-no
-tog
-cuir 4.908738521234
-coimeas
-ma
-tog
-cuir 4.712388980385
-shuim
-cuir 0.196349540849
-dealaich
-chuir 24
-chuir 26
-shuim
-malairt
-bsuim
-chuir 25
-suim
-lheig
-no
-tog
-cuir 5.105088062083
-coimeas
-ma
-tog
-cuir 4.908738521234
-shuim
-cuir 0.196349540849
-dealaich
-chuir 23
-chuir 25
-shuim
-malairt
-bsuim
-chuir 24
-suim
-lheig
-no
-tog
-cuir 5.301437602933
-coimeas
-ma
-tog
-cuir 5.105088062083
-shuim
-cuir 0.196349540849
-dealaich
-chuir 22
-chuir 24
-shuim
-malairt
-bsuim
-chuir 23
-suim
-lheig
-no
-tog
-cuir 5.497787143782
-coimeas
-ma
-tog
-cuir 5.301437602933
-shuim
-cuir 0.196349540849
-dealaich
-chuir 21
-chuir 23
-shuim
-malairt
-bsuim
-chuir 22
-suim
-lheig
-no
-tog
-cuir 5.694136684632
-coimeas
-ma
-tog
-cuir 5.497787143782
-shuim
-cuir 0.196349540849
-dealaich
-chuir 20
-chuir 22
-shuim
-malairt
-bsuim
-chuir 21
-suim
-lheig
-no
-tog
-cuir 5.890486225481
-coimeas
-ma
-tog
-cuir 5.694136684632
-shuim
-cuir 0.196349540849
-dealaich
-chuir 19
-chuir 21
-shuim
-malairt
-bsuim
-chuir 20
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-coimeas
-ma
-tog
-cuir 5.890486225481
-shuim
-cuir 0.196349540849
-dealaich
-chuir 18
-chuir 20
-shuim
-malairt
-bsuim
-chuir 19
-suim
-lheig
-no
-tog
-cuir 6.08683576633
-shuim
-cuir 0.196349540849
-dealaich
-cuir 1.0
-chuir 19
-shuim
-malairt
-bsuim
-chuir 18
-suim
-lheig
+leig
+chuir 80
 criòch
 criòch
 criòch
 criòch
+no
+cuir 10.5
+chuir 3
+coimeas
+ma
+cuir 15.5
+chuir 3
+coimeas
+ma
+cuir 17.5
+chuir 3
+coimeas
+ma
+cuir 18.5
+chuir 3
+coimeas
+ma
+cuir 19.5
+chuir 3
+coimeas
+ma
+leig
+chuir 79
+no
+leig
+chuir 78
+criòch
+no
+leig
+chuir 77
+criòch
+no
+cuir 16.5
+chuir 3
+coimeas
+ma
+leig
+chuir 76
+no
+leig
+chuir 75
+criòch
+criòch
+no
+cuir 12.5
+chuir 3
+coimeas
+ma
+cuir 13.5
+chuir 3
+coimeas
+ma
+cuir 14.5
+chuir 3
+coimeas
+ma
+leig
+chuir 74
+no
+leig
+chuir 73
+criòch
+no
+leig
+chuir 72
+criòch
+no
+cuir 11.5
+chuir 3
+coimeas
+ma
+leig
+chuir 71
+no
+leig
+chuir 70
 criòch
 criòch
 criòch
+no
+cuir 5.5
+chuir 3
+coimeas
+ma
+cuir 7.5
+chuir 3
+coimeas
+ma
+cuir 8.5
+chuir 3
+coimeas
+ma
+cuir 9.5
+chuir 3
+coimeas
+ma
+leig
+chuir 69
+no
+leig
+chuir 68
+criòch
+no
+leig
+chuir 67
+criòch
+no
+cuir 6.5
+chuir 3
+coimeas
+ma
+leig
+chuir 66
+no
+leig
+chuir 65
 criòch
 criòch
+no
+cuir 2.5
+chuir 3
+coimeas
+ma
+cuir 3.5
+chuir 3
+coimeas
+ma
+cuir 4.5
+chuir 3
+coimeas
+ma
+leig
+chuir 64
+no
+leig
+chuir 63
 criòch
+no
+leig
+chuir 62
 criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
-criòch
+no
+cuir 1.5
+chuir 3
+coimeas
+ma
+leig
+chuir 61
+no
+leig
+chuir 60
 criòch
 criòch
 criòch
@@ -6376,32 +2672,427 @@ gcuir 6
 gcuir 6
 gcuir 6
 gcuir 6
-( Ceithir-cheàrnach le sgàilean: P, ceithir cheàrn, tri dathan. )
-chuir 8
+( Ceallaich a' phiob — TIT tiotal. )
+cuir 16.0
+gcuir 1
+leig
+chuir 0
+cuir 0.0
+choimeas
+cuairt
+cuir 0.0
+cuir 8.5
+chuir 2
+coimeas
+ma
+cuir 12.5
+chuir 2
+coimeas
+ma
+cuir 14.5
+chuir 2
+coimeas
+ma
+cuir 15.5
+chuir 2
+coimeas
+ma
+leig
+chuir 59
+no
+leig
+chuir 58
+criòch
+no
+cuir 13.5
+chuir 2
+coimeas
+ma
+leig
+chuir 57
+no
+leig
+chuir 56
+criòch
+criòch
+no
+cuir 10.5
+chuir 2
+coimeas
+ma
+cuir 11.5
+chuir 2
+coimeas
+ma
+leig
+chuir 55
+no
+leig
+chuir 54
+criòch
+no
+cuir 9.5
+chuir 2
+coimeas
+ma
+leig
+chuir 53
+no
+leig
+chuir 52
+criòch
+criòch
+criòch
+no
+cuir 4.5
+chuir 2
+coimeas
+ma
+cuir 6.5
+chuir 2
+coimeas
+ma
+cuir 7.5
+chuir 2
+coimeas
+ma
+leig
+chuir 51
+no
+leig
+chuir 50
+criòch
+no
+cuir 5.5
+chuir 2
+coimeas
+ma
+leig
+chuir 49
+no
+leig
+chuir 48
+criòch
+criòch
+no
+cuir 2.5
+chuir 2
+coimeas
+ma
+cuir 3.5
+chuir 2
+coimeas
+ma
+leig
+chuir 47
+no
+leig
+chuir 46
+criòch
+no
+cuir 1.5
+chuir 2
+coimeas
+ma
+leig
+chuir 45
+no
+leig
+chuir 44
+criòch
+criòch
+criòch
+criòch
+gcuir 6
+leig
+gcuir 5
+gcuir 5
+gcuir 5
+gcuir 5
+gcuir 5
+cuir 0.0
+cuir 8.5
+chuir 2
+coimeas
+ma
+cuir 12.5
+chuir 2
+coimeas
+ma
+cuir 14.5
+chuir 2
+coimeas
+ma
+cuir 15.5
+chuir 2
+coimeas
+ma
+leig
+chuir 43
+no
+leig
+chuir 42
+criòch
+no
+cuir 13.5
+chuir 2
+coimeas
+ma
+leig
+chuir 41
+no
+leig
+chuir 40
+criòch
+criòch
+no
+cuir 10.5
+chuir 2
+coimeas
+ma
+cuir 11.5
+chuir 2
+coimeas
+ma
+leig
+chuir 39
+no
+leig
+chuir 38
+criòch
+no
+cuir 9.5
+chuir 2
+coimeas
+ma
+leig
+chuir 37
+no
+leig
+chuir 36
+criòch
+criòch
+criòch
+no
+cuir 4.5
+chuir 2
+coimeas
+ma
+cuir 6.5
+chuir 2
+coimeas
+ma
+cuir 7.5
+chuir 2
+coimeas
+ma
+leig
+chuir 35
+no
+leig
+chuir 34
+criòch
+no
+cuir 5.5
+chuir 2
+coimeas
+ma
+leig
+chuir 33
+no
+leig
+chuir 32
+criòch
+criòch
+no
+cuir 2.5
+chuir 2
+coimeas
+ma
+cuir 3.5
+chuir 2
+coimeas
+ma
+leig
+chuir 31
+no
+leig
+chuir 30
+criòch
+no
+cuir 1.5
+chuir 2
+coimeas
+ma
+leig
+chuir 29
+no
+leig
+chuir 28
+criòch
+criòch
+criòch
+criòch
+gcuir 5
+leig
+gcuir 4
+gcuir 4
+gcuir 4
+gcuir 4
+cuir 0.0
+cuir 8.5
+chuir 2
+coimeas
+ma
+cuir 12.5
+chuir 2
+coimeas
+ma
+cuir 14.5
+chuir 2
+coimeas
+ma
+cuir 15.5
+chuir 2
+coimeas
+ma
+leig
+chuir 27
+no
+leig
+chuir 26
+criòch
+no
+cuir 13.5
+chuir 2
+coimeas
+ma
+leig
+chuir 25
+no
+leig
+chuir 24
+criòch
+criòch
+no
+cuir 10.5
+chuir 2
+coimeas
+ma
+cuir 11.5
+chuir 2
+coimeas
+ma
+leig
+chuir 23
+no
+leig
+chuir 22
+criòch
+no
+cuir 9.5
+chuir 2
+coimeas
+ma
+leig
+chuir 21
+no
+leig
+chuir 20
+criòch
+criòch
+criòch
+no
+cuir 4.5
+chuir 2
+coimeas
+ma
+cuir 6.5
+chuir 2
+coimeas
+ma
+cuir 7.5
+chuir 2
+coimeas
+ma
+leig
+chuir 19
+no
+leig
+chuir 18
+criòch
+no
+cuir 5.5
+chuir 2
+coimeas
+ma
+leig
+chuir 17
+no
+leig
 chuir 16
-bsuim
-chuir 10
+criòch
+criòch
+no
+cuir 2.5
+chuir 2
+coimeas
+ma
+cuir 3.5
+chuir 2
+coimeas
+ma
+leig
+chuir 15
+no
+leig
 chuir 14
+criòch
+no
+cuir 1.5
+chuir 2
+coimeas
+ma
+leig
+chuir 13
+no
+leig
+chuir 12
+criòch
+criòch
+criòch
+criòch
+gcuir 4
+leig
+gcuir 3
+gcuir 3
+gcuir 3
+( Ceithir-cheàrnach le sgàilean. )
+chuir 4
+chuir 12
 bsuim
-chuir 16
+chuir 6
+chuir 10
+bsuim
+chuir 12
 bsuim
 shuim
-chuir 9
-chuir 16
+chuir 5
+chuir 12
 bsuim
+chuir 7
 chuir 11
-chuir 15
 bsuim
-chuir 18
+chuir 14
 bsuim
 suim
-chuir 11
-chuir 16
+chuir 7
+chuir 12
 bsuim
-cuir 0.751805729141
+cuir 0.751806
 bsuim
 chuir 1
-cuir 0.659384671971
+cuir 0.659385
 bsuim
 suim
 chuir 0
@@ -6446,103 +3137,301 @@ cuir 80
 n-abair
 cuir 10
 n-abair
-chuir 12
+chuir 8
 cuir 1.25
 bsuim
 cuir 3.0
 suim
 tog
-chuir 18
+chuir 14
 bsuim
-chuir 13
+chuir 9
 cuir 1.25
 bsuim
 chuir 2
+chuir 15
+bsuim
+chuir 1
 chuir 19
 bsuim
 chuir 1
-chuir 23
-bsuim
-chuir 1
-chuir 23
+chuir 19
 bsuim
 shuim
-chuir 2
-chuir 23
-bsuim
-chuir 2
-chuir 25
-bsuim
-suim
-chuir 4
-cuir 0.751805729141
-bsuim
-chuir 1
-cuir 0.659384671971
-bsuim
-suim
-cuir 28.0
-bsuim
-cuir 120.0
-suim
-abair
-cuir 120.0
-chuir 2
-cuir 28.0
-bsuim
-shuim
-abair
-leig
-leig
-leig
-leig
-leig
-leig
-chuir 10
-cuir 1.25
-bsuim
-cuir 3.0
-suim
-tog
-chuir 18
-bsuim
-chuir 13
-cuir 1.25
-bsuim
 chuir 2
 chuir 19
 bsuim
-chuir 1
-chuir 23
-bsuim
-chuir 1
-chuir 23
-bsuim
-shuim
 chuir 2
-chuir 23
-bsuim
-chuir 2
-chuir 25
+chuir 21
 bsuim
 suim
 chuir 4
-cuir 0.751805729141
+cuir 0.751806
 bsuim
 chuir 1
-cuir 0.659384671971
+cuir 0.659385
 bsuim
 suim
 cuir 28.0
 bsuim
 cuir 120.0
 suim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 cuir 120.0
 chuir 2
 cuir 28.0
 bsuim
 shuim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 leig
 leig
@@ -6550,51 +3439,301 @@ leig
 leig
 leig
 leig
-chuir 10
+chuir 6
 cuir 1.25
 bsuim
 cuir 3.0
 suim
 tog
-chuir 16
+chuir 14
 bsuim
-chuir 13
+chuir 9
 cuir 1.25
 bsuim
 chuir 2
-chuir 17
+chuir 15
 bsuim
 chuir 1
-chuir 23
+chuir 19
 bsuim
 chuir 1
-chuir 23
+chuir 19
 bsuim
 shuim
 chuir 2
-chuir 23
+chuir 19
 bsuim
 chuir 2
-chuir 25
+chuir 21
 bsuim
 suim
 chuir 4
-cuir 0.751805729141
+cuir 0.751806
 bsuim
 chuir 1
-cuir 0.659384671971
+cuir 0.659385
 bsuim
 suim
 cuir 28.0
 bsuim
 cuir 120.0
 suim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 cuir 120.0
 chuir 2
 cuir 28.0
 bsuim
 shuim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 leig
 leig
@@ -6602,51 +3741,603 @@ leig
 leig
 leig
 leig
+chuir 6
+cuir 1.25
+bsuim
+cuir 3.0
+suim
+tog
 chuir 12
+bsuim
+chuir 9
+cuir 1.25
+bsuim
+chuir 2
+chuir 13
+bsuim
+chuir 1
+chuir 19
+bsuim
+chuir 1
+chuir 19
+bsuim
+shuim
+chuir 2
+chuir 19
+bsuim
+chuir 2
+chuir 21
+bsuim
+suim
+chuir 4
+cuir 0.751806
+bsuim
+chuir 1
+cuir 0.659385
+bsuim
+suim
+cuir 28.0
+bsuim
+cuir 120.0
+suim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+cuir 120.0
+chuir 2
+cuir 28.0
+bsuim
+shuim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+leig
+leig
+leig
+leig
+leig
+leig
+chuir 8
 cuir 1.25
 bsuim
 cuir 3.0
 suim
 tog
-chuir 16
+chuir 12
 bsuim
-chuir 13
+chuir 9
 cuir 1.25
 bsuim
 chuir 2
-chuir 17
+chuir 13
 bsuim
 chuir 1
-chuir 23
+chuir 19
 bsuim
 chuir 1
-chuir 23
+chuir 19
 bsuim
 shuim
 chuir 2
-chuir 23
+chuir 19
 bsuim
 chuir 2
-chuir 25
+chuir 21
 bsuim
 suim
 chuir 4
-cuir 0.751805729141
+cuir 0.751806
 bsuim
 chuir 1
-cuir 0.659384671971
+cuir 0.659385
 bsuim
 suim
 cuir 28.0
 bsuim
 cuir 120.0
 suim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 cuir 120.0
 chuir 2
 cuir 28.0
 bsuim
 shuim
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 leig
 leig
@@ -6655,40 +4346,396 @@ leig
 leig
 leig
 chuir 2
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
 abair
 chuir 1
-abair
-abair
-leig
-leig
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
 chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+tog
+cuir 0.0
+coimeas
+chuir 0
+cuir 2.0
+bsuim
+cuir 1.0
+malairt
+shuim
+chuir 2
+chuir 1
+bsuim
+chuir 0
+chuir 0
+cuir 100000.0
+choimeas
+ma
+leig
+cuir 1.0
+no
+chuir 0
+cuir 10000.0
+choimeas
+ma
+leig
+cuir 10.0
+no
+chuir 0
+cuir 1000.0
+choimeas
+ma
+leig
+cuir 100.0
+no
+chuir 0
+cuir 100.0
+choimeas
+ma
+leig
+cuir 1000.0
+no
+chuir 0
+cuir 10.0
+choimeas
+ma
+leig
+cuir 10000.0
+no
+chuir 0
+cuir 1.0
+choimeas
+ma
+leig
+cuir 100000.0
+no
+chuir 0
+cuir 0.1
+choimeas
+ma
+leig
+cuir 1000000.0
+no
+chuir 0
+cuir 0.01
+choimeas
+ma
+leig
+cuir 10000000.0
+no
+chuir 0
+cuir 0.001
+choimeas
+ma
+leig
+cuir 100000000.0
+no
+chuir 0
+cuir 0.0001
+choimeas
+ma
+leig
+cuir 1000000000.0
+no
+leig
+cuir 1000000000.0
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+criòch
+chuir 1
+chuir 1
+bsuim
+chuir 0
+cuir 1.0
+dhealaich
+chuir 1
+chuir 1
+shuim
+cuir 0.5
+chuir 2
+coimeas
+chuir 1
+suim
+chuir 0
+chuir 5
+dealaich
+chuir 0
+chuir 8
+bsuim
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+lheig
+abair
+leig
+leig
+chuir 0
 cuir 1.0
 shuim
-gcuir 3
+gcuir 1
 leig
-gcuir 2
-gcuir 2
-chuir 2
+chuir 0
 cuir 0.0
 choimeas
 criòch
-chuir 3
-cuir 1.0
-shuim
-gcuir 4
-leig
-gcuir 3
-gcuir 3
-gcuir 3
-chuir 3
-cuir 0.0
-choimeas
-criòch
-( Slànaich am frèam. )
-cuir 83
-n-abair
-cuir 10
-n-abair
 chuir 1
 cuir 1.0
 shuim
@@ -6696,6 +4743,22 @@ gcuir 2
 leig
 gcuir 1
 chuir 1
+cuir 0.0
+choimeas
+criòch
+( Fhuaras am frèam air a chrathadh — sgaoil S. )
+cuir 83
+n-abair
+cuir 10
+n-abair
+chuir 2
+cuir 1.0
+shuim
+gcuir 3
+leig
+gcuir 2
+gcuir 2
+chuir 2
 cuir 0.0
 choimeas
 criòch

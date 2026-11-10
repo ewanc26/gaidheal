@@ -1,26 +1,34 @@
 #!/usr/bin/env python3
-"""Generate examples/donut_engine.gaidheal: a finite animated torus streaming
-shaded quads to the SDL2 token-protocol host in host/donut_host.c.
+"""Generate examples/donut_engine.gaidheal: a finite animated torus whose
+token stream is byte-identical to the canonical sigi engine.
 
-Gàidheal has no trig, no variables, and no strings, so:
+Byte-parity notes, mirroring the sigi reference engine exactly:
 
-- sin/cos come from a 16-sample cosine table baked in at generation time as
-  base stack slots; a lookup is an unrolled 16-way `ma`/`no` ladder
-  (`chuir`/`gcuir` indices are source literals, so selection cannot loop),
-  and the in-between value is linear interpolation with only
-  `suim`/`shuim`/`bsuim`/`dealaich`.
-- Angles reduce to [0, 2π) with `dhealaich` (remainder) plus one negative
-  fix-up; sin(x) = cos(x + 3π/2).
-- Loop and vertex state lives in stack slots addressed by `chuir`/`gcuir`;
-  every literal access index below is computed by simulating the stack in
-  this generator, so the emitted program is index-correct by construction.
-
-Counted loops use the documented `cuairt` discipline: push one condition
-value before the loop; the body's final act is to leave the next iteration's
-condition on top.
+- sigic emits every numeric literal through C++ ostream insertion, which
+  prints six significant digits, so the canonical engine really runs with
+  TH_STEP = 0.392699, PH_STEP = 0.628319, CB = 0.751806, SB = 0.659385.
+- The canonical loops are float-accumulation while-loops: the ring loop
+  adds TH_STEP while i < 16 — that is 41 iterations — and the tube loop
+  adds PH_STEP while j < 10 — 16 iterations — giving 656 quads per frame.
+  Iteration counts are fixed, so this generator bakes the exact cos/sin
+  doubles of every accumulated angle, per frame, ring and tube iteration
+  index, as base stack slots.  Gaidheal has no loops-over-tables: a lookup
+  is an unrolled bisect ladder over the integer countdown counter, and
+  every ladder branch is depth-neutral — the selected value replaces a
+  placeholder — so `chuir`/`gcuir` literal indices stay correct inside
+  `ma`/`no` branches.
+- All remaining geometry, projection and shading arithmetic runs at
+  program time with only + - * / in exactly the C evaluation order, so
+  the doubles match bit for bit.
+- The token protocol prints with C percent-g style — six significant
+  digits — while gaidheal `abair` prints a double's shortest round-trip
+  form.  So the program rounds every printed value to six significant
+  digits at runtime — sign, magnitude bucket ladder, remainder, round
+  half up, divide back — and `abair` then prints exactly the percent-g
+  string.  Rounding ties never occur here; that is asserted below.
 
 Run:    ./target/release/gaidheal examples/donut_engine.gaidheal | ./host_bin
-Headless (the host replays the finite stream forever):
+Headless, the host replays the finite stream forever:
   ... | SDL_VIDEODRIVER=dummy ./host_bin --frames 3
 """
 
@@ -30,30 +38,68 @@ import pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 R, TUBE = 3.0, 1.25
-RING, TUBE_N = 16, 10          # 160 quads per frame
+RING, TUBE_N = 16, 10            # loop bounds, exactly as the canonical
 SCALE, OX, OY = 28.0, 120.0, 120.0
 SPIN_STEP = 0.05
 TILT = 0.72
 LIGHT = (0.32, 0.58, 0.75)
 FRAMES = 60
-TH_STEP = 2 * math.pi / RING   # ring angle step
-PH_STEP = 2 * math.pi / TUBE_N  # tube angle step
-CB, SB = round(math.cos(TILT), 12), round(math.sin(TILT), 12)
 
-TN = 32                         # cosine table samples over [0, 2π)
-TTH = 2 * math.pi / TN          # table step
-TP = 2 * math.pi
-H3P2 = 3 * math.pi / 2          # sin(x) = cos(x + 3π/2)
-TABLE = [round(math.cos(k * TTH), 12) for k in range(TN)]
+
+def lit_num(v):
+    """sigic literal truncation: six significant digits."""
+    return float("%g" % round(v, 12))
+
+
+TH_STEP = lit_num(2 * math.pi / RING)     # 0.392699
+PH_STEP = lit_num(2 * math.pi / TUBE_N)   # 0.628319
+CB = lit_num(math.cos(TILT))              # 0.751806
+SB = lit_num(math.sin(TILT))              # 0.659385
+
+RIT = 41                            # ring iterations: i += TH_STEP while i < 16
+TIT = 16                            # tube iterations: j += PH_STEP while j < 10
+
+# ------------------------------------------------ angle accumulation tables
+# Exact doubles the canonical engine computes via IEEE accumulation.
+F_CA, F_SA = [], []                # per frame: A += SPIN_STEP, then cos/sin
+A = 0.0
+for _ in range(FRAMES):
+    A = A + SPIN_STEP
+    F_CA.append(math.cos(A))
+    F_SA.append(math.sin(A))
+
+CT1, ST1, CT2, ST2 = [], [], [], []    # cos/sin of i and i + TH_STEP
+i = 0.0
+for _ in range(RIT):
+    CT1.append(math.cos(i))
+    ST1.append(math.sin(i))
+    CT2.append(math.cos(i + TH_STEP))
+    ST2.append(math.sin(i + TH_STEP))
+    i = i + TH_STEP
+
+CP1, SP1, CP2 = [], [], []             # cos/sin of j; cos of j + PH_STEP
+j = 0.0
+for _ in range(TIT):
+    CP1.append(math.cos(j))
+    SP1.append(math.sin(j))
+    CP2.append(math.cos(j + PH_STEP))
+    j = j + PH_STEP
 
 
 def num(v):
-    return repr(round(v, 12))
+    """Emit a double literal that round-trips exactly — Python repr is the
+    shortest round-trip decimal, so the interpreter loads the same bits."""
+    return repr(v)
 
 
 class Gh:
     """Emitter with a symbolic stack model: every emitted operation updates
-    the model, so `chuir`/`gcuir` literal indices are always correct."""
+    the model, so `chuir`/`gcuir` literal indices are always correct.
+
+    Branch discipline: every `ma`/`no` pair here is depth-neutral — both
+    branches leave the stack depth unchanged (selection branches replace a
+    placeholder value).  The model treats branches as executed
+    sequentially, which stays index-correct because only depth matters."""
 
     BINOPS = {"suim", "shuim", "bsuim", "dealaich", "dhealaich", "ndealaich",
               "coimeas", "choimeas", "gcoimeas"}
@@ -97,16 +143,14 @@ class Gh:
 
     def block(self, word):
         """Emit a control-flow word; `cuairt`/`ma`/`mha` pop their condition
-        at runtime, so the model must pop it too (the body runs with that
-        value already consumed)."""
+        at runtime, so the model pops it too."""
         self.out.append(word)
         if word in ("cuairt", "ma", "mha"):
             self.stack.pop()
 
     def model_pop(self):
-        """Account for a value the machine consumes at runtime but that has
-        no source word here (the `cuairt` re-test pops the trailing loop
-        condition)."""
+        """Account for the `cuairt` re-test popping the trailing loop
+        condition — no source word, runtime pop only."""
         self.stack.pop()
 
     def newslot(self, initial=0.0):
@@ -115,18 +159,14 @@ class Gh:
 
     def setslot(self, pos):
         """Store the value on top into slot pos IN PLACE — the old value must
-        not be on top. Gàidheal has no in-place store, so: roll the old slot
-        value up (gcuir) and drop it, then restore the shifted region by
-        lifting each displaced element back to the top (repeated gcuir with
-        the constant depth of the region's bottom). Net effect: [S, X, R,
-        new] -> [S, new, R]. Without this the region above the slot would
-        shift and every later fixed chuir/gcuir index in a loop body would
-        be wrong on the second iteration."""
+        not be on top: roll the old slot value up and drop it, then lift
+        each displaced element back (repeated gcuir at constant region
+        depth), leaving the rest of the stack unshifted."""
         n = len(self.stack)
-        self.roll(pos)                  # gcuir: old slot value to top
-        self.emit("leig")               # drop the old value
-        for _ in range(n - 2 - pos):    # each lift: gcuir with constant idx
-            self.roll(pos)              # (idx = n-2-pos; region bottom rises)
+        self.roll(pos)
+        self.emit("leig")
+        for _ in range(n - 2 - pos):
+            self.roll(pos)
 
 
 G = Gh()
@@ -137,7 +177,7 @@ def comment(text):
 
 
 def emit_str(s):
-    """Emit a literal token plus the newline separator (code point 10)."""
+    """Emit a literal token plus the newline separator — code point 10."""
     for ch in s + "\n":
         G.push(ord(ch))
         G.emit("n-abair")
@@ -147,91 +187,168 @@ def print_top():
     G.emit("abair")
 
 
-# ------------------------------------------------------------ cosine table
-comment("Bòrd co-shìnte: 16 sampall de cos eadar 0 agus 2π.")
-for v in TABLE:
-    G.push(v)
-TPOS = [len(G.stack) - TN + k for k in range(TN)]    # absolute positions
+# --------------------------------------------------------------- selection
+def biselect_leaf(table_pos, leaf):
+    """Depth-neutral: drop the placeholder on top, copy table slot `leaf`."""
+    G.emit("leig")
+    G.copy(table_pos[leaf])
 
 
-def table_val(k):
-    """Push cosine table sample k (k == TN wraps to T[0])."""
-    if k == TN:
-        G.push(TABLE[0])
-    else:
-        G.copy(TPOS[k])
+def biselect(table_pos, n, ctr_pos, lo, hi):
+    """Depth-neutral bisect ladder.  Precondition: a placeholder value P on
+    top; leaves replace it with table[idx] where idx = n - ctr and ctr is
+    the running countdown in slot `ctr_pos` (ctr is n, n-1, ..., 1 and idx
+    runs 0, 1, ... n-1 over the body iterations).
 
-
-def cos_top():
-    """Consume the angle on top, push cos(angle)."""
-    # r = x mod 2π, then +2π if negative
-    G.push(TP)
-    G.emit("dhealaich")             # a = x, b = 2π → r0
-    G.emit("tog")                   # [r0, r0]
-    G.push(0.0)
-    G.emit("coimeas")              # r0 < 0 ?
+    Branch condition for the lower half — idx <= mid:
+        n - ctr <= mid  <=>  ctr > n - mid - 0.5
+    """
+    assert hi - lo + 1 <= len(table_pos)
+    if lo == hi:
+        biselect_leaf(table_pos, lo)
+        return
+    mid = (lo + hi) // 2
+    G.push(n - mid - 0.5)
+    G.copy(ctr_pos)
+    G.emit("coimeas")              # threshold < ctr ?
     G.block("ma")
-    G.push(TP)
-    G.emit("suim")                 # r0 + 2π
+    biselect(table_pos, n, ctr_pos, lo, mid)
+    G.block("no")
+    biselect(table_pos, n, ctr_pos, mid + 1, hi)
     G.block("criòch")
-    # top: r ∈ [0, 2π)
-
-    def seg(k):
-        # v = T(k) + frac·(T(k+1) − T(k)), frac = (r − k·TTH)/TTH
-        G.emit("tog")                 # [r, r] — keep the angle for the drop
-        G.push(k * TTH)
-        G.emit("shuim")             # r − k·TTH
-        G.push(TTH)
-        G.emit("dealaich")          # frac
-        table_val(k + 1)            # [frac, T(k+1)]
-        table_val(k)                # [frac, T(k+1), T(k)]
-        G.emit("shuim")             # T(k+1) − T(k)
-        G.emit("malairt")           # [frac, T(k+1)−T(k)]→[d, frac]
-        G.emit("bsuim")             # frac·d
-        table_val(k)                # [t, T(k)]
-        G.emit("suim")              # v
-        G.emit("lheig")             # drop the angle (2nd from top)
-
-    def ladder(k):
-        if k == TN - 1:
-            seg(k)                  # last segment runs unconditionally
-            return
-        G.emit("tog")               # [r, r]
-        G.push((k + 1) * TTH)
-        G.emit("coimeas")          # r < (k+1)·TTH ?
-        G.block("ma")
-        seg(k)
-        G.block("no")
-        ladder(k + 1)
-        G.block("criòch")
-
-    ladder(0)
 
 
-def assign_cos_from(dest, source, offset=0.0):
-    """dest := cos(source + offset)."""
-    G.copy(source)
-    if offset:
-        G.push(offset)
-        G.emit("suim")
-    cos_top()
+def assign_from_table(dest, table_pos, n, ctr_pos):
+    """dest := table[n - ctr] via a bisect ladder."""
+    G.push(0.0)                    # placeholder consumed by the ladder
+    biselect(table_pos, n, ctr_pos, 0, n - 1)
     G.setslot(dest)
 
 
-def assign_sin_from(dest, source, offset=0.0):
-    """dest := sin(source + offset)."""
-    G.copy(source)
-    if offset:
-        G.push(offset)
-        G.emit("suim")
-    G.push(H3P2)
-    G.emit("suim")
-    cos_top()
-    G.setslot(dest)
+# -------------------------------------------------------------- round6 macro
+# Round the value on top to six significant digits, in place:
+#   neg = v < 0; qm = 1 - 2*neg; a = |v| = v*qm;
+#   M = 10^p so that a*M has six integer digits — an unrolled ma/no ladder;
+#   w = a*M; frac = rem(w, 1); fl = w - frac; incr = 0.5 < frac;
+#   r = fl + incr; out = r/M*qm.
+# Exact half ties never occur in this animation — asserted at the bottom.
+MAG = [(1e5, 1.0), (1e4, 10.0), (1e3, 100.0), (100.0, 1e3), (10.0, 1e4),
+       (1.0, 1e5), (0.1, 1e6), (0.01, 1e7), (0.001, 1e8), (0.0001, 1e9),
+       (None, 1e9)]                # below 1e-4: same bucket as 1e-4
 
 
-# ------------------------------------------------------------------- slots
-comment("Seadaichean-obrach: trighirimhean, ceumannan, agus cunntadairean.")
+def mag_ladder(level):
+    """Depth-neutral: replace the |v| value on top with M = 10^p."""
+    thr, m = MAG[level]
+    if thr is None:
+        G.emit("leig")
+        G.push(m)
+        return
+    G.copy(len(G.stack) - 1)      # copy a
+    G.push(thr)
+    G.emit("choimeas")            # a > thr ?
+    G.block("ma")
+    G.emit("leig")                # drop a
+    G.push(m)
+    G.block("no")
+    mag_ladder(level + 1)
+    G.block("criòch")
+
+
+def copyd(k):
+    """Append a copy of the stack element at distance k — 0 = top."""
+    G.copy(len(G.stack) - 1 - k)
+
+
+def round6():
+    """Replace the value on top with itself rounded to six significant
+    digits.  Distances are from the top at each emission point:
+
+      [v]
+      neg  = v < 0                      [.., v, neg]
+      qm   = 1 - 2*neg                  [.., v, neg, qm]
+      a    = v*qm                        [.., v, neg, qm, a]
+      M    = magnitude ladder            [.., v, neg, qm, a, M]
+      w    = a*M                         [.., a, M, w]
+      frac = rem(w, 1)                   [.., M, w, frac]
+      fl   = w - frac                    [.., w, frac, fl]
+      incr = 0.5 < frac                  [.., frac, fl, incr]
+      r    = fl + incr                   [.., frac, r]
+      res  = r/M                         [.., r, res]
+      s    = res*qm                      [.., res, s]
+    then nine nips keep only s.
+    """
+    G.emit("tog")
+    G.push(0.0)
+    G.emit("coimeas")               # neg = v < 0     [v, neg]
+    copyd(0)                        # neg
+    G.push(2.0)
+    G.emit("bsuim")                 # 2*neg
+    G.push(1.0)
+    G.emit("malairt")
+    G.emit("shuim")                 # qm = 1 - 2*neg  [v, neg, qm]
+    copyd(2)                        # v
+    copyd(1)                        # qm
+    G.emit("bsuim")                 # a = v*qm        [v, neg, qm, a]
+    copyd(0)                        # a placeholder
+    mag_ladder(0)                   # -> M            [.., a, M]
+    copyd(1)                        # a
+    copyd(1)                        # M
+    G.emit("bsuim")                 # w = a*M         [.., a, M, w]
+    copyd(0)                        # w
+    G.push(1.0)
+    G.emit("dhealaich")             # frac = rem(w,1) [.., M, w, frac]
+    copyd(1)                        # w
+    copyd(1)                        # frac
+    G.emit("shuim")                 # fl = w - frac   [.., w, frac, fl]
+    G.push(0.5)
+    copyd(2)                        # frac
+    G.emit("coimeas")               # incr = 0.5 < frac
+    copyd(1)                        # fl (stays on the stack)
+    G.emit("suim")                  # r = fl + incr   [.., frac, r]
+    copyd(0)                        # r
+    copyd(5)                        # M — fl resident at distance 3
+    G.emit("dealaich")              # res = r/M
+    copyd(0)                        # res
+    copyd(8)                        # qm — fl still resident
+    G.emit("bsuim")                 # s = res*qm
+    for _ in range(10):             # res r fl frac w M a qm neg v
+        G.emit("lheig")
+
+
+def print_rounded():
+    round6()
+    print_top()
+
+
+# --------------------------------------------------------------- baked slots
+comment("Bòrdan trig: luachan cos agus sin air a bhàthadh a-steach")
+comment("leis a' ghineadhar, cruinn dha-rìribh — co-ionnan ri sigi.")
+comment("Taghadh le bàta biseach nach bi acrach air doimhne.")
+
+TABLE_SETS = []
+
+
+def bake_table(values):
+    for v in values:
+        G.push(v)
+    pos = [len(G.stack) - len(values) + k for k in range(len(values))]
+    TABLE_SETS.append(len(values))
+    return pos
+
+
+CA_T = bake_table(F_CA)     # cos A gach frèam
+SA_T = bake_table(F_SA)     # sin A gach frèam
+CT1_T = bake_table(CT1)     # cos theta
+ST1_T = bake_table(ST1)     # sin theta
+CT2_T = bake_table(CT2)     # cos theta ceum
+ST2_T = bake_table(ST2)     # sin theta ceum
+CP1_T = bake_table(CP1)     # cos phi
+SP1_T = bake_table(SP1)     # sin phi
+CP2_T = bake_table(CP2)     # cos phi ceum
+NTABS = len(G.stack)
+
+comment("Seadaichean-obrach: trig a chaidh a thaghadh, agus cunntadairean.")
 CA = G.newslot()
 SA = G.newslot()
 CT1 = G.newslot()
@@ -241,23 +358,18 @@ ST2 = G.newslot()
 CP1 = G.newslot()
 SP1 = G.newslot()
 CP2 = G.newslot()
-SP2 = G.newslot()
-ANG_I = G.newslot()                    # ring angle θ
-ANG_J = G.newslot()                    # tube angle φ
-CTR_I = G.newslot(float(RING))
-CTR_J = G.newslot(float(TUBE_N))
 CTR_F = G.newslot(float(FRAMES))
-A = G.newslot(0.0)                     # spin angle
+CTR_I = G.newslot(float(RIT))
+CTR_J = G.newslot(float(TIT))
+NSLOTS = len(G.stack)
 
 
 def reset_slot(pos, value):
-    """Store a constant into a slot (re-initialise loop counters)."""
     G.push(value)
     G.setslot(pos)
 
 
 def countdown_cond(pos):
-    """Push 1 if slot pos > 0 else 0 — a `cuairt` condition."""
     G.copy(pos)
     G.push(0.0)
     G.emit("choimeas")             # n > 0
@@ -270,28 +382,28 @@ def decrement(pos):
     G.setslot(pos)
 
 
-# ----------------------------------------------------------------- helpers
+# -------------------------------------------------------------- quad corner
 def corner(cp, sp, ct, stt):
-    """Print the two screen coords of one quad corner (slot addresses)."""
+    """Print the two rounded screen coords of one quad corner."""
     G.copy(cp)
     G.push(TUBE)
     G.emit("bsuim")
     G.push(R)
-    G.emit("suim")                      # rad = cosφ·TUBE + R
+    G.emit("suim")                      # rad = cosf*TUBE + R
     G.emit("tog")
     G.copy(ct)
-    G.emit("bsuim")                     # x = rad·cosθ
+    G.emit("bsuim")                     # x = rad*cosTheta
     G.copy(sp)
     G.push(TUBE)
-    G.emit("bsuim")                     # y = sinφ·TUBE
+    G.emit("bsuim")                     # y = sinf*TUBE
     rad_pos = len(G.stack) - 3
     G.copy(rad_pos)
     G.copy(stt)
-    G.emit("bsuim")                     # z = rad·sinθ
+    G.emit("bsuim")                     # z = rad*sinTheta
     x_pos = len(G.stack) - 3
     y_pos = len(G.stack) - 2
     z_pos = len(G.stack) - 1
-    # cy = y·ca − z·sa
+    # cy = y*ca - z*sa
     G.copy(y_pos)
     G.copy(CA)
     G.emit("bsuim")
@@ -300,7 +412,7 @@ def corner(cp, sp, ct, stt):
     G.emit("bsuim")
     G.emit("shuim")                      # cy
     cy_pos = len(G.stack) - 1
-    # cz = y·sa + z·ca
+    # cz = y*sa + z*ca
     G.copy(y_pos)
     G.copy(SA)
     G.emit("bsuim")
@@ -309,7 +421,7 @@ def corner(cp, sp, ct, stt):
     G.emit("bsuim")
     G.emit("suim")                       # cz
     cz_pos = len(G.stack) - 1
-    # px = OX + (x·CB + cz·SB)·SCALE
+    # px = OX + (x*CB + cz*SB)*SCALE
     G.copy(x_pos)
     G.push(CB)
     G.emit("bsuim")
@@ -321,22 +433,23 @@ def corner(cp, sp, ct, stt):
     G.emit("bsuim")
     G.push(OX)
     G.emit("suim")                        # px
-    print_top()
-    # py = OY − cy·SCALE
+    print_rounded()
+    # py = OY - cy*SCALE
     G.push(OY)
     G.copy(cy_pos)
     G.push(SCALE)
     G.emit("bsuim")
     G.emit("shuim")                       # py
-    print_top()
+    print_rounded()
     for _ in range(6):                    # rad, x, y, z, cy, cz
         G.emit("leig")
 
 
-def quad(cp1, sp1, ct1, stt1, cp2, sp2, ct2, stt2):
-    """Print normals-driven colours, then 'P', 4 corners, 3 colour values."""
+def quad(cp1, sp1, ct1, stt1, cp2, ct2, stt2):
+    """Emit one quad line: normal-driven colours kept until after the
+    coordinates, exactly like the reference emission order."""
     base_depth = len(G.stack)
-    # ny = sp1·ca − cp1·st1·sa
+    # ny = sp1*ca - cp1*st1*sa
     G.copy(sp1)
     G.copy(CA)
     G.emit("bsuim")
@@ -347,7 +460,7 @@ def quad(cp1, sp1, ct1, stt1, cp2, sp2, ct2, stt2):
     G.emit("bsuim")
     G.emit("shuim")                       # ny
     ny_pos = len(G.stack) - 1
-    # nz = sp1·sa + cp1·st1·ca
+    # nz = sp1*sa + cp1*st1*ca
     G.copy(sp1)
     G.copy(SA)
     G.emit("bsuim")
@@ -358,7 +471,7 @@ def quad(cp1, sp1, ct1, stt1, cp2, sp2, ct2, stt2):
     G.emit("bsuim")
     G.emit("suim")                         # nz
     nz_pos = len(G.stack) - 1
-    # nx = cp1·ct1·CB + nz·SB
+    # nx = cp1*ct1*CB + nz*SB
     G.copy(cp1)
     G.copy(ct1)
     G.emit("bsuim")
@@ -369,7 +482,7 @@ def quad(cp1, sp1, ct1, stt1, cp2, sp2, ct2, stt2):
     G.emit("bsuim")
     G.emit("suim")                          # nx
     nx_pos = len(G.stack) - 1
-    # lum = (nx·Lr + ny·Lg + nz·Lb + 1)·0.5
+    # lum = (nx*Lr + ny*Lg + nz*Lb + 1)*0.5
     G.copy(nx_pos)
     G.push(LIGHT[0])
     G.emit("bsuim")
@@ -385,94 +498,65 @@ def quad(cp1, sp1, ct1, stt1, cp2, sp2, ct2, stt2):
     G.emit("suim")
     G.push(0.5)
     G.emit("bsuim")                         # lum
-    # three colour values stay on the stack until after the coordinates
-    lum_pos = len(G.stack) - 1               # lum is on top here
+    lum_pos = len(G.stack) - 1
     for mul, add in ((150.0, 80.0), (90.0, 50.0), (60.0, 30.0)):
         G.copy(lum_pos)
         G.push(mul)
         G.emit("bsuim")
         G.push(add)
         G.emit("suim")                       # r / g / b
-    # drop the four normals: positions from the bottom up (nothing above
-    # them moves), rolling each to the top to drop it in place
+    # drop the four normals, keeping the three colour values
     while len(G.stack) > base_depth + 3:
         pos = len(G.stack) - 4
         G.roll(pos)
         G.emit("leig")
     emit_str("P")
-    for cp, sp, ct, stt in ((cp1, sp1, ct1, stt1),
-                            (cp2, sp1, ct1, stt1),
-                            (cp2, sp1, ct2, stt2),
-                            (cp1, sp1, ct2, stt2)):
-        corner(cp, sp, ct, stt)
-    # now print r, g, b (b is on top)
+    for cp, ct, stt in ((cp1, ct1, stt1), (cp2, ct1, stt1),
+                        (cp2, ct2, stt2), (cp1, ct2, stt2)):
+        corner(cp, sp1, ct, stt)
+    # print r, g, b — b is on top
     r_pos = len(G.stack) - 3
     g_pos = len(G.stack) - 2
     G.copy(r_pos)
-    print_top()                              # r
+    print_rounded()                          # r
     G.copy(g_pos)
-    print_top()                              # g
-    print_top()                              # b (pops it)
+    print_rounded()                          # g
+    print_rounded()                          # b pops it
     G.emit("leig")                           # drop r
     G.emit("leig")                           # drop g
 
 
-
 # -------------------------------------------------------------------- main
-comment("An t-einnsean donut: toirgeoill bheò do dhonut_host SDL2")
-comment("le cos/sin à bòrd co-shìnte — gun trig, le + − × ÷ a-mhàin.")
-comment("Air a ghintinn le scripts/gen_donut_engine.py — FRAMES 60.")
+comment("An t-einnsean donut: sruth ceala-deug co-ionnan ri sigi.")
+comment("Cunnt cunntadan sìos le cuairt; tagh trig à bhòrdan.")
+comment("Air a ghineadh le scripts/gen_donut_engine.py — FRAMES 60.")
 
+comment("Frèam.")
 countdown_cond(CTR_F)
 G.block("cuairt")
-comment("Fhràmadh: A += SPIN_STEP; ca/sa à A; sgaoil F.")
-
-G.copy(A)
-G.push(SPIN_STEP)
-G.emit("suim")
-G.setslot(A)
-assign_cos_from(CA, A)
-assign_sin_from(SA, A)
+assign_from_table(CA, CA_T, FRAMES, CTR_F)
+assign_from_table(SA, SA_T, FRAMES, CTR_F)
 emit_str("F")
 
-comment("Ath-shuidhic ni airson gach fràma.")
-reset_slot(CTR_I, float(RING))
-
-comment("Ceallaichean a' chrò:",)
-comment("teta = TH_STEP air i; tha ni ag dol sios.")
+comment("Cealla a' chrò — RIT tiotail.")
+reset_slot(CTR_I, float(RIT))
 countdown_cond(CTR_I)
 G.block("cuairt")
-G.push(RING)
-G.copy(CTR_I)
-G.emit("shuim")                          # RING − ni (counter counts down)
-G.push(TH_STEP)
-G.emit("bsuim")
-G.setslot(ANG_I)                          # θ
-assign_cos_from(CT1, ANG_I)
-assign_sin_from(ST1, ANG_I)
-assign_cos_from(CT2, ANG_I, offset=TH_STEP)
-assign_sin_from(ST2, ANG_I, offset=TH_STEP)
+assign_from_table(CT1, CT1_T, RIT, CTR_I)
+assign_from_table(ST1, ST1_T, RIT, CTR_I)
+assign_from_table(CT2, CT2_T, RIT, CTR_I)
+assign_from_table(ST2, ST2_T, RIT, CTR_I)
 
-comment("Ath-shuidhic nj airson gach cealla den chrò.")
-reset_slot(CTR_J, float(TUBE_N))
-
-comment("Ceallaichean a' phiob:",)
-comment("fi = PH_STEP air j; tha nj ag dol sios.")
+comment("Ceallaich a' phiob — TIT tiotal.")
+reset_slot(CTR_J, float(TIT))
 countdown_cond(CTR_J)
 G.block("cuairt")
-G.push(TUBE_N)
-G.copy(CTR_J)
-G.emit("shuim")
-G.push(PH_STEP)
-G.emit("bsuim")
-G.setslot(ANG_J)                          # φ
-assign_cos_from(CP1, ANG_J)
-assign_sin_from(SP1, ANG_J)
-assign_cos_from(CP2, ANG_J, offset=PH_STEP)
-assign_sin_from(SP2, ANG_J, offset=PH_STEP)
+assign_from_table(CP1, CP1_T, TIT, CTR_J)
+assign_from_table(SP1, SP1_T, TIT, CTR_J)
+assign_from_table(CP2, CP2_T, TIT, CTR_J)
 
-comment("Ceithir-cheàrnach le sgàilean: P, ceithir cheàrn, tri dathan.")
-quad(CP1, SP1, CT1, ST1, CP2, SP2, CT2, ST2)
+comment("Ceithir-cheàrnach le sgàilean.")
+quad(CP1, SP1, CT1, ST1, CP2, CT2, ST2)
 
 decrement(CTR_J)
 countdown_cond(CTR_J)
@@ -484,7 +568,7 @@ countdown_cond(CTR_I)
 G.block("criòch")
 G.model_pop()
 
-comment("Slànaich am frèam.")
+comment("Fhuaras am frèam air a chrathadh — sgaoil S.")
 emit_str("S")
 decrement(CTR_F)
 countdown_cond(CTR_F)
@@ -493,7 +577,92 @@ G.model_pop()
 
 comment("Crìoch an t-srutha.")
 
+assert len(G.stack) == NTABS + 12, \
+    "unbalanced model stack: %d" % len(G.stack)
+
 text = "\n".join(G.out) + "\n"
-assert len(G.stack) == TN + 16, "unbalanced model stack: %d" % len(G.stack)
 (ROOT / "examples" / "donut_engine.gaidheal").write_text(text, encoding="utf-8")
-print("wrote examples/donut_engine.gaidheal: {} lines".format(len(text.splitlines())))
+print("wrote examples/donut_engine.gaidheal: {} lines".format(
+    len(text.splitlines())))
+
+
+# ----------------------------------------------------------- self-verification
+def g6(v):
+    return "%g" % v
+
+
+def render_all():
+    """Python mirror of the emitted program: exact same value order, used
+    to assert no rounding ties occur anywhere in the animation."""
+    out = []
+    A = 0.0
+    for f in range(FRAMES):
+        A = A + SPIN_STEP
+        ca, sa = math.cos(A), math.sin(A)
+        out.append("F")
+        i = 0.0
+        for _ in range(RIT):
+            ct1, st1 = math.cos(i), math.sin(i)
+            i2 = i + TH_STEP
+            ct2, st2 = math.cos(i2), math.sin(i2)
+            j = 0.0
+            for _ in range(TIT):
+                cp1, sp1 = math.cos(j), math.sin(j)
+                j2 = j + PH_STEP
+                cp2 = math.cos(j2)
+                ny = sp1 * ca - cp1 * st1 * sa
+                nz = sp1 * sa + cp1 * st1 * ca
+                nx = cp1 * ct1 * CB + nz * SB
+                lum = (nx * LIGHT[0] + ny * LIGHT[1] + nz * LIGHT[2]
+                       + 1.0) * 0.5
+                vals = [lum * 150.0 + 80.0, lum * 90.0 + 50.0,
+                        lum * 60.0 + 30.0]
+                out.append("P")
+                for cp, ct, st_ in ((cp1, ct1, st1), (cp2, ct1, st1),
+                                    (cp2, ct2, st2), (cp1, ct2, st2)):
+                    rad = cp * TUBE + R
+                    x = rad * ct
+                    y = sp1 * TUBE
+                    z = rad * st_
+                    cy = y * ca - z * sa
+                    cz = y * sa + z * ca
+                    px = (x * CB + cz * SB) * SCALE + OX
+                    py = OY - cy * SCALE
+                    tie_check(px)
+                    tie_check(py)
+                    out.append(g6(px))
+                    out.append(g6(py))
+                for v in vals:
+                    tie_check(v)
+                    out.append(g6(v))
+                j = j + PH_STEP
+            i = i + TH_STEP
+        out.append("S")
+    return out
+
+
+def tie_check(v):
+    """No exact half ties and no %g exponent surprises: the emitted
+    runtime rounder is round-half-up, ties would misbehave."""
+    M = mag_bound(v)
+    w = abs(v) * M
+    frac = w - math.floor(w)
+    assert abs(frac - 0.5) > 1e-9, "rounding tie at %r" % v
+    s = g6(v)
+    assert "e" not in s, "exponent form %s for %r" % (s, v)
+
+
+def mag_bound(v):
+    a = abs(v)
+    for thr, m in MAG:
+        if thr is None or a >= thr:
+            return m
+    return MAG[-1][1]
+
+
+if __name__ == "__main__":
+    pass
+
+lines = render_all()
+print("self-check: rendered {} stream lines, no rounding ties".format(
+    len(lines)))
