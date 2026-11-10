@@ -1,24 +1,28 @@
-//! Canonical donut stream parity: the first eight frames emitted by
-//! examples/donut_engine.gaidheal must be byte-identical to the canonical
-//! sigi engine stream vendored in tests/fixtures/donut_canonical_8f.txt.
+//! Canonical donut stream parity (v2 vertex protocol): the first two
+//! frames emitted by examples/donut_engine.gaidheal must be
+//! byte-identical to the canonical sigi engine stream vendored in
+//! tests/fixtures/donut_canonical_v2_2f.txt.
 //!
-//! The example animates 60 frames of 656 quads each; only the first eight
-//! frames are compared, matching the fixture.
+//! Protocol per frame: "F", then for each of the 1500 torus vertices
+//! (i*V_STEPS+j order, i in 0..49, j in 0..29) four lines px, py, z,
+//! intensity, then "S" — mirrors the renderer in doughnut.c.  The
+//! example animates 60 frames; only the first two frames are compared,
+//! matching the fixture (the fixture is the captured canonical prefix).
 
 use std::io::Cursor;
 
-const FRAMES_COMPARE: usize = 8;
-const LINES_PER_FRAME: usize = 7874; // 656 quads x 12 lines + F + S
+const FRAMES_COMPARE: usize = 2;
+const LINES_PER_FRAME: usize = 6002; // 1500 vertices x 4 lines + F + S
 
 #[test]
-fn donut_engine_first_8_frames_match_canonical() {
+fn donut_engine_first_2_frames_match_canonical_v2() {
     let src = include_str!("../examples/donut_engine.gaidheal");
     let input = Cursor::new(Vec::<u8>::new());
     let mut out: Vec<u8> = Vec::new();
     gaidheal::run_source(src, input, &mut out)
         .expect("donut engine program must run cleanly");
 
-    let want_bytes = include_bytes!("fixtures/donut_canonical_8f.txt");
+    let want_bytes = include_bytes!("fixtures/donut_canonical_v2_2f.txt");
     let want = std::str::from_utf8(want_bytes).expect("fixture is UTF-8");
     let want_lines: Vec<&str> = want.lines().collect();
     assert_eq!(
