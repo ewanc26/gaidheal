@@ -24,6 +24,9 @@ See:
 - `capabilities.json` / `scripts/check_capabilities.py` for the machine-readable implementation status.
 - `AGENTS.md` for the architecture and contribution invariants.
 
+Gàidheal source highlighting for VS Code is provided in
+`editors/vscode-gaidheal`.
+
 ## The mutation rule
 
 Binary ops pop `b`, then `a`, and push `a op b`.

@@ -1,0 +1,29 @@
+{
+  "name": "gaidheal-language",
+  "displayName": "Gàidheal Language",
+  "description": "Syntax highlighting for Gàidheal stack-based programs written in Scottish Gaelic.",
+  "version": "0.1.0",
+  "publisher": "gaidheal",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "gaidheal",
+        "aliases": ["Gàidheal", "gaidheal"],
+        "extensions": [".gaidheal"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gaidheal",
+        "scopeName": "source.gaidheal",
+        "path": "./syntaxes/gaidheal.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "comments": {
+    "blockComment": ["( ", " )"]
+  },
+  "brackets": [],
+  "autoClosingPairs": [
+    { "open": "(", "close": ")" }
+  ],
+  "surroundingPairs": [
+    { "open": "(", "close": ")" }
+  ],
+  "folding": {
+    "markers": {
+      "start": "\\b(cuairt|chuairt|gcuairt|ma|mha)\\b",
+      "end": "\\bcriòch\\b"
+    }
+  }
+}

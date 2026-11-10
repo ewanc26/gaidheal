@@ -1,0 +1,77 @@
+{
+  "name": "Gàidheal",
+  "scopeName": "source.gaidheal",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#numbers" },
+    { "include": "#block-words" },
+    { "include": "#control-words" },
+    { "include": "#stack-words" },
+    { "include": "#io-words" },
+    { "include": "#words" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.parenthetical.gaidheal",
+          "begin": "\\(",
+          "end": "\\)",
+          "patterns": [{ "include": "#comments" }]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.gaidheal",
+          "match": "(?<=^|\\s)[-+]?(?:\\d+\\.?\\d*|\\.\\d+)(?:[eE][-+]?\\d+)?(?=\\s|$)"
+        }
+      ]
+    },
+    "block-words": {
+      "patterns": [
+        {
+          "name": "keyword.control.block.gaidheal",
+          "match": "\\b(?:cuairt|chuairt|gcuairt|ma|mha|no|criòch)\\b"
+        }
+      ]
+    },
+    "control-words": {
+      "patterns": [
+        {
+          "name": "keyword.control.flow.gaidheal",
+          "match": "\\b(?:cùl|cuìl|chuìl|chùl)\\b"
+        }
+      ]
+    },
+    "stack-words": {
+      "patterns": [
+        {
+          "name": "support.function.stack.gaidheal",
+          "match": "\\b(?:cuir|chuir|gcuir|tog|thog|dtog|malairt|mhalairt|bhalairt|leig|lheig|nleig)\\b"
+        }
+      ]
+    },
+    "io-words": {
+      "patterns": [
+        {
+          "name": "support.function.io.gaidheal",
+          "match": "\\b(?:abair|n-abair|faigh|fhaigh|bhfaigh)\\b"
+        }
+      ]
+    },
+    "words": {
+      "patterns": [
+        {
+          "name": "keyword.operator.gaidheal",
+          "match": "\\b(?:suim|shuim|bsuim|dealaich|dhealaich|ndealaich|coimeas|choimeas|gcoimeas)\\b"
+        },
+        {
+          "name": "meta.word.gaidheal",
+          "match": "[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'\\-]*"
+        }
+      ]
+    }
+  }
+}
