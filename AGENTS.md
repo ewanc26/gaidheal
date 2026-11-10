@@ -23,6 +23,8 @@ An esoteric stack-based programming language written in Scottish Gaelic. All val
 - `src/lexer/tokenizer.rs` — tokenizes words, numbers, and comments `( ... )` spanning lines; tracks line numbers for diagnostics
 - `src/parser/parser.rs` — parses blocks ending with `criòch`; resolves `ma`/`mha`/`no` and loop nesting; rejects `cùl`/`chuìl` outside loops and numbers outside the `cuir` family
 - `src/interpreter.rs` — stack machine over the AST: mutation-form opcodes, arithmetic, comparisons, I/O over abstract `Read`/`Write` streams, break/continue propagation
+- `src/codegen.rs` — lowers the block AST to readable portable C99; control flow maps directly (`ma`→`if`, `cuairt`→`while` with a popping condition, `chuairt`→`do`/`while`, `cùl`/`chuìl`→`break`/`continue`)
+- `runtime/gaidheal_runtime.h` — C99 header-only runtime: the `gh_*` stack machine, number formatting, UTF-8 I/O, and error messages kept byte-identical to the interpreter
 - `src/builtins.rs` — the canonical word table (`lookup`); the single source of truth for word spellings; do not hard-code words elsewhere
 - `src/repl.rs` — interactive REPL over the interpreter's streams: persistent stack, multi-line blocks until their `criòch`, error recovery
 - `src/main.rs` — CLI entry: read `.gaidheal` file, parse, interpret; no file starts the REPL; `--tokens`/`--ast` inspection flags; `--stack-depth`
@@ -33,5 +35,6 @@ An esoteric stack-based programming language written in Scottish Gaelic. All val
 - `cuairt` pops its condition BEFORE each iteration; `chuairt` pops AFTER the body.
 - `abair`/`n-abair` and `ma`/`mha` pop values — copy first when a value is needed again.
 - Numbers only appear immediately after `cuir`/`chuir`/`gcuir`.
+- Interpreted and compiled programs must stay in byte-for-byte parity (stdout, stderr, exit codes, runtime error messages); run `scripts/run_differential_tests.py` after touching either the interpreter or the C backend/runtime.
 - Write program comments in Gàidhlig inside `( ... )` (no Beàrla in example or test programs).
 - Keep `capabilities.json` in sync with implemented behavior and reference test files that exist.

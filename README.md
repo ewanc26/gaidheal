@@ -2,6 +2,8 @@
 
 An esoteric stack-based programming language written in Scottish Gaelic. All values are 64-bit doubles on a single operand stack (default depth 1000). Every root word has three forms selected by initial-consonant mutation: **base** (destructive/primary), **lenited** (variant element), and **eclipsed** (non-destructive/structural) — so `cuir` pushes, `chuir` copies, and `gcuir` rolls.
 
+The reference interpreter is Rust. Every program also lowers through readable portable C99 plus the `gaidheal_runtime.h` runtime and is built with the system C compiler for a native binary; the interpreter and the C backend are kept in byte-for-byte differential parity (`stdout`, `stderr`, and exit codes, including runtime error messages).
+
 ```text
 ( Fàilte dhan t-saoghal )
 cuir 70 n-abair
@@ -79,12 +81,32 @@ Inspect a program without running it:
 ./target/release/gaidheal examples/failte.gaidheal --stack-depth 4096
 ```
 
+## Compile to C
+
+```sh
+# Emit generated C (reads: readable portable C99 + the runtime header)
+./target/release/gaidheal examples/fibonacci.gaidheal --emit-c
+
+# Emit C to a file
+./target/release/gaidheal examples/fibonacci.gaidheal --emit-c -o fib.c
+
+# Compile a native binary (keeps the generated C next to it)
+./target/release/gaidheal examples/fizzbuzz.gaidheal -o fizzbuzz && ./fizzbuzz
+
+# Compile and run immediately, piping program input
+printf '48 18\n' | ./target/release/gaidheal examples/cgd.gaidheal --run
+
+# Use a different C compiler
+GAIDHEAL_CC=clang ./target/release/gaidheal examples/cunntas.gaidheal --run
+```
+
 ## Test
 
 ```sh
 cargo test
 ./scripts/run_golden_tests.sh target/debug/gaidheal
 python3 scripts/check_capabilities.py --language gaidheal --require-complete
+python3 scripts/run_differential_tests.py --binary target/debug/gaidheal --cc clang
 ```
 
 ## Star History

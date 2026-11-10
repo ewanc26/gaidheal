@@ -197,6 +197,18 @@
           ]
         }
       }
+    },
+    {
+      "id": "compiler.c-backend",
+      "description": "Every program lowers to readable portable C99 against runtime/gaidheal_runtime.h; -o builds a native binary through the system C compiler and --run executes it immediately. Interpreted and compiled programs produce identical stdout, stderr, and exit codes, including runtime error messages.",
+      "cells": {
+        "gaidheal": {
+          "status": "implemented",
+          "tests": [
+            "scripts/run_differential_tests.py"
+          ]
+        }
+      }
     }
   ]
 }
