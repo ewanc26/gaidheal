@@ -126,10 +126,11 @@
         "gaidheal": {
           "status": "implemented",
           "tests": [
+            "tests/golden/collatz.gaidheal",
             "tests/golden/cunntas.gaidheal",
-            "tests/golden/fizzbuzz.gaidheal",
+            "tests/golden/errors/break_outside_loop.gaidheal",
             "tests/golden/factarail.gaidheal",
-            "tests/golden/errors/break_outside_loop.gaidheal"
+            "tests/golden/fizzbuzz.gaidheal"
           ]
         }
       }

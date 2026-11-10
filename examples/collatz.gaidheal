@@ -1,0 +1,19 @@
+( Collatz: tòisich air 27 agus leàn an t-sloinn air gus an ruig sinn 1 )
+( Stac: [n] air fad an t-seallaidh )
+
+cuir 27
+
+gcuairt
+    chuir 0 cuir 1 gcoimeas ma cuìl criòch    ( bris nuair a bhios n = 1 )
+    chuir 0 abair                             ( cluich n )
+    chuir 0 cuir 2 dhealaich                   ( [n, n mod 2] )
+    ma
+        ( neònach: n = 3n + 1 )
+        chuir 0 cuir 3 bsuim cuir 1 suim lheig
+    no
+        ( cothrom: n = n / 2 )
+        chuir 0 cuir 2 dealaich lheig
+    criòch
+criòch
+
+abair                                      ( cluich an t-aonaran mu dheireadh )
