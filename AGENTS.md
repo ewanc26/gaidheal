@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guidance for AI coding agents working in **Gàidheal**.
+Guidance for AI coding agents working in **gaidheal**.
 
 ## Project overview
 
@@ -25,7 +25,8 @@ An esoteric stack-based programming language written in Scottish Gaelic. All val
 - `src/interpreter.rs` — stack machine over the AST: mutation-form opcodes, arithmetic, comparisons, I/O over abstract `Read`/`Write` streams, break/continue propagation
 - `src/codegen.rs` — lowers the block AST to readable portable C99; control flow maps directly (`ma`→`if`, `cuairt`→`while` with a popping condition, `chuairt`→`do`/`while`, `cùl`/`chuìl`→`break`/`continue`)
 - `runtime/gaidheal_runtime.h` — C99 header-only runtime: the `gh_*` stack machine, number formatting, UTF-8 I/O, and error messages kept byte-identical to the interpreter
-- `src/builtins.rs` — the canonical word table (`lookup`); the single source of truth for word spellings; do not hard-code words elsewhere
+- `sr
+c/builtins.rs` — the canonical word table (`lookup`); the single source of truth for word spellings; do not hard-code words elsewhere
 - `src/repl.rs` — interactive REPL over the interpreter's streams: persistent stack, multi-line blocks until their `criòch`, error recovery
 - `src/main.rs` — CLI entry: read `.gaidheal` file, parse, interpret; no file starts the REPL; `--tokens`/`--ast` inspection flags; `--stack-depth`
 
@@ -40,6 +41,17 @@ An esoteric stack-based programming language written in Scottish Gaelic. All val
 - Keep `capabilities.json` in sync with implemented behavior and reference test files that exist.
 
 <!-- allowed-agents -->
+## Allowed agents
+
+Only **Claude** (Anthropic) and **Mistral** (Mistral AI) may be used as coding agents in this repository. This rule supersedes any earlier agent-attribution guidance in this file.
+
+- Agent-assisted commits must credit only one of those agents:
+  - `Co-Authored-By: Claude <noreply@anthropic.com>`
+  - `Co-Authored-By: Mistral Vibe <vibe@mistral.ai>`
+- Allowed agent footers are `🤖 Generated with [Claude Code](https://claude.com/claude-code)` and `🤖 Generated with [Mistral Vibe](https://mistral.ai)`.
+- Do not add `Co-Authored-By:` trailers, `Generated with` footers, author names, or committer identities for any other agent or AI tool.
+- Do not credit another agent in commit metadata.
+
 ## Allowed agents
 
 Only **Claude** (Anthropic) and **Mistral** (Mistral AI) may be used as coding agents in this repository. This rule supersedes any earlier agent-attribution guidance in this file.

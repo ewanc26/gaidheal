@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/ewanc26/gaidheal/actions/workflows/ci.yml"><img src="https://github.com/ewanc26/gaidheal/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/ewanc26/gaidheal?label=licence" alt="Licence"></a>
+  <a href="https://github.com/sponsors/ewanc26"><img src="https://img.shields.io/github/sponsors/ewanc26?logo=githubsponsors&logoColor=white&label=sponsors" alt="Sponsor"></a>
+</p>
+
 # Gàidheal
 
 An esoteric stack-based programming language written in Scottish Gaelic. All values are 64-bit doubles on a single operand stack (default depth 1000). Every root word has three forms selected by initial-consonant mutation: **base** (destructive/primary), **lenited** (variant element), and **eclipsed** (non-destructive/structural) — so `cuir` pushes, `chuir` copies, and `gcuir` rolls.
@@ -155,3 +161,11 @@ python3 scripts/run_differential_tests.py --binary target/debug/gaidheal --cc cl
     <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ewanc26%2Fgaidheal&type=date" />
   </picture>
 </a>
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and the checks required before opening a pull request.
+
+## Licence
+
+See [LICENSE](LICENSE) for the licence terms.
