@@ -4,6 +4,7 @@
 
 [package]
 name = "gaidheal"
+authors = ["Ewan Croft (ewanc26)"]
 version = "0.1.0"
 edition = "2021"
 description = "An esoteric stack-based programming language written in Scottish Gaelic"
